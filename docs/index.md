@@ -1,6 +1,6 @@
 ---
 title: 運営者について
-description: 本サイトの運営者（通報者本人）と、ＰＤＦ墨消しツール・スクショＰＤＦ化ツール・サイドノート資料作成・公文書ウェブ掲載ツール・決算/株価データ分析連載・応援傍聴ナビ・Ｘスクショ管理アプリなど制作物の紹介です。
+description: 本サイトの運営者（通報者本人）と、ＰＤＦ墨消しツール・スクショＰＤＦ化ツール・サイドノート資料作成・公文書ウェブ掲載ツール・決算/株価データ分析連載・応援傍聴ナビ・Ｘスクショ管理アプリ・スキャンＰＤＦのＯＣＲ化ツールなど制作物の紹介です。
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
 twitter_card: summary
@@ -111,6 +111,18 @@ hide:
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０８</p>
+<p class="about-work-title">スキャンＰＤＦのＯＣＲ化ツール</p>
+<p>
+スキャンした裁判文書や画像から、1回のＯＣＲで「テキスト乗せＰＤＦ（見た目そのまま＋検索・コピペ可能）」「Ｍａｒｋｄｏｗｎ」「構造化ＪＳＯＮ」の3つを同時に作れるローカルＷｅｂアプリです。日本語文書に強いＯＣＲエンジンを使用し、処理はすべてこのパソコンの中だけで完結します。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：Python・FastAPI・YomiToku（ローカルＷｅｂアプリ）</p>
+<p>
+<a href="https://github.com/minnanosaiban/scan-ocr" class="about-btn" target="_blank" rel="noopener">スキャンＰＤＦのＯＣＲ化ツールを見る <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０９</p>
 <p class="about-work-title">ＥＮＥＯＳの内部通報制度をめぐる訴訟について</p>
 <p>
 ＥＮＥＯＳをめぐる訴訟の記録サイトも自作しています。判決文・準備書面をアコーディオンで開いて読め、本文はMarkdownとしてコピー・ダウンロードもできます。コードは GitHub で公開しています。

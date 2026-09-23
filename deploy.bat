@@ -3,8 +3,8 @@ setlocal
 
 rem --- メモ（初回設定やコマンド確認用） ---
 rem pip install -r requirements.txt
-rem git clone https://github.com/minnanosaiban/kabuka.git
-rem git remote set-url origin https://github.com/minnanosaiban/kabuka.git
+rem git clone https://github.com/minnanosaiban/tomo.git
+rem git remote set-url origin https://github.com/minnanosaiban/tomo.git
 rem python -m mkdocs serve
 rem --------------------------------------
 
@@ -36,7 +36,7 @@ echo === Notify IndexNow ===
 powershell -ExecutionPolicy Bypass -File "%~dp0scripts\indexnow_ping.ps1"
 if %errorlevel% neq 0 echo IndexNow ping failed (non-blocking, continuing).
 
-echo === Commit ^& Push to main (kabuka) ===
+echo === Commit ^& Push to main (tomo) ===
 git add .
 rem ビルド成果物(site/)をmainブランチのコミット対象から外す
 git reset site/ >nul 2>&1

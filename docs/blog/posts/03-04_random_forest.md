@@ -1,8 +1,8 @@
 ---
 title: ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ
 description: ランダムフォレストで決算指標からCARの上下を予測するも失敗。その過程で見えた「特徴量重要度」という指標の落とし穴を解説します。
-image: https://minnanosaiban.github.io/kabuka/blog/posts/img/03-04_random_forest/00_thumbnail.png
-url: https://minnanosaiban.github.io/kabuka/blog/posts/03-04_random_forest/
+image: https://minnanosaiban.github.io/tomo/blog/posts/img/03-04_random_forest/00_thumbnail.png
+url: https://minnanosaiban.github.io/tomo/blog/posts/03-04_random_forest/
 twitter_card: summary_large_image
 ---
 

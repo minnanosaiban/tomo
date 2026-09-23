@@ -1,8 +1,8 @@
 ---
 title: 番外編：決算データで「Note記事の下書き」を作る ― XBRL→プロンプト生成アプリ
 description: 決算短信・有報のJSONから、銘柄コード入力だけでNote記事の下書きプロンプトを生成するStreamlitアプリを作ります。
-image: https://minnanosaiban.github.io/kabuka/blog/posts/img/EX-03_kessan_note_app/app.png
-url: https://minnanosaiban.github.io/kabuka/blog/posts/EX-03_kessan_note_app/
+image: https://minnanosaiban.github.io/tomo/blog/posts/img/EX-03_kessan_note_app/app.png
+url: https://minnanosaiban.github.io/tomo/blog/posts/EX-03_kessan_note_app/
 twitter_card: summary_large_image
 ---
 

@@ -1,6 +1,6 @@
 site_name: 制作物の紹介
 site_description: 通報者本人が作成した、ＰＤＦ墨消しツール・スクショＰＤＦ化ツール・サイドノート資料作成・公文書ウェブ掲載ツール・応援傍聴ナビ・Ｘスクショ管理アプリなどの紹介と、決算/株価データ分析の連載です。
-site_url: https://minnanosaiban.github.io/kabuka/
+site_url: https://minnanosaiban.github.io/tomo/
 site_dir: site
 
 # mkdocs serve でも overrides/（テンプレート）の変更を検知してリロードする

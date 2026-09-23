@@ -8,7 +8,7 @@
   (the deploy regenerates site/sitemap.xml and pushes the live site).
 
   Key file must stay live at:
-    https://minnanosaiban.github.io/kabuka/<key>.txt
+    https://minnanosaiban.github.io/tomo/<key>.txt
   (committed at docs/<key>.txt). Because the key sits under /hotline/, the
   keyLocation parameter is required and only /hotline/ URLs may be submitted.
 

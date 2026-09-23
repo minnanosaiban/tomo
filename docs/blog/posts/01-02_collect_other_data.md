@@ -1,8 +1,8 @@
 ---
 title: 決算データを無料で集める ― EDINET・TDnet の公式 XBRL を活用
 description: 金融庁EDINET・東証TDnet・証券会社アプリから決算書や業績指標を取得し、株価チャートに業績という土台を加えます。
-image: https://minnanosaiban.github.io/kabuka/blog/posts/img/01-02_collect_other_data/00_thumbnail.png
-url: https://minnanosaiban.github.io/kabuka/blog/posts/01-02_collect_other_data/
+image: https://minnanosaiban.github.io/tomo/blog/posts/img/01-02_collect_other_data/00_thumbnail.png
+url: https://minnanosaiban.github.io/tomo/blog/posts/01-02_collect_other_data/
 twitter_card: summary_large_image
 ---
 

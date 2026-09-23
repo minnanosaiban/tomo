@@ -1,8 +1,8 @@
 ---
 title: 超短期のエッジを統計で探す ― 5分足、コスト控除後に何が残るか
 description: 定番シグナル5本を5分足で検証し、往復コスト控除後に何が残るかだけを見ます。生き残ったのは場中開示のドリフトのみでした。
-image: https://minnanosaiban.github.io/kabuka/blog/posts/img/EX-01_intraday_stats/00_thumbnail.png
-url: https://minnanosaiban.github.io/kabuka/blog/posts/EX-01_intraday_stats/
+image: https://minnanosaiban.github.io/tomo/blog/posts/img/EX-01_intraday_stats/00_thumbnail.png
+url: https://minnanosaiban.github.io/tomo/blog/posts/EX-01_intraday_stats/
 twitter_card: summary_large_image
 ---
 

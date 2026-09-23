@@ -1,10 +1,13 @@
 /* =========================================================
-   12-about.css — 「運営者について」(about/) 専用
+   12-about.css — Home（旧 about/、制作物ポートフォリオ）専用
    2026-08-10 モック承認：案B（番号のエディトリアル）＋カード廃止。
    青いバー・青いラベルを使わず、無彩色の番号＋文字の大きさで見出しを
    立てる方針だったが、2026-08-17 見直し：タイトルが名前として弱く
    見えたため、Home/agm/trial 見出しと同じ .bar-title（行頭の青バー）
    に統一。番号は引き続き無彩色のまま（併用）。
+   2026-09-23: about/ がHomeに昇格・ポートフォリオ機能も持たせるにあたり、
+   カード化はせず（上の方針を維持）、ホバー時の微細な反応（バー・番号・ボタン）
+   だけを足して「作り込まれた質感」を強める方向で洗練。
    ========================================================= */
 
 /* 節見出し「制作物」：ページ題(h1 2.4rem)より一段小さく、字間で立てる。
@@ -43,10 +46,16 @@
   margin: 0 !important;
 }
 .md-typeset .about-work .about-work-num {
-  font-size: 12px !important;
-  letter-spacing: 0.18em;
+  font-size: 13px !important;
+  letter-spacing: 0.28em;
   color: var(--md-default-fg-color--light) !important;
-  margin-bottom: 0.15rem !important;
+  margin-bottom: 0.2rem !important;
+  transition: color 0.25s ease, letter-spacing 0.25s ease;
+}
+/* 番号は項目にカーソルが乗っている間だけ字間が少し開く（気づいた人だけに見える微細な反応） */
+.md-typeset .about-work:hover .about-work-num {
+  color: var(--md-default-fg-color) !important;
+  letter-spacing: 0.34em;
 }
 .md-typeset .about-work .about-work-title {
   position: relative;
@@ -65,25 +74,43 @@
   width: 0.24rem;
   background-color: var(--md-link-color);
   border-radius: 1px;
+  transition: width 0.25s ease;
 }
-.md-typeset .about-work p:has(> .about-btn) {
-  margin-top: 0.7rem !important;
+/* タイトル左の青バーが、項目にカーソルが乗っている間だけ少し太くなる */
+.md-typeset .about-work:hover .about-work-title::before {
+  width: 0.34rem;
+}
+.md-typeset .about-work p:has(> .about-btn),
+.md-typeset .about-work p:has(> .arrow-link) {
+  margin-top: 0.9rem !important;
 }
 
 /* 控えめボタン（無彩色チップ。ライト/ダークは Material 変数が吸収。
-   旧: .x-share と同系だったが、.x-share は2026-08-20にサイトの青へ変更済み） */
+   旧: .x-share と同系だったが、.x-share は2026-08-20にサイトの青へ変更済み）。
+   2026-09-23: ホバーで少し持ち上がる（box-shadow＋translateY）反応を追加、
+   「押せる・触れる」手触りを足した。カード化はしていない（枠線・背景の大幅変更なし）。 */
 .about-btn {
   display: inline-block;
-  padding: 0.45em 1em;
+  padding: 0.5em 1.1em;
   font-size: 13px;
   border-radius: 0.25rem;
   color: var(--md-typeset-color) !important;
   background-color: var(--md-default-fg-color--lightest);
   text-decoration: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .about-btn:hover {
   background-color: var(--md-default-fg-color--lighter);
   text-decoration: none !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+[data-md-color-scheme="slate"] .about-btn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+.about-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 /* 代表記事のテキスト一覧（カード廃止・番号と説明は無彩色、リンクだけ青） */

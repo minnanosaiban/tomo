@@ -1,8 +1,8 @@
 ---
 title: セグメント分析 ― 連結に埋もれた「強い事業」を発進力スコアで探す
 description: XBRLをJSON化した自前パイプラインで決算を事業セグメント別に分解し、次の主力事業と隠れた高収益事業を発掘します。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-05_segment_analysis/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-05_segment_analysis/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-05_segment_analysis/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-05_segment_analysis/
 twitter_card: summary_large_image
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: アクルーアル分析 ― ＥＮＥＯＳの最高益に「現金の裏付け」はあるか
 description: 純利益と営業キャッシュフローの差（アクルーアル）から、最高益の"質"がキャッシュを伴っているかを見抜きます。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-03_accrual_analysis/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-03_accrual_analysis/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-03_accrual_analysis/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-03_accrual_analysis/
 twitter_card: summary_large_image
 ---
 

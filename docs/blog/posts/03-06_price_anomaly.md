@@ -1,8 +1,8 @@
 ---
 title: PCA 異常検知 ― 値動きの「共動の崩れ」で突発材料を検出
 description: 市場や同業が動いていないのに1銘柄だけ急に動いた「共動の崩れ」をPCA残差で教師なし検出し、突発材料をその日のうちに拾います。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/03-06_price_anomaly/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/03-06_price_anomaly/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/03-06_price_anomaly/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/03-06_price_anomaly/
 twitter_card: summary_large_image
 ---
 

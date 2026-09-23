@@ -1,8 +1,8 @@
 ---
 title: 4象限で GARP を見る ― 「成長と割安の両立」銘柄を探す
 description: ピーター・リンチのGARP（Growth At a Reasonable Price）をPEG×ROEの2軸で実装し、成長性と割安度を両立した銘柄を探します。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-01_garp_peg_roe/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-01_garp_peg_roe/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-01_garp_peg_roe/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-01_garp_peg_roe/
 twitter_card: summary_large_image
 ---
 

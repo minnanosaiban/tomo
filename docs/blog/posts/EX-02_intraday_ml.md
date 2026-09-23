@@ -1,8 +1,8 @@
 ---
 title: LightGBM で「次の5分」を当てられるか ― 111万バーで検証
 description: 超短期シグナルをLightGBMにまとめて学習させ、機械学習で何ができて何ができないかを111万バーの5分足データで確かめます。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/EX-02_intraday_ml/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/EX-02_intraday_ml/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/EX-02_intraday_ml/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/EX-02_intraday_ml/
 twitter_card: summary_large_image
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: マルチファクタースコア ― 7軸で「全方位の優等生」を探す
 description: Value/Quality/Growth/Consensus/Sentiment/Momentum/Riskの7ファクターで、ファンダ評価と株価の逆転現象を定量的に読み解きます。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-02_multifactor_scoreboard/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-02_multifactor_scoreboard/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-02_multifactor_scoreboard/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-02_multifactor_scoreboard/
 twitter_card: summary_large_image
 ---
 

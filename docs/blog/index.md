@@ -1,15 +1,15 @@
 ---
 title: 株価分析 ― ENEOS株主が無料データで読み解く決算・XBRL・機械学習
 description: ENEOS株主が、無料で手に入る株価・決算短信・有価証券報告書をもとに元売株・資源株を分析する連載です。チャートとアプリのPythonコードはGitHubで公開しています。
-url: https://minnanosaiban.github.io/hotline/blog/
-image: https://minnanosaiban.github.io/hotline/img/card1.png
+url: https://minnanosaiban.github.io/kabuka/blog/
+image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
 ---
 
 <style>.md-typeset h1 { display: none !important; }</style>
 
 <p>
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/hotline/blog/ &text=株価分析 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/kabuka/blog/ &text=株価分析 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
      target="_blank" class="x-share">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>

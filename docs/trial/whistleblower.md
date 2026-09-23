@@ -1,13 +1,13 @@
 ---
 title: 通報者側の主張書面 ― 控訴理由書・控訴理由補充書・原告準備書面
 description: ENEOS内部通報制度訴訟における原告（通報者）側の主張書面（控訴理由書、控訴理由補充書、原告準備書面）を公開しています。
-url: https://minnanosaiban.github.io/hotline/trial/whistleblower/
-image: https://minnanosaiban.github.io/hotline/img/card1.png
+url: https://minnanosaiban.github.io/kabuka/trial/whistleblower/
+image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
 ---
 
 <p>
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/hotline/trial/whistleblower/ &text=通報者側の主張書面 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/kabuka/trial/whistleblower/ &text=通報者側の主張書面 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
      target="_blank" class="x-share">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>

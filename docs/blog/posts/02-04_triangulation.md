@@ -1,8 +1,8 @@
 ---
 title: コンセンサス予想を検証 ― 会社予想とのズレから「修正の向き」を読む
 description: 業績・会社予想・アナリストコンセンサスという3つの数値の食い違いから、業績修正の向きを読み解きます。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-04_triangulation/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-04_triangulation/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-04_triangulation/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-04_triangulation/
 twitter_card: summary_large_image
 ---
 

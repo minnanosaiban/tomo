@@ -1,4 +1,4 @@
-https://minnanosaiban.github.io/hotline/
+https://minnanosaiban.github.io/kabuka/
 
 # ＥＮＥＯＳの内部通報制度をめぐる訴訟について
 

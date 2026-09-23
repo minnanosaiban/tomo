@@ -1,13 +1,13 @@
 ---
 title: 判決文 ― 東京地裁・東京高裁
 description: ENEOS内部通報制度訴訟の判決文（東京地方裁判所・東京高等裁判所）を公開しています。
-url: https://minnanosaiban.github.io/hotline/trial/judgement_2025/
-image: https://minnanosaiban.github.io/hotline/img/card1.png
+url: https://minnanosaiban.github.io/kabuka/trial/judgement_2025/
+image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
 ---
 
 <p>
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/hotline/trial/judgement_2025/ &text=判決書 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/kabuka/trial/judgement_2025/ &text=判決書 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
      target="_blank" class="x-share">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>
@@ -102,7 +102,7 @@ twitter_card: summary
 
 このように、通報者に求められているのは「どのような行為があったか」という事実の程度であることを消費者庁が示しています。ＥＮＥＯＳ自身の規程も、同じ前提（会社が照会し、通報者が応じる）に立っています。要するに、契約内容のような会社側にしか確認できない事実の特定までは求めていません。
 
-この線引きに対しては、通報者が訴訟の中で、具体的な根拠を挙げて反論していました。本件規程も消費者庁のハンドブックも、通報者に法令や問題事項の特定を求めていないこと（[原告第５準備書面 <i class="bi bi-arrow-up-right"></i>](/hotline/trial/whistleblower/#dai5_261)）。そして、会社自身が通報の受付後、通報情報の追加を送る宛先を調査補助者のみに制限していた以上、調査補助者に告げた追加の情報は、通報窓口への通報と実質的に同じであること（[原告第１準備書面 <i class="bi bi-arrow-up-right"></i>](https://minnanosaiban.github.io/eneos-saiban/argument.html#id21)。公益通報者保護法の指針の解説も「実質的に同窓口において内部公益通報を受け付けたといえる場合を含む」としています）。判決は、地裁・高裁を通じて、この反論のいずれにも触れないまま、上記の線引きを採用しています。
+この線引きに対しては、通報者が訴訟の中で、具体的な根拠を挙げて反論していました。本件規程も消費者庁のハンドブックも、通報者に法令や問題事項の特定を求めていないこと（[原告第５準備書面 <i class="bi bi-arrow-up-right"></i>](/kabuka/trial/whistleblower/#dai5_261)）。そして、会社自身が通報の受付後、通報情報の追加を送る宛先を調査補助者のみに制限していた以上、調査補助者に告げた追加の情報は、通報窓口への通報と実質的に同じであること（[原告第１準備書面 <i class="bi bi-arrow-up-right"></i>](https://minnanosaiban.github.io/eneos-saiban/argument.html#id21)。公益通報者保護法の指針の解説も「実質的に同窓口において内部公益通報を受け付けたといえる場合を含む」としています）。判決は、地裁・高裁を通じて、この反論のいずれにも触れないまま、上記の線引きを採用しています。
 
 <div class="f-head" id="jud-riyu-2" markdown>
 <p class="f-label"><i class="fa-solid fa-square-full"></i> 理由２</p>
@@ -132,7 +132,7 @@ twitter_card: summary
 
 > 原告の求釈明の内容は、訴訟関係を明瞭にするため（民事訴訟法第１４９条）のものとはいえないので、被告において回答する必要を認めない。
 >
-> ――[被告準備書面（５）　第４の２「ＧＳＴの法改正」に該当する法改正について <i class="bi bi-arrow-up-right"></i>](/hotline/trial/eneos/#hikoku5_342)
+> ――[被告準備書面（５）　第４の２「ＧＳＴの法改正」に該当する法改正について <i class="bi bi-arrow-up-right"></i>](/kabuka/trial/eneos/#hikoku5_342)
 
 **回収が合意の推認を妨げないとする判決の理由づけは、被告自身が訴訟の中で特定を拒んだ主張の上に成り立っています。**
 
@@ -158,7 +158,7 @@ twitter_card: summary
 <li class="tl-gap">約２か月</li>
 <li class="tl-ev tl-out"><span class="tl-date">平成２９年３月</span><span class="tl-srcs"><a class="tl-src" href="https://minnanosaiban.github.io/eneos-saiban/_static/甲17_税務処理の確認経緯_ENEOS_公開.pdf">甲１７ <i class="bi bi-arrow-up-right"></i></a></span><span class="tl-body">実際には還付が受けられていなかったことが判明（前年９月の説明は誤りだった）</span></li>
 <li class="tl-gap"></li>
-<li class="tl-ev tl-out"><span class="tl-date">平成２９年</span><span class="tl-srcs"><a class="tl-src" href="/hotline/trial/eneos/#hikoku2_214">被告準備書面（２） <i class="bi bi-arrow-up-right"></i></a></span><span class="tl-body">ＧＳＴ業務の移管により、通報者は契約に関する情報から<span class="tl-quote">「遮断された状態」</span>になる（被告が訴訟の認否で認めた事実）</span></li>
+<li class="tl-ev tl-out"><span class="tl-date">平成２９年</span><span class="tl-srcs"><a class="tl-src" href="/kabuka/trial/eneos/#hikoku2_214">被告準備書面（２） <i class="bi bi-arrow-up-right"></i></a></span><span class="tl-body">ＧＳＴ業務の移管により、通報者は契約に関する情報から<span class="tl-quote">「遮断された状態」</span>になる（被告が訴訟の認否で認めた事実）</span></li>
 <li class="tl-gap"></li>
 <li class="tl-ev tl-out"><span class="tl-date">平成２９年７月２４日</span><span class="tl-srcs"><a class="tl-src" href="https://minnanosaiban.github.io/eneos-saiban/_static/甲08-16_調査補助者とのメール2016-2017_ENEOS_公開.pdf#page=17">甲１６の３ <i class="bi bi-arrow-up-right"></i></a></span><span class="tl-body">調査補助者に対し（法務部長ＣＣ）、確認したい事項として<span class="tl-quote">「支払先との契約書のＧＳＴに関する内容」</span>を挙げて開示を求める</span></li>
 <li class="tl-gap"></li>
@@ -265,7 +265,7 @@ twitter_card: summary
 
 ただ、この資料の正体は判決自身が記録しています。判決はこれを「**『通報情報に関する事実』を……整理したパワーポイント資料**」と呼び（[認定事実キ <i class="bi bi-arrow-up-right"></i>](#2025-kousai-judgment_ninteiki)）、会社もこの３０項目を一つずつ調査して「**いずれも不正行為等に該当しない**」という結果を示しました（[認定事実ク <i class="bi bi-arrow-up-right"></i>](#2025-kousai-judgment_nintei-ku)）。同じ行為を作り手の側から書けば、「調査を求める事実を、調査できる形に整理して渡した」——規程２．５⑵（照会への協力義務）の履行そのものです。
 
-なぜ、説明は量を要したのか。正式な通知にあたる本件調査報告は、過去の経緯についての問合せに「**回答を差し控える**」としました（[認定事実エ <i class="bi bi-arrow-up-right"></i>](#2025-kousai-judgment_nintei-e)）。一方、詳しい情報が書かれていた本件メールは、部長を宛先とし通報者をＣＣに入れる社内メールで、被告自身が後の訴訟で「**本件通報に関して通知又は情報共有をしたわけではない**」と位置づけています（[被告準備書面（５） <i class="bi bi-arrow-up-right"></i>](/hotline/trial/eneos/#hikoku5_224u)）。正式な通知には中身がなく、中身のある文書は正式な通知ではない——通報者の手元に残るのは曖昧な情報だけです。その状態で追加通報をするには、経緯を自分で整理して説明するほかありません。「繰り返し」「３０項目」「自ら」は、その帰結を受け取る側から記録した姿です。
+なぜ、説明は量を要したのか。正式な通知にあたる本件調査報告は、過去の経緯についての問合せに「**回答を差し控える**」としました（[認定事実エ <i class="bi bi-arrow-up-right"></i>](#2025-kousai-judgment_nintei-e)）。一方、詳しい情報が書かれていた本件メールは、部長を宛先とし通報者をＣＣに入れる社内メールで、被告自身が後の訴訟で「**本件通報に関して通知又は情報共有をしたわけではない**」と位置づけています（[被告準備書面（５） <i class="bi bi-arrow-up-right"></i>](/kabuka/trial/eneos/#hikoku5_224u)）。正式な通知には中身がなく、中身のある文書は正式な通知ではない——通報者の手元に残るのは曖昧な情報だけです。その状態で追加通報をするには、経緯を自分で整理して説明するほかありません。「繰り返し」「３０項目」「自ら」は、その帰結を受け取る側から記録した姿です。
 
 <div class="f-head" id="jud-kensho" markdown>
 <p class="f-label"><i class="fa-solid fa-square-full"></i> 検証</p>
@@ -856,10 +856,10 @@ twitter_card: summary
 東京地裁判決解説</p>
 <div class="audio-content center margin02">
   <audio controls preload="none">
-    <source src="https://minnanosaiban.github.io/hotline/img/judgement_202508.m4a" type="audio/wav">
+    <source src="https://minnanosaiban.github.io/kabuka/img/judgement_202508.m4a" type="audio/wav">
     お使いのブラウザは audio 要素をサポートしていません。
   </audio>
 </div>
 <p class="smallest center margin01">
-プロンプトなし・2025年8月作成<br><a class="arrow-link" href="https://minnanosaiban.github.io/hotline/trial/judgement_2025/">東京地裁判決</a></p>
+プロンプトなし・2025年8月作成<br><a class="arrow-link" href="https://minnanosaiban.github.io/kabuka/trial/judgement_2025/">東京地裁判決</a></p>
 </div>

@@ -1,8 +1,8 @@
 ---
 title: コングロマリット・ディスカウント ― 総合商社・ＥＮＥＯＳをセグメントで読み解く
 description: 総合商社の事業転換と、本連載の中核ＥＮＥＯＳのピークアウトがどのセグメントで起きているかを決算短信XBRLで読み解きます。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/02-06_segment_core_stocks/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/02-06_segment_core_stocks/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/02-06_segment_core_stocks/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/02-06_segment_core_stocks/
 twitter_card: summary_large_image
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: K-NN 分類 ― 似た決算群から外れた「個別ショック」を検出
 description: 似た決算を物差しに株価反応（CAR）をK-NNで分類し、群れから外れた「個別ショック」＝IRを確認すべき銘柄を洗い出します。
-image: https://minnanosaiban.github.io/hotline/blog/posts/img/03-02_knn_prediction/00_thumbnail.png
-url: https://minnanosaiban.github.io/hotline/blog/posts/03-02_knn_prediction/
+image: https://minnanosaiban.github.io/kabuka/blog/posts/img/03-02_knn_prediction/00_thumbnail.png
+url: https://minnanosaiban.github.io/kabuka/blog/posts/03-02_knn_prediction/
 twitter_card: summary_large_image
 ---
 

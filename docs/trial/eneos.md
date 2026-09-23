@@ -1,13 +1,13 @@
 ---
 title: ＥＮＥＯＳの主張書面 ― 控訴答弁書・被告準備書面（１）〜（５）・答弁書
 description: ENEOS内部通報制度訴訟における被告ＥＮＥＯＳ側の主張書面（控訴答弁書、被告準備書面（１）〜（５）、答弁書）を公開しています。
-url: https://minnanosaiban.github.io/hotline/trial/eneos/
-image: https://minnanosaiban.github.io/hotline/img/card1.png
+url: https://minnanosaiban.github.io/kabuka/trial/eneos/
+image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
 ---
 
 <p>
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/hotline/trial/eneos/ &text=ＥＮＥＯＳ側の主張書面 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/kabuka/trial/eneos/ &text=ＥＮＥＯＳ側の主張書面 - ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
      target="_blank" class="x-share">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>
@@ -27,19 +27,19 @@ twitter_card: summary
 ＥＮＥＯＳ主張解説</p>
 <div class="audio-content center margin02">
   <audio controls preload="none">
-    <source src="https://minnanosaiban.github.io/hotline/img/eneos_202508.m4a" type="audio/wav">
+    <source src="https://minnanosaiban.github.io/kabuka/img/eneos_202508.m4a" type="audio/wav">
     お使いのブラウザは audio 要素をサポートしていません。
   </audio>
 </div>
 <p class="smallest center margin01">
-プロンプトなし・2025年8月作成<br><a class="arrow-link" href="https://minnanosaiban.github.io/hotline/trial/eneos/">ＥＮＥＯＳ主張書面全文</a></p>
+プロンプトなし・2025年8月作成<br><a class="arrow-link" href="https://minnanosaiban.github.io/kabuka/trial/eneos/">ＥＮＥＯＳ主張書面全文</a></p>
 </div>
 <div class="card-blue audio-wide">
 <p  class="larger center margin01">
 控訴審主張解説</p>
 <div class="audio-content center margin02">
   <audio controls preload="none">
-    <source src="https://minnanosaiban.github.io/hotline/img/kouso_202508.wav" type="audio/wav">
+    <source src="https://minnanosaiban.github.io/kabuka/img/kouso_202508.wav" type="audio/wav">
     お使いのブラウザは audio 要素をサポートしていません。
   </audio>
 </div>

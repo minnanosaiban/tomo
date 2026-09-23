@@ -1,8 +1,8 @@
 ---
 title: 運営者について
 description: 本サイトの運営者（通報者本人）と、ＰＤＦ墨消しツール・スクショＰＤＦ化ツール・サイドノート資料作成・公文書ウェブ掲載ツール・決算/株価データ分析連載・応援傍聴ナビ・Ｘスクショ管理アプリなど制作物の紹介です。
-url: https://minnanosaiban.github.io/hotline/about/
-image: https://minnanosaiban.github.io/hotline/img/card1.png
+url: https://minnanosaiban.github.io/kabuka/about/
+image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
 hide:
   - navigation

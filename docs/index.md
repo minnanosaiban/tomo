@@ -1,6 +1,6 @@
 ---
-title: ENEOSの内部通報制度をめぐる訴訟について
-description: ENEOS（エネオス）の内部通報制度をめぐる訴訟の裁判文書を公開しています。通報を受けた後、通報者を通報内容に関する情報から遮断したうえ、裏づけの確認できない情報を知らせて、不正の有無を伏せるという企業の対応について問題提起をしています。株主総会で問題提起します。
+title: 運営者について
+description: 本サイトの運営者（通報者本人）と、ＰＤＦ墨消しツール・スクショＰＤＦ化ツール・サイドノート資料作成・公文書ウェブ掲載ツール・決算/株価データ分析連載・応援傍聴ナビ・Ｘスクショ管理アプリなど制作物の紹介です。
 url: https://minnanosaiban.github.io/kabuka/
 image: https://minnanosaiban.github.io/kabuka/img/card1.png
 twitter_card: summary
@@ -10,109 +10,115 @@ hide:
 ---
 
 <div class="center-container" markdown>
-<h1 class="hero-band top-title-13">
-  <b><span class="tl-line"><span style="color: var(--md-accent-color);">ＥＮＥＯＳ</span>の</span><span class="tl-line">内部通報制度を</span><span class="tl-line">めぐる訴訟について</span></b>
-</h1>
 
-<p class="base00 hero-share">
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/kabuka/ &text=ＥＮＥＯＳの内部通報制度をめぐる訴訟について"
-     target="_blank" class="x-share">
-    <i class="fa-brands fa-x-twitter"></i> でシェア
-  </a>
+<div class="hero-band" markdown>
+# 運営者について
+<p>
+本ウェブサイトは持ち前の技術を活かして通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・Ｅ資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
 </p>
-
-<div markdown>
-<p class="width-40 issue-lead sec-title">
-本サイトの<br>問題提起
-</p>
-
-<p class="width-40 margin02 agree-gap">
-本サイトで問題提起をするのは、通報を受けてからの会社の対応です。<b><span class="text-warn">通報の後、通報者は通報内容に関する情報から遮断されました。そのうえで、裏づけの確認できない情報を知らされました。</span></b>なお、私は社内通報窓口を利用した従業員で、本文では「通報者」とも記します。
-</p>
-
-<p class="larger width-40 margin02 agree-gap bar-title">
-調査事項を曖昧にして回答
-</p>
-<p class="width-40">
-通報したのは「支払う必要のない海外消費税を払っている」という問題でした。ところが、回答の際の調査事項は曖昧で、調査結果の対象も判然としませんでした。肝心の海外消費税を支払う必要があるか否かは、調査結果として示されませんでした。
-</p>
-<p class="larger width-40 margin02 agree-gap bar-title">
-裏づけが確認できない情報
-</p>
-<p class="width-40">
-その後、「法改正があったため」と通報者に知らせ、海外子会社が「本社の代わりに返金を受けた」として本社に送金しました。しかし、その「法改正」は未だに特定できず、海外子会社が返金を受けた事実も確認できません。
-</p>
-<p class="larger width-40 margin02 agree-gap bar-title">
-海外消費税の支払を契約化
-</p>
-<p class="width-40">
-日本企業に海外消費税を支払う義務がないにもかかわらず、海外消費税を支払っている旨の通報を受けた後、「海外企業がＥＮＥＯＳへ海外消費税を請求できる」形へ契約変更しました。この措置は通報者に知らされませんでした。
-</p>
-
-<p class="width-40 gap-6">
-<b><span class="text-main">裁判所の判断 <i class="fa-solid fa-hand-point-right"></i> </span></b>　通報を受けた後の契約変更について、<b>「通報を受けて講じた是正措置を通報者に通知しなかったこと」が裁判の争点</b>です。裁判所は、契約書に海外消費税の定めはなかったものの、ＥＮＥＯＳは取引先と「海外消費税を支払う合意」をしていたと推認し、合意がある以上海外消費税の支払は契約違反ではない、と判断しました。違反そのものがなければ、通報者に伝えるべき「違反への是正措置」もない ── そう判断し、通知しなかったことを問題にする主張を退けました。
-</p>
-
-<div class="agm-section" markdown>
-
-<p class="sec-title">
-<span class="text-main">裏づけが<br>確認できない<br>３つの情報</span>
-</p>
-
-<p class="width-40 verdict-lead">
-裁判で敗訴はしました。けれども、裁判を通じて、ＥＮＥＯＳが、海外消費税の支払いについて「法改正があったため」としたこと、および、「海外子会社が本社の代わりに海外消費税の返金を受けた」と通報者に知らせていた事実が、明確になりました。
-</p>
-
-<p class="width-40 margin04 bar-title">
-<span class="larger">法改正があったため</span><br>
-ただし、その法改正は未だに特定されていません
-</p>
-<p class="width-40 margin02">
-会社は通報者に、「法改正があったため」と知らせました。<br>
-── しかし、その「法改正」が、いつの・どの法律なのか、未だに特定されていません。（通報者が探しても、見つかりませんでした。）
-</p>
-
-<p class="width-40 margin04 bar-title">
-<span class="larger">子会社が返金を受けた</span><br>
-ただし、記録は「子会社 <i class="fa-solid fa-arrow-right"></i> 本社」間の送金だけ
-</p>
-<p class="width-40 margin02">
-会社は通報者に、「海外子会社が本社の代わりに海外消費税の返金を受けた」ことを解決策として示しました。<br>
-── しかし、記録として確認できるのは「海外子会社から本社への送金」だけで、「海外子会社が外部から実際に回収した」ことを示す記録は見つかりません。
-</p>
-
-<p class="width-40 margin04 bar-title">
-<span class="larger">コンサルに相談した</span><br>
-ただし、何を相談したのかが分からない
-</p>
-<p class="width-40 margin02">
-会社は通報者に、「経理部およびコンサルティング会社と相談し」たことを対応の根拠として示しました。<br>
-── しかし、何を相談し、どう回答を得たのかは記録に示されておらず、「違反ではない」という結論だけが伝えられました。
-</p>
-
 </div>
 
-<p class="width-40 gap-6">
-<b><span class="text-warn">こんなことも！？</span></b>　海外消費税の支払いについて、裁判所は「合意による支払い」と推認を示しました。なお、ＥＮＥＯＳ側からは、その「合意」の記録は示されておらず、「記録のない合意」となります。つまり、ＥＮＥＯＳは海外消費税を記録されない合意に基づいて支払っていたことになります。<span class="text-warn">── 「日本企業に支払義務のない海外消費税を、記録されない合意に基づいて支払う」　これ自体が、企業の内部統制として問題です。</span>
-</p>
+<p class="about-sec-title width-40">制作物</p>
 
-<p class="sec-title">
-再通報と<br>新たな問題
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０１</p>
+<p class="about-work-title">ＰＤＦ墨消しツール</p>
+<p>
+裁判文書を公開するにあたり、第三者の個人情報を保護するために自作したツールです。処理はすべてブラウザ内で完結し、ＰＤＦは外部に送信されません。コードは GitHub で公開しています。
 </p>
-<p class="width-40 retort-lead agree-gap">
-解決策とされた海外子会社から本社への送金について、私は改めて通報しました。不正な送金が疑われるからです。しかし、<span class="text-warn">会社は通報者に『解決済み』と伝えるだけで、不正の有無がどちらなのかすら、判然としないままでした。</span>
+<p class="fig-meta">使用技術：JavaScript・PDF.js・pdf-lib（Cloudflare Pages）</p>
+<p>
+<a href="https://pdf-redactor.pages.dev/" class="about-btn" target="_blank" rel="noopener">ＰＤＦ墨消しツールを開く <i class="bi bi-box-arrow-up-right"></i></a>
 </p>
-<p class="width-40 margin02">
-公益通報者保護法の指針は、調査結果を通報者に通知することを求めていますが、『解決済み』として調査を省くなら、その判断は「可能な限り客観的に」行うこと、新たな疑いの再通報であれば本当に解決済みかを慎重に検討すること、とされています。
-</p>
-<p class="width-40 margin02">
-しかも、宮田社長は、元社長の不祥事を引き合いに、「コンプライアンスの再徹底」を掲げて、社員に内部通報制度の利用を促していました。本件の再通報は、その呼びかけに応じたものです。
-</p>
-<p class="width-40 margin02">
-社内外に掲げた「コンプライアンスの再徹底」<br>
-── この表明が本物なのかどうか、問われる事態です。
-</p>
-
-</div>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０２</p>
+<p class="about-work-title">スクショＰＤＦ化ツール</p>
+<p>
+スマホのスクリーンショットを並べ替えて２×２でＡ４ＰＤＦにまとめ、メールやＬＩＮＥで共有できるツールです。処理はすべてブラウザ内で完結し、画像は外部に送信されません。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・pdf-lib（Cloudflare Pages）</p>
+<p>
+<a href="https://screenshot-pdf.pages.dev/" class="about-btn" target="_blank" rel="noopener">スクショＰＤＦ化ツールを開く <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０３</p>
+<p class="about-work-title">サイドノート資料作成</p>
+<p>
+テキストやスクリーンショットの資料に、読みながら気づいた点をサイドノートとして書き込めるツールです。左に本文、右にサイドノートを並べて表示し、Markdownや印刷用のＡ４ＰＤＦにも書き出せます。処理はすべてブラウザ内で完結し、資料は外部に送信されません。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・PDF.js（Cloudflare Pages）</p>
+<p>
+<a href="https://sidenote-pdf.pages.dev/" class="about-btn" target="_blank" rel="noopener">サイドノート資料作成を開く <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０４</p>
+<p class="about-work-title">公文書ウェブ掲載ツール</p>
+<p>
+準備書面等の公文書を、項番（第１／１／⑴／ア）の設定とサイドノートの検討メモを使いながら作成できるツールです。Markdown原稿の取り込みにも対応し、文末脚注・明朝体１２ｐｔの公文書仕様ＰＤＦや、本サイトへの直接書き出しにも対応しています。処理はすべてブラウザ内で完結し、資料は外部に送信されません。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・PDF.js（Cloudflare Pages）</p>
+<p>
+<a href="https://sidenote-pdf-doc.pages.dev/" class="about-btn" target="_blank" rel="noopener">公文書ウェブ掲載ツールを開く <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０５</p>
+<p class="about-work-title">決算・株価データの分析連載</p>
+<p>
+無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。チャートとアプリの Python コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：Python・pandas・matplotlib・Streamlit</p>
+<ul class="about-art-list">
+<li><span class="n">2-3</span><a href="blog/posts/02-03_accrual_analysis/">アクルーアル分析</a><span class="d">ＥＮＥＯＳの最高益に「現金の裏付け」はあるか</span></li>
+<li><span class="n">2-8</span><a href="blog/posts/02-08_enterprise_value/">EVで見る「会社の値段」</a><span class="d">時価総額に借金を足し、13社を簡易DCFで検証</span></li>
+<li><span class="n">2-6</span><a href="blog/posts/02-06_segment_core_stocks/">コングロマリット・ディスカウント</a><span class="d">総合商社・ＥＮＥＯＳをセグメントで読み解く</span></li>
+</ul>
+<p>
+<a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０６</p>
+<p class="about-work-title">応援傍聴ナビ</p>
+<p>
+民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。友人と共同運営しており、裁判官・事件番号の一覧化や「行ってきたよ」掲示板などの機能があります。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
+<p>
+<a href="https://court-calendar-6q8.pages.dev/" class="about-btn" target="_blank" rel="noopener">応援傍聴ナビを開く <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０７</p>
+<p class="about-work-title">Ｘスクショ管理アプリ</p>
+<p>
+民事裁判の証拠として、Ｘ（旧Twitter）の投稿を後から確認できる形で保存・整理するためのデスクトップアプリです。投稿ページをブラウザウィンドウごとスクリーンショットとして貯め、重要度を採点したうえで、証拠提出用のＰＤＦやサイドノート資料作成ツール用のファイルに書き出せます。処理はすべてローカルのＰＣ内で完結し、外部には送信されません。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：Python・Playwright・Tkinter（PyInstallerでexe化・GitHub Releases配布）</p>
+<p>
+<a href="https://github.com/minnanosaiban/screenshot-x/releases/latest" class="about-btn" target="_blank" rel="noopener">Ｘスクショ管理アプリをダウンロード <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０８</p>
+<p class="about-work-title">ＥＮＥＯＳの内部通報制度をめぐる訴訟について</p>
+<p>
+ＥＮＥＯＳをめぐる訴訟の記録サイトも自作しています。判決文・準備書面をアコーディオンで開いて読め、本文はMarkdownとしてコピー・ダウンロードもできます。コードは GitHub で公開しています。
+</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・JavaScript・GitHub Pages</p>
+<p>
+<a href="https://minnanosaiban.github.io/hotline/" class="about-btn" target="_blank" rel="noopener">裁判記録サイトを見る <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+</div>

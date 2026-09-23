@@ -1,6 +1,12 @@
 # hotline デザインシステム — コンポーネント一覧
 
 作成: 2026-08-17。`docs/css/01〜12`（9ファイル）と実ページ（Home / agm / trial / about / blog）を突き合わせて棚卸しした。
+
+> **2026-09-23 追記**: このリポジトリは `kabuka` に改名し、ENEOS訴訟関連の旧 Home・`agm/`・`trial/`・`styleguide.md`
+> は削除、`about/`の内容がHomeに昇格した（詳細はREADME参照）。この文書内の `.agm-section`・`.eneos-card`・
+> `.qa-turn`・`.toc-card`・trial系（`.q-card`／`.f-head`／`.test-part`）・カルーセルの記述は、いずれも
+> 削除済みページの棚卸し記録であり、現在のサイトのどのページにも存在しない（正本としては無効・履歴として残す）。
+> 現行ページ（Home＝旧about、blog）に関する記述のみ有効。
 目的は2つ：①今後の手直しで一貫性を崩さないための正本、②「Markdownを知らなくてもMkDocs用mdが作れるアプリ」（sidenote-pdf応用）の部品パレット設計図。
 
 サイト全体の方針（[[hotline-design-preferences]]と同じ）：

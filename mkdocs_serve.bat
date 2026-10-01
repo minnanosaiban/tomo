@@ -1,4 +1,4 @@
 @echo off
-cd /d C:\minnanosaiban\hotline
+cd /d C:\minnanosaiban\tomo
 mkdocs serve --livereload
 pause

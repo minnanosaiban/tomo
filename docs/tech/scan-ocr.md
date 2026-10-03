@@ -25,12 +25,7 @@ jobs/             処理中の一時ファイル（Git管理外）
 
 役割はきれいに分かれています。`ocr_pipeline.py` と `redact.py` は Web を知らず、`app.py` は OCR の中身を知りません。
 
-```
-  ブラウザ ──HTTP──▶ app.py ──▶ ocr_pipeline.py ──▶ YomiToku
- (static/)            │   └───▶ redact.py ─────────┘ （OCRは ocr_pipeline の
-                      │                              get_analyzer を共用）
-                      └──▶ jobs/<ジョブID>/ （一時ファイル）
-```
+![scan-ocr の全体構成：画面からapp.pyへHTTP、app.pyはocr_pipeline・redactを呼び、どちらもYomiTokuでOCRする](../img/scan-ocr-architecture.svg){width="700"}
 
 ### 起動を速くする
 
@@ -40,16 +35,7 @@ YomiToku は torch を引き込むので、読み込むだけで10秒以上か�
 
 通常のOCRは、1ページずつ次の順に進みます。
 
-```
-PDF/画像 ─▶ ページ画像（200dpi・BGR配列）
-                 │
-                 ▼  ページごとに1回だけ
-           DocumentAnalyzer（YomiToku）
-                 │ 結果（段落・表・図・単語ボックス・読み順）
-      ┌──────────┼──────────┐
-      ▼          ▼          ▼
-   Markdown     JSON    テキスト乗せPDF
-```
+![OCRは1回だけ、出力は3つ：PDF・画像→ページ画像→YomiToku→Markdown・JSON・テキスト乗せPDF](../img/scan-ocr-output-flow.svg){width="700"}
 
 PDFは [pypdfium2](https://github.com/pypdfium2-team/pypdfium2) で、**200dpi の画像**にしてからOCRにかけます。解析（いちばん重い処理）は形式によらずページにつき1回で、選ばれなかった形式の変換と書き出しだけを省きます。
 
@@ -96,7 +82,7 @@ PDFの墨消しで最もよくある事故は、黒い四角を**上に重ねた
 
 ![墨消しの流れ：①ページを画像にする→②候補検出用OCR→③人が確認・調整→④黒く塗りつぶす→⑤再OCRして出力→⑥塗り残しを検証](../img/scan-ocr-redact-flow.svg){width="700"}
 
-※この図は、自作の関係図ツール「ＲｅｌａＧｒｉｄ」で描きました。
+※この解説の3つの図は、自作の関係図ツール「ＲｅｌａＧｒｉｄ」で描きました。
 
 ②の結果は候補を探すためだけに使い、最終出力には**一切使いません**。⑤のOCRは黒塗り済みの画像を読むので、塗った文字は最初から存在しません。PDFの透明な文字層にも、Markdown にも、JSON にも入りません。ページを画像にしてから描き直すため、元のPDFの文字データ・注釈・メタデータも持ち越しません。
 

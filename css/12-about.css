@@ -80,6 +80,15 @@
 .md-typeset .about-work:hover .about-work-title::before {
   width: 0.34rem;
 }
+/* タイトル右の GitHub リンク（アイコンのみ。文字色は控えめ、ホバーでリンク色） */
+.md-typeset .about-work .about-work-title .gh-link {
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .about-work .about-work-title .gh-link:hover {
+  color: var(--md-link-color);
+}
 .md-typeset .about-work p:has(> .about-btn),
 .md-typeset .about-work p:has(> .arrow-link) {
   margin-top: 0.9rem !important;

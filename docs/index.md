@@ -60,7 +60,7 @@ hide:
 <p class="about-work-num">０４</p>
 <p class="about-work-title">スキャン墨消し <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
-訴訟資料の個人名などの墨消しをラクにするツールです。Ｐｙｔｈｏｎが必要なため、ご希望に応じてサポートします。処理はすべてこのパソコンの中だけで完結します。
+訴訟資料の個人名などの墨消しをラクにするツールです。 Python が必要なため、ご希望に応じてサポートします。処理はすべてこのパソコンの中だけで完結します。
 </p>
 <p class="fig-meta">使用技術：Python（ローカルＷｅｂアプリ）</p>
 <p>

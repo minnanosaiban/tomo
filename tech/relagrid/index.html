@@ -2732,6 +2732,7 @@ note api "SLA 99.95%\np99&lt;200ms" pos=bottom
 </ul>
 <p>図を CSS 変数にしなかったのは、書き出した SVG が、このページの CSS なしで単体で開かれるためです。色が属性に入っていれば、どこで開いても同じに見えます。</p>
 <p>2層は同じスイッチで動きます。DSL の <code>theme dark</code>（またはツールバーの切替）が、図のパレットを切り替えるのと同時に <code>body.rg-dark</code> を付けるので、図だけ暗くて画面は明るい、という状態にはなりません。</p>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/relagrid-two-color-layers.svg" data-desc-position="bottom"><img alt="色の2層：テーマ切替は、画面の色（body.rg-dark を付け、CSS変数が置き換わる）と、図の色（JavaScript のパレットから選び、書き出し SVG の属性に値を直接書く）の両方を動かす" src="../../img/relagrid-two-color-layers.svg" width="700"></a></p>
 <h3 id="ui-css">UI の色（CSS 変数）</h3>
 <table>
 <thead>

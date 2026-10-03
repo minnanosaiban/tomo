@@ -1,6 +1,6 @@
 ---
 title: 運営者について
-description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・ＲｅｌａＧｒｉｄ・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・決算/株価データ分析連載・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
+description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・決算/株価データ分析連載・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
 twitter_card: summary
@@ -46,13 +46,13 @@ hide:
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０３</p>
-<p class="about-work-title">ＲｅｌａＧｒｉｄ　関係図 <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title">RelaGrid　関係図 <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
 グリッドに人物や会社を置いて矢印でつなぐ、事件の関係図エディタです。ＰＮＧやＳＶＧのほか、Ｘに投稿しやすい縦画像でも書き出せます。ブラウザだけで動作します。
 </p>
 <p class="fig-meta">使用技術：JavaScript（GitHub Pages）</p>
 <p>
-<a href="https://minnanosaiban.github.io/relagrid/" class="about-btn" target="_blank" rel="noopener">ＲｅｌａＧｒｉｄを開く <i class="bi bi-box-arrow-up-right"></i></a>
+<a href="https://minnanosaiban.github.io/relagrid/" class="about-btn" target="_blank" rel="noopener">RelaGridを開く <i class="bi bi-box-arrow-up-right"></i></a>
 </p>
 </div>
 

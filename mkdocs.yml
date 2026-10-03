@@ -1,5 +1,5 @@
 site_name: サイト運営者の制作物について
-site_description: 通報者本人が作成した、ＰＤＦツール・サイドノート作成・ＲｅｌａＧｒｉｄ・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データ分析の連載です。
+site_description: 通報者本人が作成した、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データ分析の連載です。
 site_url: https://minnanosaiban.github.io/tomo/
 site_dir: site
 
@@ -17,7 +17,7 @@ nav:
   - 技術解説:
       - ＰＤＦツール: tech/pdf-tools.md
       - サイドノート作成: tech/sidenote.md
-      - ＲｅｌａＧｒｉｄ　関係図: tech/relagrid.md
+      - RelaGrid　関係図: tech/relagrid.md
       - スキャン墨消し: tech/scan-ocr.md
       - スクショＰＤＦ化: tech/screenshot-pdf.md
       - Ｘスクショ管理ツール: tech/screenshot-x.md

@@ -2567,11 +2567,14 @@ js/
 tests/run.js     パーサ・シリアライザの回帰テスト
 </code></pre></div>
 <p>ES Modules は使わず、各ファイルを <code>&lt;script&gt;</code> で順に読み、<code>window.RelaGrid</code> という1つの名前空間にぶら下げています。そのため <code>index.html</code> をダブルクリックして開く（<code>file://</code>）だけで動きます。読み込み順がそのまま依存関係です。</p>
-<p>流れは一方向です。</p>
-<div class="highlight"><pre><span></span><code>DSLテキスト ──parse──▶ モデル ──render──▶ SVG
-     ▲                    │
-     └────serialize───────┘   （GUIで編集したとき）
-</code></pre></div>
+<p>データは、すべて真ん中の「モデル」を通ります。</p>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/relagrid-data-flow.svg" data-desc-position="bottom"><img alt="データの流れ：DSLテキストとモデルは parse / serialize で同期し、モデルから SVG を描画する。GUI 操作は commit を通してモデルを更新し、DSL テキストは localStorage に自動保存される" src="../../img/relagrid-data-flow.svg" width="700"></a></p>
+<ul>
+<li><strong>DSLテキスト ⇄ モデル</strong>：テキストを書くと <code>parse</code> でモデルになり、GUI で編集すると <code>serialize</code> でテキストが書き直されます</li>
+<li><strong>モデル → 画面</strong>：モデルから SVG を描きます（画面もこの経路です）</li>
+<li><strong>GUI 操作 → モデル</strong>：操作は必ず <code>commit</code> を通ります（次の節）</li>
+<li><strong>保存</strong>：保存されるのは、モデルではなく DSL テキストです</li>
+</ul>
 <h2 id="_2">図の状態は「モデル」ひとつで持つ</h2>
 <p>画面の状態は、<code>state.model</code>（ただのJSONオブジェクト）にまとめています。</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nx">grid</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">cols</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">},</span><span class="w"> </span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">textScale</span><span class="p">,</span>

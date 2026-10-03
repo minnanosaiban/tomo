@@ -2272,24 +2272,12 @@ static/           画面（index.html=通常OCR、redact.html=墨消し）
 jobs/             処理中の一時ファイル（Git管理外）
 </code></pre></div>
 <p>役割はきれいに分かれています。<code>ocr_pipeline.py</code> と <code>redact.py</code> は Web を知らず、<code>app.py</code> は OCR の中身を知りません。</p>
-<div class="highlight"><pre><span></span><code>  ブラウザ ──HTTP──▶ app.py ──▶ ocr_pipeline.py ──▶ YomiToku
- (static/)            │   └───▶ redact.py ─────────┘ （OCRは ocr_pipeline の
-                      │                              get_analyzer を共用）
-                      └──▶ jobs/&lt;ジョブID&gt;/ （一時ファイル）
-</code></pre></div>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/scan-ocr-architecture.svg" data-desc-position="bottom"><img alt="scan-ocr の全体構成：画面からapp.pyへHTTP、app.pyはocr_pipeline・redactを呼び、どちらもYomiTokuでOCRする" src="../../img/scan-ocr-architecture.svg" width="700"></a></p>
 <h3 id="_3">起動を速くする</h3>
 <p>YomiToku は torch を引き込むので、読み込むだけで10秒以上かかります。サーバー起動時に読み込むと、ブラウザが開いても画面が出ません。そこで <code>import yomitoku</code> は、実際に使う関数の中（遅延インポート）に置いています。モデルの初期化（<code>DocumentAnalyzer</code>）も重いため、<code>(軽量か, デバイス)</code> の組ごとに1つだけ作って使い回します。</p>
 <h2 id="ocr13">OCRは1回だけ、出力は3つ</h2>
 <p>通常のOCRは、1ページずつ次の順に進みます。</p>
-<div class="highlight"><pre><span></span><code>PDF/画像 ─▶ ページ画像（200dpi・BGR配列）
-                 │
-                 ▼  ページごとに1回だけ
-           DocumentAnalyzer（YomiToku）
-                 │ 結果（段落・表・図・単語ボックス・読み順）
-      ┌──────────┼──────────┐
-      ▼          ▼          ▼
-   Markdown     JSON    テキスト乗せPDF
-</code></pre></div>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/scan-ocr-output-flow.svg" data-desc-position="bottom"><img alt="OCRは1回だけ、出力は3つ：PDF・画像→ページ画像→YomiToku→Markdown・JSON・テキスト乗せPDF" src="../../img/scan-ocr-output-flow.svg" width="700"></a></p>
 <p>PDFは <a href="https://github.com/pypdfium2-team/pypdfium2">pypdfium2</a> で、<strong>200dpi の画像</strong>にしてからOCRにかけます。解析（いちばん重い処理）は形式によらずページにつき1回で、選ばれなかった形式の変換と書き出しだけを省きます。</p>
 <h3 id="3">3つの形式</h3>
 <table>
@@ -2345,7 +2333,7 @@ jobs/             処理中の一時ファイル（Git管理外）
 <p>PDFの墨消しで最もよくある事故は、黒い四角を<strong>上に重ねただけ</strong>で、下の文字が残るケースです。コピペや検索で元の文字が出ます。OCRで文字層を作る場合は、さらに別の落とし穴があります。<strong>黒塗りの前にOCRしてしまうと、透明な文字層に元の文字がそのまま入ります。</strong></p>
 <p>このアプリは、<strong>黒塗りが先、OCRが後</strong>にしています。</p>
 <p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/scan-ocr-redact-flow.svg" data-desc-position="bottom"><img alt="墨消しの流れ：①ページを画像にする→②候補検出用OCR→③人が確認・調整→④黒く塗りつぶす→⑤再OCRして出力→⑥塗り残しを検証" src="../../img/scan-ocr-redact-flow.svg" width="700"></a></p>
-<p>※この図は、自作の関係図ツール「ＲｅｌａＧｒｉｄ」で描きました。</p>
+<p>※この解説の3つの図は、自作の関係図ツール「ＲｅｌａＧｒｉｄ」で描きました。</p>
 <p>②の結果は候補を探すためだけに使い、最終出力には<strong>一切使いません</strong>。⑤のOCRは黒塗り済みの画像を読むので、塗った文字は最初から存在しません。PDFの透明な文字層にも、Markdown にも、JSON にも入りません。ページを画像にしてから描き直すため、元のPDFの文字データ・注釈・メタデータも持ち越しません。</p>
 <h3 id="redactpy">候補の検出（redact.py）</h3>
 <p>検出は、「行（YomiToku の <code>words</code>）の文字列」に対して行います。比較の前に、辞書語と行の両方を揃えます。</p>

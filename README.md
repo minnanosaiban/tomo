@@ -17,6 +17,6 @@ https://minnanosaiban.github.io/tomo/
 
 ## 構成
 
-- `docs/index.md` … Home（制作物の紹介、旧 about）
+- `docs/index.md` … Home（サイト運営者の制作物について、旧 about）
 - `docs/blog/` … 決算/株価データ分析の連載
 - `hikae/` … ローカル退避用（Git 管理せず、push しない）

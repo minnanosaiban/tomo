@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 setlocal
 
 rem --- メモ（初回設定やコマンド確認用） ---

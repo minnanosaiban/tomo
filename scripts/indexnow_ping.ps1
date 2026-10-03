@@ -9,8 +9,8 @@
 
   Key file must stay live at:
     https://minnanosaiban.github.io/tomo/<key>.txt
-  (committed at docs/<key>.txt). Because the key sits under /hotline/, the
-  keyLocation parameter is required and only /hotline/ URLs may be submitted.
+  (committed at docs/<key>.txt). Because the key sits under /tomo/, the
+  keyLocation parameter is required and only /tomo/ URLs may be submitted.
 
 .EXAMPLE
   powershell -ExecutionPolicy Bypass -File scripts\indexnow_ping.ps1
@@ -21,7 +21,7 @@ $ErrorActionPreference = 'Stop'
 # --- config -------------------------------------------------------------
 $key         = 'e482d7edf83b50b925f361e389d57812'
 $siteHost    = 'minnanosaiban.github.io'
-$keyLocation = "https://$siteHost/hotline/$key.txt"
+$keyLocation = "https://$siteHost/tomo/$key.txt"
 $endpoint    = 'https://api.indexnow.org/indexnow'   # fans out to all IndexNow engines
 $exclude     = @('ai_studio_code', 'draft_scalping_prediction')  # drafts: don't submit
 # ------------------------------------------------------------------------

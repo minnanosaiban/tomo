@@ -18,14 +18,27 @@ title: サイドノート作成
 ```
 public/
   index.html      画面
-  app.js          本体（編集・注釈・保存・書き出し・PDFモードのすべて）
+  js/             本体（編集・注釈・保存・書き出し・PDFモード）。12ファイルを番号順に読み込む
   md-parser.js    Markdown → ブロック配列（DOMに依存しない自前パーサー）
   style.css       画面・印刷の見た目
   themes.css      7種類のデザイン（CSS変数のセット）
+  fonts/          Webフォント（woff2・fonts.css。Google Fontsから同梱）
   vendor/         pdf.js・DOMPurify・docx（同梱）
 ```
 
 画面は左右2カラムです。左が本文（またはPDF本体）、右がサイドノートです。
+
+### 本体を12ファイルに分けている（ビルド工程なし）
+
+もともと4,000行を超える1つの `app.js` でしたが、機能ごとに `public/js/` の12ファイルに分けました（`00-core` 状態と定数 → `10` 無害化・貼り付け → `20` 保存 → `30` MD・hotline書き出し → `40` docx → `50` 印刷 → `60` 開く・自動保存・Undo → `70` UIパネル → `80` ブロックとMarkdown取り込み → `90` 書式ツールバー → `95` サイドノート配置 → `96` PDFモード → `99` 起動時の初期化）。
+
+バンドラーは使わず、`index.html` に `<script>` を番号順に並べているだけです。クラシックスクリプトは同じグローバルスコープを共有するので、ファイルをまたいで関数や変数をそのまま参照できます。分割は、元の行を機械的に切っただけで、内容は1行も変えていません（空行とコメントを除いて、連結すると元のファイルと一致することを確認しています）。
+
+ひとつだけ、分割で壊れた点がありました。単一ファイルでは、関数宣言が巻き上げられるため、ファイルの先頭付近から「後ろで定義した関数」を呼べます。分けるとそれができず、起動時に走る呼び出し（最初の通し番号の振り直しなど）が `ReferenceError` になります。そこで、起動時の呼び出しを `99-init.js` に集めました。起動時の呼び出し（文書の最初の通し番号、自動保存の有無の確認、書式ツールバーや「項番設定」の初期表示、Undo 履歴の初回セットなど）は、元の実行順のまま `99-init.js` に集めました。
+
+ここで1つ、順序が効く箇所がありました。画面下部の注記（見出しの上部余白など）は、`#doc` に段落がある状態で測った値を表示します。`resetDoc()` を `99-init.js` に移すと、測るときに `#doc` が空で、上部余白が「1.1em」ではなく「0em」と表示されてしまいました。起動前後の画面の状態（DOM、各トグルの状態、注記の文字など）を、変更前の版と並べて比較して見つけた不具合です。このため、`resetDoc()` と、localStorage から自分の状態を読み込むもの（テーマ、メニュー設定など）は、宣言のすぐ隣に残しています。
+
+**ファイルの読み込み順は変えられません。** 起動時に走る文が後ろのファイルの関数や変数に触れていないかは、`npm test`（`test/load-order.test.js`）が構文解析で検査します。`index.html` の `<script>` の並びも変えないでください。
 
 ## 画面の状態は「DOM」と「ノートの表」で持つ
 
@@ -37,6 +50,30 @@ public/
 | コメントの中身 | `notesByAnchor`（`Map`：アンカーID → ノートの配列） |
 
 注釈を付けた範囲は、本文の中で `<span class="note-anchor" data-anchor-id="a3">` に包みます。コメントの文字・色・返信は DOM ではなく `notesByAnchor` に入れ、アンカーIDで結びます。1つのアンカーに複数のノートを配列で持たせているので、そのまま**返信スレッド**になります。
+
+![本文のDOMと、ノートの表と、サイドノートの関係。注釈した一文のアンカーIDで、本文とノートが結ばれる。番号と配置の処理が、両方を読んで右側のカードを描く。](../img/tech/sidenote/state-light.svg#only-light)
+![本文のDOMと、ノートの表と、サイドノートの関係。注釈した一文のアンカーIDで、本文とノートが結ばれる。番号と配置の処理が、両方を読んで右側のカードを描く。](../img/tech/sidenote/state-dark.svg#only-dark)
+
+??? note "この図のテキスト（DSL）"
+    [RelaGrid](relagrid.md) に貼り付けると、同じ図を描けます。
+
+    ```
+    grid 4x2
+
+    node doc    A1 icon=file     color=blue   "本文（DOM）"
+    node anchor B1 icon=pin      color=orange "注釈した一文"
+    node notes  C1 icon=database color=green  "ノートの表"
+    node layout C2 icon=refresh  color=purple "番号と配置"
+    node card   D2 icon=chart    color=slate  "右のサイドノート"
+
+    doc -> anchor "含む"
+    anchor -> notes "アンカーIDで対応"
+    anchor -> layout "登場順に番号"
+    notes -> layout "コメント"
+    layout -> card "描画"
+
+    note notes "コメント・色・返信" pos=top
+    ```
 
 ### 注釈した範囲はロックする
 
@@ -61,7 +98,7 @@ AIチャットが出力する Markdown を貼り付けて使うことを前提�
 1. `parseMarkdownBlocks()`：文書を `{type: "heading" | "paragraph" | "li" | "table" …}` のブロック配列にする。DOMには触らない
 2. `inlineToHtml()`：段落内の記法を HTML 文字列にする
 
-逆方向（本文のDOM → Markdown）は `app.js` の `docToMarkdown()` が担当します。注釈・配置・インデントは Markdown で表せないため、書き出しには含まれません。
+逆方向（本文のDOM → Markdown）は `js/30-export-md-hotline.js` の `docToMarkdown()` が担当します。注釈・配置・インデントは Markdown で表せないため、書き出しには含まれません。
 
 ### インライン変換の順序
 
@@ -91,6 +128,38 @@ AIチャットが出力する Markdown を貼り付けて使うことを前提�
 段落の途中の改行は、保存して開き直すと消えがちです。空行（＝段落の区切り）とは違う意味なので、書き出しでは `\n`、取り込みでは `<br>` に戻します。表のセルの中では、行を割らないよう `<br>` と書きます（GitHub と同じ記法）。
 
 ## 保存形式の使い分け
+
+![入口（貼り付け・.md、.json、.pdf）から本文とノートに取り込み、出口（.md、.json、.docx、.pdf、hotline用）へ書き出す流れ。](../img/tech/sidenote/formats-light.svg#only-light)
+![入口（貼り付け・.md、.json、.pdf）から本文とノートに取り込み、出口（.md、.json、.docx、.pdf、hotline用）へ書き出す流れ。](../img/tech/sidenote/formats-dark.svg#only-dark)
+
+??? note "この図のテキスト（DSL）"
+    [RelaGrid](relagrid.md) に貼り付けると、同じ図を描けます。
+
+    ```
+    grid 5x5
+
+    zone A2:A4 "入口" color=slate
+    zone E1:E5 "出口" color=slate
+
+    node paste  A2 icon=file   color=slate  "貼り付け・.md"
+    node jsonin A3 icon=folder color=slate  ".json（開く）"
+    node pdfin  A4 icon=file   color=slate  ".pdf（開く）"
+    node app    C3 icon=box    color=blue   "本文＋ノート"
+    node outmd  E1 icon=code   color=green  ".md（本文のみ）"
+    node outjs  E2 icon=folder color=green  ".json（すべて）"
+    node outdoc E3 icon=file   color=green  ".docx（コメント付き）"
+    node outpdf E4 icon=mail   color=green  ".pdf（印刷）"
+    node outhot E5 icon=globe  color=green  "hotline用（生HTML）"
+
+    paste -> app "取り込み"
+    jsonin -> app "復元"
+    pdfin -> app "PDFモード"
+    app -> outmd
+    app -> outjs
+    app -> outdoc
+    app -> outpdf
+    app -> outhot
+    ```
 
 | 形式 | 用途 | 含まれるもの |
 |---|---|---|
@@ -129,6 +198,48 @@ AIチャットが出力する Markdown を貼り付けて使うことを前提�
 - **PDFモード**：描画済みの canvas をそのまま画像にして、ページ画像に対する絶対座標でノートを置く
 - **白黒**：画像を Canvas で灰色に変換し、`body` に `.print-bw` を付けて文字・線・番号を黒にする。Chrome の印刷ダイアログの「カラー」設定は「PDFに保存」では出ないため、色はこちらで決めている
 
+## 外部URLの画像は、押すまで読み込まない
+
+Markdown の `![](https://…)` や、共有された `.json` の `<img src="https://…">` を、開いた瞬間に読み込むと、画像の置き場所のサーバーに「いつ・どのIPで開いたか」が伝わります。内容が外に出ない作りのツールとしては、見過ごせない通信です。
+
+![Markdownは、エスケープして変換する。.jsonと自動保存は、許可リストで無害化する。どちらも外部画像のsrcを外し、URLと読み込むボタンだけを表示する。通信は、ボタンを押した時だけ起きる。](../img/tech/sidenote/external-light.svg#only-light)
+![Markdownは、エスケープして変換する。.jsonと自動保存は、許可リストで無害化する。どちらも外部画像のsrcを外し、URLと読み込むボタンだけを表示する。通信は、ボタンを押した時だけ起きる。](../img/tech/sidenote/external-dark.svg#only-dark)
+
+??? note "この図のテキスト（DSL）"
+    [RelaGrid](relagrid.md) に貼り付けると、同じ図を描けます。
+
+    ```
+    grid 5x3
+
+    node mdin   A1 icon=file     color=slate  "Markdown"
+    node jsonin A3 icon=folder   color=slate  ".json・自動保存"
+    node parser B1 icon=code     color=blue   "エスケープして変換"
+    node purify B3 icon=shield   color=blue   "許可リストで無害化"
+    node strip  C2 icon=lock     color=orange "外部画像のsrcを外す"
+    node ph     D2 icon=box      color=orange "URLと読み込むボタン"
+    node net    E2 icon=globe    color=red    "通信が発生"
+
+    mdin -> parser
+    jsonin -> purify
+    parser -> strip
+    purify -> strip
+    strip -> ph "表示のみ"
+    ph -> net "押した時だけ" style=dashed color=red
+
+    note strip "開いただけでは通信しない" pos=top
+    ```
+
+そこで、外部URLの画像は次のように扱います。
+
+- 取り込み時は `<img>` に `src` を付けず、URLを `data-external-src` に退避する。画像の代わりに、URLと「読み込む」ボタンの枠を出す
+- 利用者がボタンを押した時だけ `src` を設定して読み込む
+- `.json`・自動保存の復元時は、DOMPurify のフックで `src` を `data-external-src` に退避する。悪意ある `.json` に `src` が直接書かれていても、読み込まれない
+- 同梱の画像（`data:image/…`）は、これまでどおり即時に表示する
+- 未読み込みの外部画像は、印刷（PDF化）にも出さない（通信が起きないように）
+- `.md` に書き出す時は、元のURLをそのまま書く
+
+読み込み済みだった画像も、保存して開き直すと「未読み込み」に戻ります。開くたびに確認することになりますが、安全側に倒しています。
+
 ## 元に戻す（Undo / Redo）
 
 ブラウザ標準の Undo は、JS が直接 DOM を組み立てた操作（画像貼り付け、表挿入、ノート追加）には効きません。そこで、保存（`serializeProject()`）と同じ形のスナップショットを履歴として積む方式にしました。
@@ -138,6 +249,21 @@ AIチャットが出力する Markdown を貼り付けて使うことを前提�
 ## デザイン
 
 本文の見た目は7種類から切り替えられます。`themes.css` に、デザインごとの CSS 変数のセットを置き、`<html data-theme="…">` を書き換えるだけで切り替えます。**本文の DOM は変わらない**ので、中身（テキスト・注釈）は何も変わりません。ダークモードは別のフラグで、本文エリアの色だけを暗くします（アプリ本体の見た目や印刷には影響しません）。
+
+### 外部通信をなくす
+
+書体は当初 Google Fonts から読み込んでいましたが、2026年10月にリポジトリへ同梱する形に変えました。「内容は外部に出ない」と謳うツールが、ページを開くたびに外部サーバーへアクセスするのは筋が悪いためです。あわせて、CSP（`_headers`）で `script-src 'self'` と `connect-src 'self' data: blob:` に絞り、仮にスクリプトが紛れ込んでも外へ送れないようにしています。
+
+日本語フォントは1書体が数MBあるため、Google Fonts と同じく `unicode-range` で細かく分割した woff2（約1,000ファイル・約30MB）をそのまま置いています。ブラウザは、文書に出てくる文字を含む分割だけを取得します。同梱の代償は、リポジトリが重くなることです。
+
+## テスト
+
+テストは2種類です。
+
+- **単体テスト**（`npm test`）：`md-parser.js` の変換と、JSファイルの読み込み順（構文解析で検査）。ブラウザは要らず、数秒で終わる
+- **ブラウザテスト**（`npm run test:e2e`、Playwright）：本番と同じCSPを付けたサーバーでアプリを動かし、起動・Markdown取り込み・サイドノート・自動保存・各形式の書き出し・PDFモード・悪意ある入力・外部画像を確認する。さらに、すべてのテストで「コンソールエラー・CSP違反・外部への通信が出ていないこと」を終了時に検査する
+
+ブラウザテストを足してすぐ、実際の不具合が見つかりました。`app.js` を12ファイルに分けた時、PDFモードだけが壊れていました。pdf.js の読み込み（`import("./vendor/pdfjs/pdf.min.mjs")`）は、**ページではなくスクリプトファイルの場所**を基準に解決されるため、`js/` の下へ移ったことで `/js/vendor/…` を探して404になっていたのです。単体テストと、通常の画面操作の手動確認では気づけず、PDFを開く操作を自動で通すテストが捕まえました（`../vendor/…` に直して解消）。ファイルの置き場所を変えたときは、相対パスで資源を読んでいる箇所に注意が必要です。
 
 ## 限界と使うときの注意
 

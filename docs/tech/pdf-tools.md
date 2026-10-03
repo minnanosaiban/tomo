@@ -13,6 +13,9 @@ PDFの加工を1か所にまとめた、ブラウザだけで動くツールで�
 
 ## 全体の構成
 
+![ＰＤＦツールの全体像](img/pdf-tools-architecture-light.svg#only-light)
+![ＰＤＦツールの全体像](img/pdf-tools-architecture-dark.svg#only-dark)
+
 ビルド工程のない素の HTML / CSS / JavaScript です。バンドラーもフレームワークも使っていません。
 
 ```
@@ -51,6 +54,9 @@ PDFの墨消しで最もよくある事故は、黒い四角を**上に重ねた
 1. 各ページを pdf.js で画像（canvas）に描く
 2. その画像の**ピクセルそのものを黒で塗りつぶす**
 3. 塗りつぶした画像だけを貼った、新しいPDFを作る
+
+![墨消しの流れ](img/pdf-tools-redact-light.svg#only-light)
+![墨消しの流れ](img/pdf-tools-redact-dark.svg#only-dark)
 
 ```js
 await page.render({ canvasContext: cx, viewport: vp }).promise;

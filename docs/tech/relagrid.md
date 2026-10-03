@@ -241,6 +241,8 @@ node tests/run.js
 
 2層は同じスイッチで動きます。DSL の `theme dark`（またはツールバーの切替）が、図のパレットを切り替えるのと同時に `body.rg-dark` を付けるので、図だけ暗くて画面は明るい、という状態にはなりません。
 
+![色の2層：テーマ切替は、画面の色（body.rg-dark を付け、CSS変数が置き換わる）と、図の色（JavaScript のパレットから選び、書き出し SVG の属性に値を直接書く）の両方を動かす](../img/relagrid-two-color-layers.svg){width="700"}
+
 ### UI の色（CSS 変数）
 
 | 変数 | ライト | ダーク | 用途 |

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="通報者本人が作成した、ＰＤＦツール・サイドノート作成・ＲｅｌａＧｒｉｄ・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データ分析の連載です。">
+        <meta name="description" content="通報者本人が作成した、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データ分析の連載です。">
       
       
       
@@ -292,7 +292,7 @@
             
               <li>
                 <a href="../relagrid/" class="md-tabs__dropdown-link">
-                  ＲｅｌａＧｒｉｄ　関係図
+                  RelaGrid　関係図
                 </a>
               </li>
             
@@ -667,7 +667,7 @@
   <span class="md-ellipsis">
     
   
-    ＲｅｌａＧｒｉｄ　関係図
+    RelaGrid　関係図
   
 
     
@@ -2333,7 +2333,7 @@ jobs/             処理中の一時ファイル（Git管理外）
 <p>PDFの墨消しで最もよくある事故は、黒い四角を<strong>上に重ねただけ</strong>で、下の文字が残るケースです。コピペや検索で元の文字が出ます。OCRで文字層を作る場合は、さらに別の落とし穴があります。<strong>黒塗りの前にOCRしてしまうと、透明な文字層に元の文字がそのまま入ります。</strong></p>
 <p>このアプリは、<strong>黒塗りが先、OCRが後</strong>にしています。</p>
 <p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/scan-ocr-redact-flow.svg" data-desc-position="bottom"><img alt="墨消しの流れ：①ページを画像にする→②候補検出用OCR→③人が確認・調整→④黒く塗りつぶす→⑤再OCRして出力→⑥塗り残しを検証" src="../../img/scan-ocr-redact-flow.svg" width="700"></a></p>
-<p>※この解説の3つの図は、自作の関係図ツール「ＲｅｌａＧｒｉｄ」で描きました。</p>
+<p>※この解説の3つの図は、自作の関係図ツール「RelaGrid」で描きました。</p>
 <p>②の結果は候補を探すためだけに使い、最終出力には<strong>一切使いません</strong>。⑤のOCRは黒塗り済みの画像を読むので、塗った文字は最初から存在しません。PDFの透明な文字層にも、Markdown にも、JSON にも入りません。ページを画像にしてから描き直すため、元のPDFの文字データ・注釈・メタデータも持ち越しません。</p>
 <h3 id="redactpy">候補の検出（redact.py）</h3>
 <p>検出は、「行（YomiToku の <code>words</code>）の文字列」に対して行います。比較の前に、辞書語と行の両方を揃えます。</p>

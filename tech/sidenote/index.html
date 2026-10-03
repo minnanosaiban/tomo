@@ -700,6 +700,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="全体の構成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本体を12ファイルに分けている（ビルド工程なし）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -842,6 +859,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外部URLの画像は、押すまで読み込まない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#undo-redo" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -861,10 +889,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="デザイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外部通信をなくす
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         限界と使うときの注意
@@ -875,7 +931,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         姉妹ツール
@@ -886,7 +942,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         デザインシステム
@@ -1987,6 +2043,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="全体の構成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本体を12ファイルに分けている（ビルド工程なし）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2129,6 +2202,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外部URLの画像は、押すまで読み込まない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#undo-redo" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2148,10 +2232,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="デザイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外部通信をなくす
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         限界と使うときの注意
@@ -2162,7 +2274,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         姉妹ツール
@@ -2173,7 +2285,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         デザインシステム
@@ -2211,13 +2323,20 @@
 <p>ビルド工程のない素の HTML / CSS / JavaScript です。React などのフレームワークもバンドラーも使っていません。</p>
 <div class="highlight"><pre><span></span><code>public/
   index.html      画面
-  app.js          本体（編集・注釈・保存・書き出し・PDFモードのすべて）
+  js/             本体（編集・注釈・保存・書き出し・PDFモード）。12ファイルを番号順に読み込む
   md-parser.js    Markdown → ブロック配列（DOMに依存しない自前パーサー）
   style.css       画面・印刷の見た目
   themes.css      7種類のデザイン（CSS変数のセット）
+  fonts/          Webフォント（woff2・fonts.css。Google Fontsから同梱）
   vendor/         pdf.js・DOMPurify・docx（同梱）
 </code></pre></div>
 <p>画面は左右2カラムです。左が本文（またはPDF本体）、右がサイドノートです。</p>
+<h3 id="12">本体を12ファイルに分けている（ビルド工程なし）</h3>
+<p>もともと4,000行を超える1つの <code>app.js</code> でしたが、機能ごとに <code>public/js/</code> の12ファイルに分けました（<code>00-core</code> 状態と定数 → <code>10</code> 無害化・貼り付け → <code>20</code> 保存 → <code>30</code> MD・hotline書き出し → <code>40</code> docx → <code>50</code> 印刷 → <code>60</code> 開く・自動保存・Undo → <code>70</code> UIパネル → <code>80</code> ブロックとMarkdown取り込み → <code>90</code> 書式ツールバー → <code>95</code> サイドノート配置 → <code>96</code> PDFモード → <code>99</code> 起動時の初期化）。</p>
+<p>バンドラーは使わず、<code>index.html</code> に <code>&lt;script&gt;</code> を番号順に並べているだけです。クラシックスクリプトは同じグローバルスコープを共有するので、ファイルをまたいで関数や変数をそのまま参照できます。分割は、元の行を機械的に切っただけで、内容は1行も変えていません（空行とコメントを除いて、連結すると元のファイルと一致することを確認しています）。</p>
+<p>ひとつだけ、分割で壊れた点がありました。単一ファイルでは、関数宣言が巻き上げられるため、ファイルの先頭付近から「後ろで定義した関数」を呼べます。分けるとそれができず、起動時に走る呼び出し（最初の通し番号の振り直しなど）が <code>ReferenceError</code> になります。そこで、起動時の呼び出しを <code>99-init.js</code> に集めました。起動時の呼び出し（文書の最初の通し番号、自動保存の有無の確認、書式ツールバーや「項番設定」の初期表示、Undo 履歴の初回セットなど）は、元の実行順のまま <code>99-init.js</code> に集めました。</p>
+<p>ここで1つ、順序が効く箇所がありました。画面下部の注記（見出しの上部余白など）は、<code>#doc</code> に段落がある状態で測った値を表示します。<code>resetDoc()</code> を <code>99-init.js</code> に移すと、測るときに <code>#doc</code> が空で、上部余白が「1.1em」ではなく「0em」と表示されてしまいました。起動前後の画面の状態（DOM、各トグルの状態、注記の文字など）を、変更前の版と並べて比較して見つけた不具合です。このため、<code>resetDoc()</code> と、localStorage から自分の状態を読み込むもの（テーマ、メニュー設定など）は、宣言のすぐ隣に残しています。</p>
+<p><strong>ファイルの読み込み順は変えられません。</strong> 起動時に走る文が後ろのファイルの関数や変数に触れていないかは、<code>npm test</code>（<code>test/load-order.test.js</code>）が構文解析で検査します。<code>index.html</code> の <code>&lt;script&gt;</code> の並びも変えないでください。</p>
 <h2 id="dom">画面の状態は「DOM」と「ノートの表」で持つ</h2>
 <p>状態の持ち方は、次の2つに分けています。</p>
 <table>
@@ -2239,6 +2358,28 @@
 </tbody>
 </table>
 <p>注釈を付けた範囲は、本文の中で <code>&lt;span class="note-anchor" data-anchor-id="a3"&gt;</code> に包みます。コメントの文字・色・返信は DOM ではなく <code>notesByAnchor</code> に入れ、アンカーIDで結びます。1つのアンカーに複数のノートを配列で持たせているので、そのまま<strong>返信スレッド</strong>になります。</p>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/state-light.svg#only-light" data-desc-position="bottom"><img alt="本文のDOMと、ノートの表と、サイドノートの関係。注釈した一文のアンカーIDで、本文とノートが結ばれる。番号と配置の処理が、両方を読んで右側のカードを描く。" src="../../img/tech/sidenote/state-light.svg#only-light"></a><br>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/state-dark.svg#only-dark" data-desc-position="bottom"><img alt="本文のDOMと、ノートの表と、サイドノートの関係。注釈した一文のアンカーIDで、本文とノートが結ばれる。番号と配置の処理が、両方を読んで右側のカードを描く。" src="../../img/tech/sidenote/state-dark.svg#only-dark"></a></p>
+<details class="note">
+<summary>この図のテキスト（DSL）</summary>
+<p><a href="../relagrid/">RelaGrid</a> に貼り付けると、同じ図を描けます。</p>
+<div class="highlight"><pre><span></span><code>grid 4x2
+
+node doc    A1 icon=file     color=blue   "本文（DOM）"
+node anchor B1 icon=pin      color=orange "注釈した一文"
+node notes  C1 icon=database color=green  "ノートの表"
+node layout C2 icon=refresh  color=purple "番号と配置"
+node card   D2 icon=chart    color=slate  "右のサイドノート"
+
+doc -&gt; anchor "含む"
+anchor -&gt; notes "アンカーIDで対応"
+anchor -&gt; layout "登場順に番号"
+notes -&gt; layout "コメント"
+layout -&gt; card "描画"
+
+note notes "コメント・色・返信" pos=top
+</code></pre></div>
+</details>
 <h3 id="_3">注釈した範囲はロックする</h3>
 <p>注釈済みの範囲は <code>contenteditable="false"</code> にします。後から原文を書き換えてしまい、コメントと食い違う事故を防ぐためです。範囲選択が注釈済みの部分や、画像・表・区切り線にかかっているときは、太字・下線・ノート追加を受け付けません。</p>
 <h3 id="_4">通し番号とサイドノートの配置</h3>
@@ -2256,7 +2397,7 @@
 <li><code>parseMarkdownBlocks()</code>：文書を <code>{type: "heading" | "paragraph" | "li" | "table" …}</code> のブロック配列にする。DOMには触らない</li>
 <li><code>inlineToHtml()</code>：段落内の記法を HTML 文字列にする</li>
 </ol>
-<p>逆方向（本文のDOM → Markdown）は <code>app.js</code> の <code>docToMarkdown()</code> が担当します。注釈・配置・インデントは Markdown で表せないため、書き出しには含まれません。</p>
+<p>逆方向（本文のDOM → Markdown）は <code>js/30-export-md-hotline.js</code> の <code>docToMarkdown()</code> が担当します。注釈・配置・インデントは Markdown で表せないため、書き出しには含まれません。</p>
 <h3 id="_5">インライン変換の順序</h3>
 <p><code>inlineToHtml()</code> は、順序で安全を確保しています。</p>
 <ol>
@@ -2275,6 +2416,36 @@
 <h3 id="shiftenter">Shift+Enter の改行を残す</h3>
 <p>段落の途中の改行は、保存して開き直すと消えがちです。空行（＝段落の区切り）とは違う意味なので、書き出しでは <code>\n</code>、取り込みでは <code>&lt;br&gt;</code> に戻します。表のセルの中では、行を割らないよう <code>&lt;br&gt;</code> と書きます（GitHub と同じ記法）。</p>
 <h2 id="_6">保存形式の使い分け</h2>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/formats-light.svg#only-light" data-desc-position="bottom"><img alt="入口（貼り付け・.md、.json、.pdf）から本文とノートに取り込み、出口（.md、.json、.docx、.pdf、hotline用）へ書き出す流れ。" src="../../img/tech/sidenote/formats-light.svg#only-light"></a><br>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/formats-dark.svg#only-dark" data-desc-position="bottom"><img alt="入口（貼り付け・.md、.json、.pdf）から本文とノートに取り込み、出口（.md、.json、.docx、.pdf、hotline用）へ書き出す流れ。" src="../../img/tech/sidenote/formats-dark.svg#only-dark"></a></p>
+<details class="note">
+<summary>この図のテキスト（DSL）</summary>
+<p><a href="../relagrid/">RelaGrid</a> に貼り付けると、同じ図を描けます。</p>
+<div class="highlight"><pre><span></span><code>grid 5x5
+
+zone A2:A4 "入口" color=slate
+zone E1:E5 "出口" color=slate
+
+node paste  A2 icon=file   color=slate  "貼り付け・.md"
+node jsonin A3 icon=folder color=slate  ".json（開く）"
+node pdfin  A4 icon=file   color=slate  ".pdf（開く）"
+node app    C3 icon=box    color=blue   "本文＋ノート"
+node outmd  E1 icon=code   color=green  ".md（本文のみ）"
+node outjs  E2 icon=folder color=green  ".json（すべて）"
+node outdoc E3 icon=file   color=green  ".docx（コメント付き）"
+node outpdf E4 icon=mail   color=green  ".pdf（印刷）"
+node outhot E5 icon=globe  color=green  "hotline用（生HTML）"
+
+paste -&gt; app "取り込み"
+jsonin -&gt; app "復元"
+pdfin -&gt; app "PDFモード"
+app -&gt; outmd
+app -&gt; outjs
+app -&gt; outdoc
+app -&gt; outpdf
+app -&gt; outhot
+</code></pre></div>
+</details>
 <table>
 <thead>
 <tr>
@@ -2332,21 +2503,68 @@
 <li><strong>PDFモード</strong>：描画済みの canvas をそのまま画像にして、ページ画像に対する絶対座標でノートを置く</li>
 <li><strong>白黒</strong>：画像を Canvas で灰色に変換し、<code>body</code> に <code>.print-bw</code> を付けて文字・線・番号を黒にする。Chrome の印刷ダイアログの「カラー」設定は「PDFに保存」では出ないため、色はこちらで決めている</li>
 </ul>
+<h2 id="url">外部URLの画像は、押すまで読み込まない</h2>
+<p>Markdown の <code>![](https://…)</code> や、共有された <code>.json</code> の <code>&lt;img src="https://…"&gt;</code> を、開いた瞬間に読み込むと、画像の置き場所のサーバーに「いつ・どのIPで開いたか」が伝わります。内容が外に出ない作りのツールとしては、見過ごせない通信です。</p>
+<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/external-light.svg#only-light" data-desc-position="bottom"><img alt="Markdownは、エスケープして変換する。.jsonと自動保存は、許可リストで無害化する。どちらも外部画像のsrcを外し、URLと読み込むボタンだけを表示する。通信は、ボタンを押した時だけ起きる。" src="../../img/tech/sidenote/external-light.svg#only-light"></a><br>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../../img/tech/sidenote/external-dark.svg#only-dark" data-desc-position="bottom"><img alt="Markdownは、エスケープして変換する。.jsonと自動保存は、許可リストで無害化する。どちらも外部画像のsrcを外し、URLと読み込むボタンだけを表示する。通信は、ボタンを押した時だけ起きる。" src="../../img/tech/sidenote/external-dark.svg#only-dark"></a></p>
+<details class="note">
+<summary>この図のテキスト（DSL）</summary>
+<p><a href="../relagrid/">RelaGrid</a> に貼り付けると、同じ図を描けます。</p>
+<div class="highlight"><pre><span></span><code>grid 5x3
+
+node mdin   A1 icon=file     color=slate  "Markdown"
+node jsonin A3 icon=folder   color=slate  ".json・自動保存"
+node parser B1 icon=code     color=blue   "エスケープして変換"
+node purify B3 icon=shield   color=blue   "許可リストで無害化"
+node strip  C2 icon=lock     color=orange "外部画像のsrcを外す"
+node ph     D2 icon=box      color=orange "URLと読み込むボタン"
+node net    E2 icon=globe    color=red    "通信が発生"
+
+mdin -&gt; parser
+jsonin -&gt; purify
+parser -&gt; strip
+purify -&gt; strip
+strip -&gt; ph "表示のみ"
+ph -&gt; net "押した時だけ" style=dashed color=red
+
+note strip "開いただけでは通信しない" pos=top
+</code></pre></div>
+</details>
+<p>そこで、外部URLの画像は次のように扱います。</p>
+<ul>
+<li>取り込み時は <code>&lt;img&gt;</code> に <code>src</code> を付けず、URLを <code>data-external-src</code> に退避する。画像の代わりに、URLと「読み込む」ボタンの枠を出す</li>
+<li>利用者がボタンを押した時だけ <code>src</code> を設定して読み込む</li>
+<li><code>.json</code>・自動保存の復元時は、DOMPurify のフックで <code>src</code> を <code>data-external-src</code> に退避する。悪意ある <code>.json</code> に <code>src</code> が直接書かれていても、読み込まれない</li>
+<li>同梱の画像（<code>data:image/…</code>）は、これまでどおり即時に表示する</li>
+<li>未読み込みの外部画像は、印刷（PDF化）にも出さない（通信が起きないように）</li>
+<li><code>.md</code> に書き出す時は、元のURLをそのまま書く</li>
+</ul>
+<p>読み込み済みだった画像も、保存して開き直すと「未読み込み」に戻ります。開くたびに確認することになりますが、安全側に倒しています。</p>
 <h2 id="undo-redo">元に戻す（Undo / Redo）</h2>
 <p>ブラウザ標準の Undo は、JS が直接 DOM を組み立てた操作（画像貼り付け、表挿入、ノート追加）には効きません。そこで、保存（<code>serializeProject()</code>）と同じ形のスナップショットを履歴として積む方式にしました。</p>
 <p>記録のタイミングは、既存の自動保存に相乗りさせています。状態を変える操作は、最後に必ず自動保存を呼ぶので、記録漏れが起きません。連続入力は800msのデバウンスでまとまり、1文字ごとに履歴が増えることもありません。直前と同じ内容（<code>savedAt</code> だけが違う場合）は積みません。タイトル欄などの通常の入力欄にフォーカスがあるときは、ブラウザ標準の Undo に任せます。</p>
 <h2 id="_7">デザイン</h2>
 <p>本文の見た目は7種類から切り替えられます。<code>themes.css</code> に、デザインごとの CSS 変数のセットを置き、<code>&lt;html data-theme="…"&gt;</code> を書き換えるだけで切り替えます。<strong>本文の DOM は変わらない</strong>ので、中身（テキスト・注釈）は何も変わりません。ダークモードは別のフラグで、本文エリアの色だけを暗くします（アプリ本体の見た目や印刷には影響しません）。</p>
-<h2 id="_8">限界と使うときの注意</h2>
+<h3 id="_8">外部通信をなくす</h3>
+<p>書体は当初 Google Fonts から読み込んでいましたが、2026年10月にリポジトリへ同梱する形に変えました。「内容は外部に出ない」と謳うツールが、ページを開くたびに外部サーバーへアクセスするのは筋が悪いためです。あわせて、CSP（<code>_headers</code>）で <code>script-src 'self'</code> と <code>connect-src 'self' data: blob:</code> に絞り、仮にスクリプトが紛れ込んでも外へ送れないようにしています。</p>
+<p>日本語フォントは1書体が数MBあるため、Google Fonts と同じく <code>unicode-range</code> で細かく分割した woff2（約1,000ファイル・約30MB）をそのまま置いています。ブラウザは、文書に出てくる文字を含む分割だけを取得します。同梱の代償は、リポジトリが重くなることです。</p>
+<h2 id="_9">テスト</h2>
+<p>テストは2種類です。</p>
+<ul>
+<li><strong>単体テスト</strong>（<code>npm test</code>）：<code>md-parser.js</code> の変換と、JSファイルの読み込み順（構文解析で検査）。ブラウザは要らず、数秒で終わる</li>
+<li><strong>ブラウザテスト</strong>（<code>npm run test:e2e</code>、Playwright）：本番と同じCSPを付けたサーバーでアプリを動かし、起動・Markdown取り込み・サイドノート・自動保存・各形式の書き出し・PDFモード・悪意ある入力・外部画像を確認する。さらに、すべてのテストで「コンソールエラー・CSP違反・外部への通信が出ていないこと」を終了時に検査する</li>
+</ul>
+<p>ブラウザテストを足してすぐ、実際の不具合が見つかりました。<code>app.js</code> を12ファイルに分けた時、PDFモードだけが壊れていました。pdf.js の読み込み（<code>import("./vendor/pdfjs/pdf.min.mjs")</code>）は、<strong>ページではなくスクリプトファイルの場所</strong>を基準に解決されるため、<code>js/</code> の下へ移ったことで <code>/js/vendor/…</code> を探して404になっていたのです。単体テストと、通常の画面操作の手動確認では気づけず、PDFを開く操作を自動で通すテストが捕まえました（<code>../vendor/…</code> に直して解消）。ファイルの置き場所を変えたときは、相対パスで資源を読んでいる箇所に注意が必要です。</p>
+<h2 id="_10">限界と使うときの注意</h2>
 <ul>
 <li>注釈はブラウザの <code>execCommand</code> と <code>contenteditable</code> に頼っています。ブラウザの挙動差（特に Chrome 以外）で、細かな編集の挙動が変わることがあります</li>
 <li>自動保存は localStorage です。<strong>PDFを開いている場合は、容量超過で保存されないことがあります</strong>（失敗は表示されません）。区切りのよいところで <code>.json</code> に保存してください</li>
 <li><code>.md</code> への書き出しでは、注釈・書式（配置・インデントなど）が消えます</li>
 <li>hotline 用の書き出しは、画像・表・箇条書きを対象にしていません</li>
 </ul>
-<h2 id="_9">姉妹ツール</h2>
+<h2 id="_11">姉妹ツール</h2>
 <p>スキャン書類を、墨消ししたうえで検索できるPDFにしたい場合は、ローカルアプリの <strong>scan-ocr</strong> を使います。このツールが「読んで注釈を付ける」ものだとすると、scan-ocr は「資料を安全に加工する」側の道具です。</p>
-<h2 id="_10">デザインシステム</h2>
+<h2 id="_12">デザインシステム</h2>
 <p>掲載予定です。</p>
 
 

@@ -669,6 +669,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ＲｅｌａＧｒｉｄ　関係図
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -685,6 +703,402 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体の構成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図の状態は「モデル」ひとつで持つ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dslgui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSLとGUIの双方向同期
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSLとGUIの双方向同期">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正規化で失うもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保存するのはモデルではなくDSLテキスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        描画：SVGを自前で組み立てる
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="描画：SVGを自前で組み立てる">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文字の大きさは2回に分けて測る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タイトルは「見積もり」で折り返す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接続線は直線だけ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マウス操作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="マウス操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スライダーは「離したとき」に確定する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書き出し
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="書き出し">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        縦画像は「縦のまま」出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外から来るデータは「信用できない入力」として扱う
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="外から来るデータは「信用できない入力」として扱う">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        グリッドの大きさに上限がなかった
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IDの検証と、書き出しの往復
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON は読み込み時に作り直す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色名・アイコン名をキーとして使わない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIと組み合わせる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限界と使うときの注意
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        姉妹ツール
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デザインシステム
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="デザインシステム">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色が2層ある理由
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UI の色（CSS 変数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図の色（パレット）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書体と文字の大きさ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かたち・大きさ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        状態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイアウト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色の見え方についての限界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1730,6 +2144,391 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体の構成
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図の状態は「モデル」ひとつで持つ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dslgui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSLとGUIの双方向同期
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSLとGUIの双方向同期">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正規化で失うもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保存するのはモデルではなくDSLテキスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        描画：SVGを自前で組み立てる
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="描画：SVGを自前で組み立てる">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文字の大きさは2回に分けて測る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タイトルは「見積もり」で折り返す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接続線は直線だけ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マウス操作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="マウス操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スライダーは「離したとき」に確定する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書き出し
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="書き出し">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        縦画像は「縦のまま」出す
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外から来るデータは「信用できない入力」として扱う
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="外から来るデータは「信用できない入力」として扱う">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        グリッドの大きさに上限がなかった
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IDの検証と、書き出しの往復
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON は読み込み時に作り直す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色名・アイコン名をキーとして使わない
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIと組み合わせる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限界と使うときの注意
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        姉妹ツール
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デザインシステム
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="デザインシステム">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色が2層ある理由
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UI の色（CSS 変数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        図の色（パレット）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書体と文字の大きさ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        かたち・大きさ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        状態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レイアウト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色の見え方についての限界
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1746,7 +2545,538 @@
 
 
 <h1 id="relagrid">ＲｅｌａＧｒｉｄ　関係図</h1>
-<p>技術解説とデザインシステムを掲載予定です。</p>
+<p>グリッドにアイコンのノードを置き、矢印でつないで関係図を作るツールです。マウスで描く方法と、短いテキスト（DSL）で書く方法があり、両者は常に同期します。サーバーはなく、静的ファイルを GitHub Pages に置いているだけです。<strong>描いた図は、自分のパソコンの外に出ません。</strong> 処理はすべてブラウザの中（JavaScript）で行います。</p>
+<ul>
+<li>公開ページ：<a href="https://minnanosaiban.github.io/relagrid/">minnanosaiban.github.io/relagrid</a></li>
+<li>ソース：<a href="https://github.com/minnanosaiban/relagrid">github.com/minnanosaiban/relagrid</a></li>
+</ul>
+<p>このページは、その仕組みと、作るうえで判断したことの解説です。</p>
+<h2 id="_1">全体の構成</h2>
+<p>ビルド工程のない素の HTML / CSS / JavaScript です。フレームワークもバンドラーも外部ライブラリも使っていません。<code>index.html</code> にはほかのサイトのURLが1つもなく、書体もOS標準のものを使うので、ページを開いても外部へのアクセスは起きません。</p>
+<div class="highlight"><pre><span></span><code>index.html
+css/style.css
+js/
+  icons.js       アイコン素材（38種類・手描きのSVG断片）
+  colors.js      配色パレット（9色 × ライト/ダーク）
+  model.js       データモデル / グリッド参照（A1 など）のヘルパー
+  parser.js      DSLテキスト → モデル
+  serializer.js  モデル → DSLテキスト
+  renderer.js    モデル → SVG
+  samples.js     サンプル図
+  app.js         GUI操作・状態管理・保存・書き出し
+tests/run.js     パーサ・シリアライザの回帰テスト
+</code></pre></div>
+<p>ES Modules は使わず、各ファイルを <code>&lt;script&gt;</code> で順に読み、<code>window.RelaGrid</code> という1つの名前空間にぶら下げています。そのため <code>index.html</code> をダブルクリックして開く（<code>file://</code>）だけで動きます。読み込み順がそのまま依存関係です。</p>
+<p>流れは一方向です。</p>
+<div class="highlight"><pre><span></span><code>DSLテキスト ──parse──▶ モデル ──render──▶ SVG
+     ▲                    │
+     └────serialize───────┘   （GUIで編集したとき）
+</code></pre></div>
+<h2 id="_2">図の状態は「モデル」ひとつで持つ</h2>
+<p>画面の状態は、<code>state.model</code>（ただのJSONオブジェクト）にまとめています。</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="nx">grid</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">cols</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">},</span><span class="w"> </span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">source</span><span class="p">,</span><span class="w"> </span><span class="nx">textScale</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">zones</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nx">nodes</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nx">edges</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nx">notes</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>画面（SVG）は、このモデルから<strong>毎回まるごと描き直します</strong>。差分更新はしていません。ノードが数十個の図なら、描き直しは一瞬で終わります。その代わり、「画面だけが先に変わって、モデルと食い違う」という種類の不具合が起きません。</p>
+<p>状態を変える操作は、すべて <code>commit(newModel, opts)</code> を通します。操作の側は、現在のモデルを <code>cloneModel()</code>（<code>JSON.parse(JSON.stringify())</code>）で複製して書き換え、できた新しいモデルを <code>commit</code> に渡します。<code>commit</code> が次を一括で行います。</p>
+<ol>
+<li>変更前のモデルを undo スタックに積む（最大100件）</li>
+<li>選択状態を整える（消えた要素を選択したままにしない）</li>
+<li>モデルからDSLテキストを作り直して左の欄に反映する</li>
+<li>再描画し、インスペクタを作り直す</li>
+<li>400ms のデバウンスで localStorage に保存する</li>
+</ol>
+<p>記録漏れが起きない（commit を通らない変更がない）ことが、Undo / Redo が単純に済んでいる理由です。</p>
+<h2 id="dslgui">DSLとGUIの双方向同期</h2>
+<p>左のテキスト欄に書くと、300ms後に <code>parseDSL()</code> が走り、図が描き直されます。逆に、GUIで編集するとテキスト欄が正規の形に書き換わります。</p>
+<div class="highlight"><pre><span></span><code>grid 4x3
+zone A1:B2 "Public zone" color=blue
+node api B1 icon=server size=1.2 color=blue "API"
+api -&gt; db "SQL" style=dashed color=red width=2
+note api "SLA 99.95%\np99&lt;200ms" pos=bottom
+</code></pre></div>
+<p>パーサー <code>parser.js</code> は<strong>1行1文</strong>の素朴な作りです。</p>
+<ul>
+<li>行末の <code>#</code> 以降はコメント。ただし <code>"…"</code> の中の <code>#</code> は文字として扱う</li>
+<li>行を <code>"…"</code>（文字列）と空白区切りの語に分け（トークン化）、先頭の語が <code>grid</code> <code>node</code> <code>zone</code> <code>note</code> などのキーワードなら対応する関数に渡す</li>
+<li>どれでもなければ <code>&lt;id&gt; &lt;op&gt; &lt;id&gt;</code> の接続として読む</li>
+<li><code>key=value</code> は順不同の属性。省略した属性は既定値になる</li>
+</ul>
+<p><strong>文法エラーは行ごとに集めて、最後に返します。</strong> 1行の間違いで全体が読めなくなることはなく、ステータスバーに「何行目が何のエラーか」を出します。エラーがある間は図を更新せず、<strong>直前に描けていた図を残します</strong>。タイピング途中の壊れたテキストで、図が消えたり点滅したりしないための判断です。</p>
+<p>エラーとは別に<strong>警告</strong>もあります。存在しないノードへの接続、同じマスへの2ノード、グリッド外の座標、未知のアイコン名や色名などです。図は描けるので止めずに、ステータスバーに知らせるだけにしています。</p>
+<h3 id="_3">正規化で失うもの</h3>
+<p>GUIで編集するたびに、テキストはシリアライザーが作り直した「正規の形」になります。つまり<strong>手書きのコメントや行の並びは保持されません</strong>（README にも制約として書いています）。コメントも保ちたいなら、パーサーが構文木（コメントを含む）を持つ必要があり、今のところそこまでの価値はないと判断しています。</p>
+<h3 id="dsl">保存するのはモデルではなくDSLテキスト</h3>
+<p>localStorage に入れるのは、JSONではなく<strong>DSLテキストそのもの</strong>です。起動時に同じパーサーを通すので、保存形式を変えても過去の保存が読めなくなる問題が起きにくく、手で直すこともできます。</p>
+<h2 id="svg">描画：SVGを自前で組み立てる</h2>
+<p><code>renderer.js</code> が、モデルから SVG を組み立てます。座標は固定の定数（1マス 168×132、余白 80/68、ノード半径 26 × サイズ）から機械的に決まります。<strong>マスの座標さえ決まれば、ほかの要素の位置は計算で出る</strong>というのが、グリッド方式のいちばんの利点です。</p>
+<p>重ね順は、下から次のとおりです。</p>
+<ol>
+<li>背景・タイトル・出典</li>
+<li>各マスの透明な当たり判定（クリックのマス特定用）</li>
+<li>グリッドの補助線（表示切替）</li>
+<li>ゾーン（色付きの矩形）</li>
+<li>接続線</li>
+<li>ノード（円＋アイコン＋ラベル）</li>
+<li>ノート</li>
+</ol>
+<h3 id="2">文字の大きさは2回に分けて測る</h3>
+<p>SVG の <code>&lt;text&gt;</code> は、実際の幅が描くまで分かりません。ところが、ラベルの背景（白い帯）やノートの枠は、文字の幅に合わせたい。そこで、描画を3段階にしています。</p>
+<ol>
+<li>要素を組み立ててDOMに挿入する</li>
+<li>ノートの文字を <code>getBBox()</code> で測り、枠・引き出し線・行の位置を確定する</li>
+<li>ラベルの文字を測り、背景の矩形の大きさを決める</li>
+</ol>
+<p><code>getBBox()</code> は、DOMに挿入されていない要素では測れません。測定は挿入後であることが条件です。例外が出ても図全体は壊さないよう、測れなかった要素だけを飛ばしています。下側のノートは、ノードのラベルに重ならないよう、引き出し線の出発点と箱の位置をずらします。</p>
+<h3 id="_4">タイトルは「見積もり」で折り返す</h3>
+<p>タイトルと出典は、図が細い（縦長の図）ときにはみ出します。これは SVG が自動で折り返してくれないので、<strong>DOMを使わずに幅を見積もって</strong>折り返します。全角はフォントサイズ、半角は0.56倍として足し合わせるだけの粗い方法ですが、日本語中心の短い文なら十分です。文字の大きさを測るにはDOMが必要で、折り返しはDOMの前（図のサイズを決める段階）に必要という、順番の問題を避けるためです。文中の <code>\n</code>（バックスラッシュ＋n）で、明示的に改行もできます。</p>
+<h3 id="_5">接続線は直線だけ</h3>
+<p>接続線は、2つのノードの中心を結んだ直線から、両端の円の半径ぶんだけ縮めたものです。矢印は SVG の <code>&lt;marker&gt;</code> で、色ごとに定義します。</p>
+<p>直線だけなので、<strong>途中のノードの上を線が通ったり、2本の線が重なったりする</strong>ことがあります（A→B と B→A を両方引くと、1本に見えます）。直交ルーティングは、その分の複雑さに見合うかを見極められず、見送っています。ノードの置き場所（グリッド）を人が決められる前提で、並べ方で避けてもらう設計です。</p>
+<h2 id="_6">マウス操作</h2>
+<p>キャンバスのイベントは、ひとつの <code>pointerdown</code> で受けます。描いた要素には <code>data-kind</code>（node / edge / zone / note / cell）と <code>data-id</code> が付いているので、<code>event.target.closest('[data-kind]')</code> で「何をつかんだか」が分かります。選んでいるツール（選択・ノード・接続・ゾーン・ノート）で処理が分かれます。</p>
+<ul>
+<li><strong>ノードの移動</strong>：ドラッグ中は、移動先のマスを枠で示すだけで、図の再描画はしません。離したときに空きマスなら <code>commit</code> します</li>
+<li><strong>ゾーン</strong>：マスをドラッグして範囲を決める。途中の矩形は、ドラッグ中だけ見えるプレビュー用の要素を直接動かす</li>
+<li><strong>接続</strong>：起点と終点のノードを順にクリック。Esc で取り消す</li>
+<li><strong>削除</strong>：Delete / Backspace。ノードを消すと、つながる接続とノートも一緒に消える</li>
+</ul>
+<p>接続線は細くてクリックしにくいので、見えない太い線（16px）を重ねて、当たり判定にしています。</p>
+<p>タッチ操作や、ウィンドウの外で指を離したときに <code>pointerup</code> が来ないことがあります。そのままだと「ドラッグ中」の状態が残るので、<code>pointercancel</code> と、ポインタ捕捉が外れたときにも後始末をします。右クリックでは操作を始めません。</p>
+<h3 id="_7">スライダーは「離したとき」に確定する</h3>
+<p>ノードの大きさや線の太さのスライダーは、動かしている間は数値の表示だけを変え、<strong>離したとき（<code>change</code>）に1回だけ <code>commit</code> します</strong>。以前は動かすたびに <code>commit</code> していて、そのたびにインスペクタを作り直すため、つまみを握ったまま操作できなくなり、履歴も途中経過で埋まりました。「状態を変える操作は commit を通す」という原則は、<strong>いつ通すか</strong>も含めて設計に入る、という例です。</p>
+<h2 id="_8">書き出し</h2>
+<table>
+<thead>
+<tr>
+<th>形式</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SVG</td>
+<td>拡大しても劣化しない。ほかのソフトで編集できる</td>
+</tr>
+<tr>
+<td>PNG</td>
+<td>そのままのサイズ（2倍の解像度）</td>
+</tr>
+<tr>
+<td>PNG 16:9</td>
+<td>スライド向け。短い辺に余白を足して 16:9 にそろえる</td>
+</tr>
+<tr>
+<td>PNG 縦（4:5）</td>
+<td>X などの縦画像向け</td>
+</tr>
+<tr>
+<td>JSON / テキスト</td>
+<td>図そのもの。読み込みで復元できる</td>
+</tr>
+</tbody>
+</table>
+<p>SVG と PNG は、画面に表示している SVG を複製して作ります。複製したものから、<strong>編集のためだけにある要素を取り除きます</strong>。マスの当たり判定、グリッドの補助線、ドラッグ中のプレビュー、接続線の見えない当たり判定、<code>data-*</code> 属性、選択中を示すクラスです。</p>
+<p>PNG は、SVG を <code>Image</code> として読み込み、2倍のサイズの <code>&lt;canvas&gt;</code> に描いて作ります。余白を足すときのために、背景色は canvas 側で塗ります。</p>
+<h3 id="_9">縦画像は「縦のまま」出す</h3>
+<p>横長の図を X に投稿すると、タイムラインで縮小されて文字が読めなくなります。そのため「PNG 縦」は、<strong>図が4:5より縦長なら、そのまま出します</strong>（横に余白を足して文字を小さくしない）。4:5より横長の図のときだけ、上下に余白を足して4:5にそろえます。あわせて、DSL の <code>textscale 1.3</code> で文字を大きくできます。縦長のサンプル（「…縦版・X投稿用」）が、その組み合わせの例です。</p>
+<h2 id="_10">外から来るデータは「信用できない入力」として扱う</h2>
+<p>このツールが受け取るテキストは、自分で書いたものだけではありません。<strong>AIが書いたDSL</strong>、<strong>ファイルから読み込むJSON・テキスト</strong>、<strong>前回の保存（localStorage）</strong>があります。コードレビューで、この境界の守りが甘い箇所が見つかったので、2026年10月に直しました。</p>
+<h3 id="_11">グリッドの大きさに上限がなかった</h3>
+<p>画面のグリッド入力は 26×30 までに制限していましたが、パーサーにはなく、<code>grid 5000x5000</code> と書けてしまいました。描画はマスごとに透明な矩形を作るので、数千万個の要素でブラウザが固まります。しかも、そのテキストは自動保存されるため、<strong>リロードしても起動時に同じものを読み込んで固まり続けます</strong>。復旧には開発者ツールで保存を消すしかありません。</p>
+<p>そこで、パーサーが 1〜26列・1〜30行の外を<strong>エラー</strong>にしました。古い巨大な値が保存に残っていても、起動時にエラーとして扱われ、空の図で立ち上がります。JSON の読み込みでも同じ範囲に丸めます。</p>
+<h3 id="id">IDの検証と、書き出しの往復</h3>
+<p>ノードIDの入力欄は、空白を取り除くだけでした。<code>a b</code> や <code>grid</code> のような名前を付けると、テキストに書き出して読み直した時点で別の文として解釈されます（<code>grid -&gt; x</code> は <code>grid</code> 文になる）。</p>
+<p>IDを英数字・<code>_</code>・<code>-</code>（先頭は英字か <code>_</code>）に絞り、<code>grid</code> <code>node</code> などの予約語は使えないようにしました。同じIDの重複は<strong>エラー</strong>、同じマスへの重複配置とグリッド外の座標は<strong>警告</strong>です。GUI の入力欄にも、同じ判定を使っています。</p>
+<p>文字列のエスケープにも穴がありました。<code>"</code> だけを <code>\"</code> にして、<code>\</code> を逃がしていなかったので、ラベルが <code>C:\</code> で終わると <code>"C:\"</code> になり、パーサーはその引用符を「エスケープされた引用符」と読んで文字列が閉じませんでした。今は <code>\</code> を先に <code>\\</code> にし、パーサー側（トークン化とコメント判定の両方）も <code>\"</code> と <code>\\</code> を1文字として読みます。<code>\n</code>（バックスラッシュ＋n）はこれまでどおりそのまま残り、描画側で改行になります。</p>
+<h3 id="json">JSON は読み込み時に作り直す</h3>
+<p>JSON の読み込みは、以前は <code>Object.assign</code> で受け取ったオブジェクトをそのままモデルにしていました。<code>edges</code> が欠けていたり、座標が文字列だったりすると、描画の途中で落ちます。</p>
+<p>今は項目ごとに型・範囲を確かめ、壊れた要素は捨て、数値は範囲内に丸め、未知の値は既定値にします。そのうえで、<strong>いったんDSLに書き出して、もう一度パーサーに通します</strong>。IDやグリッドの検証を、読み込み用にもう一度書かずに、パーサーの検証をそのまま使うためです。</p>
+<h3 id="_12">色名・アイコン名をキーとして使わない</h3>
+<p>DSL の <code>color=…</code> や <code>icon=…</code> は、ユーザー（またはAI）が自由に書ける文字列です。次の2点を直しました。</p>
+<ul>
+<li>辞書の参照に <code>hasOwnProperty</code> を使う。<code>icon=constructor</code> と書くと、<code>icons.constructor</code>（関数）が引かれて、アイコンではなく関数の文字列が <code>innerHTML</code> に入っていた</li>
+<li>矢印の <code>&lt;marker&gt;</code> のIDに、色名をそのまま入れない。パレットにある名前以外は <code>slate</code> にする。<code>color=a(b</code> のような名前が <code>querySelector('#arrow-end-a(b')</code> に渡って、構文エラーで描画全体が止まっていた</li>
+</ul>
+<p>未知の色・アイコン・線種・ノートの向き・テーマは、図は描いたうえで警告を出します。</p>
+<h2 id="ai">AIと組み合わせる</h2>
+<p>ヘルプには、DSLの文法をすべて含むプロンプトを用意しています。AIに送るとDSLを返してくれるので、それをテキスト欄に貼れば、図がその場で描かれます。API連携もログインもなく、<strong>人がコピー＆貼り付けでつなぐだけ</strong>です。AIがこのサイトを見られなくても書けるよう、文法はプロンプトの中に全部入れています。</p>
+<p>AIが書いた文は、手で書いた文と同じく、上の「信用できない入力」の扱いになります。壊れた記法は行ごとのエラーで返し、足りない部分や未知の値は警告で知らせるので、<strong>エラーの行をAIに貼り戻して直させる</strong>使い方ができます。</p>
+<h2 id="_13">テスト</h2>
+<p>パーサー・シリアライザー・ID生成などの回帰テストを、Node.js だけで動く <code>tests/run.js</code> に置いています（依存なし）。</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>tests/run.js
+</code></pre></div>
+<p>全サンプルが「エラーも警告もなく読め、書き出して読み直しても同じになる」ことを確かめ、バックスラッシュやグリッド上限、ID検証など、上で直した問題が戻らないことを守ります。描画やマウス操作のテストはなく、ブラウザで確かめています。</p>
+<h2 id="_14">限界と使うときの注意</h2>
+<ul>
+<li>接続線は直線のみです。途中のノードの上を通る線や、重なる線が出ることがあります</li>
+<li>1マスにノードは1つです。グリッドは最大 26列 × 30行です</li>
+<li>GUIで編集すると、テキストは正規の形に整形され、コメントは消えます</li>
+<li>保存先はブラウザの localStorage だけです（サーバー保存・共有機能なし）。ブラウザのデータを消すと戻せないので、大事な図は JSON かテキストで書き出してください</li>
+<li>IDは英数字・<code>_</code>・<code>-</code> のみです。日本語のIDはエラーになります（ラベルには日本語を使えます）</li>
+<li>自動検証は文法とモデルの整合までです。図の内容が正しいかは、人が見て確かめてください</li>
+</ul>
+<h2 id="_15">姉妹ツール</h2>
+<p>文書に注釈を付けたいときは <strong>サイドノート作成</strong>、PDFを加工したいときは <strong>ＰＤＦツール</strong> があります。ヒーロー部分の見た目と、ブラウザだけで完結する作りは、これらと揃えています。</p>
+<h2 id="_16">デザインシステム</h2>
+<p>見た目の決めごとは、<strong>画面（UI）の色</strong>と<strong>図の色</strong>の2層に分けています。値は <code>css/style.css</code>（UI）と <code>js/colors.js</code>（図）にあり、このページの表はそこから書き写したものです。</p>
+<h3 id="2_1">色が2層ある理由</h3>
+<ul>
+<li><strong>UI の色</strong>は CSS 変数です。<code>body.rg-dark</code> が付くと、変数がダーク用の値に置き換わります</li>
+<li><strong>図の色</strong>は JavaScript のパレットで、SVG の <code>fill</code> / <code>stroke</code> 属性に<strong>値そのものを書き込みます</strong>（CSS 変数は使いません）</li>
+</ul>
+<p>図を CSS 変数にしなかったのは、書き出した SVG が、このページの CSS なしで単体で開かれるためです。色が属性に入っていれば、どこで開いても同じに見えます。</p>
+<p>2層は同じスイッチで動きます。DSL の <code>theme dark</code>（またはツールバーの切替）が、図のパレットを切り替えるのと同時に <code>body.rg-dark</code> を付けるので、図だけ暗くて画面は明るい、という状態にはなりません。</p>
+<h3 id="ui-css">UI の色（CSS 変数）</h3>
+<table>
+<thead>
+<tr>
+<th>変数</th>
+<th>ライト</th>
+<th>ダーク</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--ui-bg</code></td>
+<td><code>#f8fafc</code></td>
+<td><code>#0b1220</code></td>
+<td>キャンバス領域の背景</td>
+</tr>
+<tr>
+<td><code>--ui-panel</code></td>
+<td><code>#ffffff</code></td>
+<td><code>#111827</code></td>
+<td>パネル・カード・入力欄</td>
+</tr>
+<tr>
+<td><code>--ui-border</code></td>
+<td><code>#e2e8f0</code></td>
+<td><code>#1f2937</code></td>
+<td>罫線・枠</td>
+</tr>
+<tr>
+<td><code>--ui-text</code></td>
+<td><code>#0f172a</code></td>
+<td><code>#e2e8f0</code></td>
+<td>本文</td>
+</tr>
+<tr>
+<td><code>--ui-subtext</code></td>
+<td><code>#64748b</code></td>
+<td><code>#94a3b8</code></td>
+<td>補助文・ラベル</td>
+</tr>
+<tr>
+<td><code>--ui-accent</code></td>
+<td><code>#2563eb</code></td>
+<td><code>#60a5fa</code></td>
+<td>選択中のボタン・ブランドマーク</td>
+</tr>
+<tr>
+<td><code>--ui-accent-text</code></td>
+<td><code>#ffffff</code></td>
+<td><code>#0b1220</code></td>
+<td>アクセント色の上の文字</td>
+</tr>
+<tr>
+<td><code>--ui-danger</code></td>
+<td><code>#dc2626</code></td>
+<td>（同じ）</td>
+<td>削除ボタン・エラー表示</td>
+</tr>
+<tr>
+<td><code>--ui-warn</code></td>
+<td><code>#a16207</code></td>
+<td><code>#facc15</code></td>
+<td>警告表示（ステータスバー）</td>
+</tr>
+<tr>
+<td><code>--ui-btn-bg</code> / <code>--ui-btn-hover</code></td>
+<td><code>#ffffff</code> / <code>#eef2ff</code></td>
+<td><code>#1e293b</code> / <code>#24324a</code></td>
+<td>ボタンの通常 / ホバー</td>
+</tr>
+<tr>
+<td><code>--hero-bg</code> / <code>--page-bg</code></td>
+<td><code>#eef0f3</code> / <code>#f4f5f7</code></td>
+<td><code>#0f1726</code> / <code>#0b1220</code></td>
+<td>ヒーローとページ背景</td>
+</tr>
+</tbody>
+</table>
+<p>ヒーロー部分の変数（<code>--hero-bg</code> <code>--page-bg</code> <code>--swatch-*</code> <code>--card-shadow</code>）は、サイドノート、ＰＤＦツールと同じ名前・同じ構成にそろえています。</p>
+<h3 id="_17">図の色（パレット）</h3>
+<p>9色を名前で指定します（DSL の <code>color=blue</code> など）。ライトは濃い（600番台）、ダークは明るい（400番台）値を使い、どちらの背景でも線と文字が読めるようにしています。</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>ライト</th>
+<th>ダーク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slate</code>（既定）</td>
+<td><code>#475569</code></td>
+<td><code>#94a3b8</code></td>
+</tr>
+<tr>
+<td><code>blue</code></td>
+<td><code>#2563eb</code></td>
+<td><code>#60a5fa</code></td>
+</tr>
+<tr>
+<td><code>green</code></td>
+<td><code>#16a34a</code></td>
+<td><code>#4ade80</code></td>
+</tr>
+<tr>
+<td><code>red</code></td>
+<td><code>#dc2626</code></td>
+<td><code>#f87171</code></td>
+</tr>
+<tr>
+<td><code>orange</code></td>
+<td><code>#ea580c</code></td>
+<td><code>#fb923c</code></td>
+</tr>
+<tr>
+<td><code>purple</code></td>
+<td><code>#7c3aed</code></td>
+<td><code>#a78bfa</code></td>
+</tr>
+<tr>
+<td><code>teal</code></td>
+<td><code>#0d9488</code></td>
+<td><code>#2dd4bf</code></td>
+</tr>
+<tr>
+<td><code>pink</code></td>
+<td><code>#db2777</code></td>
+<td><code>#f472b6</code></td>
+</tr>
+<tr>
+<td><code>yellow</code></td>
+<td><code>#a16207</code></td>
+<td><code>#facc15</code></td>
+</tr>
+</tbody>
+</table>
+<p>1色から3つの値が決まります。</p>
+<ul>
+<li><code>stroke</code>：ノードの輪郭・アイコン・接続線・矢印・ノートの枠（文字には使いません）</li>
+<li><code>zoneFill</code>：ゾーンの塗り（同じ色の透明度 0.12〜0.16。ダークはやや濃い）</li>
+<li><code>zoneStroke</code>：ゾーンの枠（透明度 0.4）</li>
+</ul>
+<p>未知の色名は <code>slate</code> にします（警告つき）。</p>
+<p>図の地の色（テーマごと）は次のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>ライト</th>
+<th>ダーク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>背景 / ノードの塗り</td>
+<td><code>#ffffff</code> / <code>#ffffff</code></td>
+<td><code>#0f172a</code> / <code>#1e293b</code></td>
+</tr>
+<tr>
+<td>文字 / 補助文字</td>
+<td><code>#0f172a</code> / <code>#64748b</code></td>
+<td><code>#e2e8f0</code> / <code>#94a3b8</code></td>
+</tr>
+<tr>
+<td>ラベルの背景</td>
+<td>白 92%</td>
+<td><code>#0f172a</code> 88%</td>
+</tr>
+<tr>
+<td>グリッドの補助線</td>
+<td><code>#0f172a</code> 8%</td>
+<td><code>#e2e8f0</code> 10%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_18">書体と文字の大きさ</h3>
+<ul>
+<li>図は <code>Segoe UI</code> → <code>Hiragino Sans</code> → <code>Noto Sans JP</code> → <code>Yu Gothic UI</code> → <code>Meiryo</code>、画面のUIは先頭3つ（<code>Segoe UI</code> → <code>Hiragino Sans</code> → <code>Noto Sans JP</code>）の順。Webフォントは読み込まず、OSにあるものを使います</li>
+<li>DSL 欄とプロンプト欄は等幅（<code>Cascadia Code</code> → <code>Consolas</code>）</li>
+<li>図の中の文字（すべて <code>textscale</code> 倍）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>大きさ</th>
+<th>太さ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>タイトル</td>
+<td>20</td>
+<td>800</td>
+</tr>
+<tr>
+<td>ゾーンのラベル</td>
+<td>13</td>
+<td>700</td>
+</tr>
+<tr>
+<td>ノードのラベル</td>
+<td>12.5</td>
+<td>700</td>
+</tr>
+<tr>
+<td>接続のラベル</td>
+<td>12</td>
+<td>600</td>
+</tr>
+<tr>
+<td>ノートの本文</td>
+<td>11</td>
+<td>標準</td>
+</tr>
+<tr>
+<td>出典</td>
+<td>11</td>
+<td>標準</td>
+</tr>
+</tbody>
+</table>
+<p>画面のUIは、本文 13px、補助の文字 11.5〜12px、パネルの見出し 11px（大文字・字間 0.04em）、ヒーローの題 38px です。</p>
+<h3 id="_19">かたち・大きさ</h3>
+<table>
+<thead>
+<tr>
+<th>対象</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1マス</td>
+<td>168 × 132（余白は左右 80・上下 68）</td>
+</tr>
+<tr>
+<td>ノード</td>
+<td>半径 26 × <code>size</code>（0.6〜2）、輪郭 2.2（選択中 3.5）</td>
+</tr>
+<tr>
+<td>アイコン</td>
+<td>24 × 24 の線画（線幅 1.6、端と角は丸）を、半径の 1.15 倍に縮尺</td>
+</tr>
+<tr>
+<td>ゾーン</td>
+<td>マスから 10 内側、角丸 18、枠 1.5</td>
+</tr>
+<tr>
+<td>ノート</td>
+<td>角丸 8、枠 1.2、引き出し線は点線（3 3）</td>
+</tr>
+<tr>
+<td>接続線</td>
+<td>幅 1〜4、破線は 6 5</td>
+</tr>
+<tr>
+<td>UI の角丸</td>
+<td>ボタン・入力欄 6、アイコン選択・コード欄 8、ヘルプ 12、カード 14</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_20">状態</h3>
+<table>
+<thead>
+<tr>
+<th>状態</th>
+<th>見せ方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選択中</td>
+<td>ノード・ゾーン・ノート・接続の線を太くする（色は変えない）</td>
+</tr>
+<tr>
+<td>接続の起点に選択中</td>
+<td>ノードの輪郭が破線</td>
+</tr>
+<tr>
+<td>ホバー</td>
+<td>ボタンの背景が <code>--ui-btn-hover</code></td>
+</tr>
+<tr>
+<td>無効</td>
+<td>不透明度 0.4</td>
+</tr>
+<tr>
+<td>警告 / エラー</td>
+<td>ステータスバーの文字が黄（<code>--ui-warn</code>）/ 赤（<code>--ui-danger</code>）</td>
+</tr>
+<tr>
+<td>ツール</td>
+<td>カーソルが変わる（コピー・十字・セル）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_21">レイアウト</h3>
+<p>編集画面は、左（DSL欄 300px）・中央（キャンバス）・右（インスペクタ 300px）の3列です。DSL 欄は初期状態では閉じていて、36px の帯になります。</p>
+<p>画面幅が 980px 以下では、3列が縦に積まれます。860px 以下でヒーローが1列、600px 以下で余白が詰まります。</p>
+<h3 id="_22">色の見え方についての限界</h3>
+<p>色の濃さ（白背景に対するコントラスト比）を計算すると、ライトテーマでは次のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>比</th>
+<th>名前</th>
+<th>比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slate</code></td>
+<td>7.6</td>
+<td><code>teal</code></td>
+<td>3.7</td>
+</tr>
+<tr>
+<td><code>purple</code></td>
+<td>5.7</td>
+<td><code>orange</code></td>
+<td>3.6</td>
+</tr>
+<tr>
+<td><code>blue</code></td>
+<td>5.2</td>
+<td><code>green</code></td>
+<td>3.3</td>
+</tr>
+<tr>
+<td><code>red</code></td>
+<td>4.8</td>
+<td><code>yellow</code></td>
+<td>4.9</td>
+</tr>
+<tr>
+<td><code>pink</code></td>
+<td>4.6</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>線やアイコンに必要とされる 3:1 は、全色が満たしています。ダークテーマはどの色も 6.4 以上です。</p>
+<p><code>yellow</code> は、以前は <code>#ca8a04</code>（2.9）で 3:1 に届かなかったため、2026年10月に <code>#a16207</code>（4.9）へ濃くしました。ゾーンの塗りと枠、ステータスバーの警告の文字も、同じ色味にそろえています（警告の文字は、ダークでは明るい黄 <code>#facc15</code> に切り替えます）。</p>
+<p><strong>文字には、色を使いません。</strong> 接続のラベルとゾーンのラベルは、以前は線や枠と同じ色で描いていましたが、小さい文字に求められる 4.5:1 を <code>green</code> <code>orange</code> <code>teal</code> <code>yellow</code> が満たさず（ライトテーマ）、読みにくくなりました。そこで、2026年10月に、ラベルの文字は本文と同じ色（<code>#0f172a</code> / <code>#e2e8f0</code>）に変えています。どの線・ゾーンのラベルかは、位置（線の上、ゾーンの左上）と、線・枠の色で分かります。小さい文字に色を使うなら、その色の濃さを確かめる必要がある、という例です。</p>
+<p>色だけで区別させないように、接続は<strong>実線・破線</strong>でも、ラベルの有無でも意味を持たせられます。ただし、色以外の手がかり（模様など）はノードにはありません。大事な区別には、ラベルを付けてください。</p>
 
 
 

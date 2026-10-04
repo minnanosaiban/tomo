@@ -99,6 +99,17 @@ twitter_card: summary_large_image
 
 次回（3-2）は、見つけた類似群を "物差し" にして、各銘柄の反応が **似た者と同じ（典型）か、大きく外れた「個別ショック」か** を **K-NN で仕分け** ます。値も方向そのものも当てられませんが、その "外れ" こそが「真っ先に IR を確認すべき銘柄」を浮かび上がらせます。
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+記事で「似ている」と出た丸紅と総合商社4社（伊藤忠・住友・三井・双日）は、公開サイトでも、最新期の**利益率・ROE・自己資本比率・キャッシュフロー**を並べて確かめられます。類似度の計算そのものは含みません。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02498,E02497,E02528,E02513,E02958" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（丸紅と類似の総合商社5社の最新期を、表と棒グラフで比べる）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**類似決算検索の計算方法（10 次元特徴量・z-score 正規化・コサイン類似度）**は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。

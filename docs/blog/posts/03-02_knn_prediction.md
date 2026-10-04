@@ -99,6 +99,17 @@ twitter_card: summary_large_image
 
 ---
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+記事の仕分けで取り上げた丸紅・双日・ＥＮＥＯＳは、公開サイトでも、最新期の財務を並べて見比べられます。K-NN の仕分けや株価の反応は含みません。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02498,E02958,E24050" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（丸紅・双日・ＥＮＥＯＳの最新期を、表と棒グラフで比べる）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**K-NN 分類の実装（似た決算 Top-K・近傍平均からの外れ量・個別ショック抽出・K=5/15/30 比較）**は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。

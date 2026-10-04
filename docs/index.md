@@ -106,6 +106,18 @@ hide:
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０８</p>
+<p class="about-work-title">ＥＮＥＯＳの内部通報制度をめぐる訴訟について <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p>
+ＥＮＥＯＳをめぐる訴訟の記録サイトも自作しています。判決文・準備書面をアコーディオンで開いて読め、本文はMarkdownとしてコピー・ダウンロードもできます。
+</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・JavaScript・GitHub Pages</p>
+<p>
+<a href="https://minnanosaiban.github.io/hotline/" class="arrow-link" target="_blank" rel="noopener">裁判記録サイトを見る <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０９</p>
 <p class="about-work-title">決算・株価データの分析連載 <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
 無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
@@ -124,18 +136,6 @@ hide:
 </ul>
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
-</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-num">０９</p>
-<p class="about-work-title">ＥＮＥＯＳの内部通報制度をめぐる訴訟について <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
-<p>
-ＥＮＥＯＳをめぐる訴訟の記録サイトも自作しています。判決文・準備書面をアコーディオンで開いて読め、本文はMarkdownとしてコピー・ダウンロードもできます。
-</p>
-<p class="fig-meta">使用技術：Zensical（MkDocs互換）・JavaScript・GitHub Pages</p>
-<p>
-<a href="https://minnanosaiban.github.io/hotline/" class="arrow-link" target="_blank" rel="noopener">裁判記録サイトを見る <i class="bi bi-box-arrow-up-right"></i></a>
 </p>
 </div>
 

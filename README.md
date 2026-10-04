@@ -23,8 +23,8 @@
 | スクショＰＤＦ化 | [`screenshot-pdf.md`](docs/tech/screenshot-pdf.md) |
 | Ｘスクショ管理ツール | [`screenshot-x.md`](docs/tech/screenshot-x.md)（準備中） |
 | 応援傍聴ナビ | [`court-calendar.md`](docs/tech/court-calendar.md) |
-| 決算・株価データの分析連載 | [`stock-analysis.md`](docs/tech/stock-analysis.md) |
 | ＥＮＥＯＳの内部通報制度をめぐる訴訟について | [`hotline.md`](docs/tech/hotline.md) |
+| 決算・株価データの分析連載 | [`stock-analysis.md`](docs/tech/stock-analysis.md) |
 
 解説の図は、[RelaGrid](https://minnanosaiban.github.io/relagrid/) で描いたものが多くあります。図の元になった記述（DSL）は、RelaGrid リポジトリの `examples/` にあります（`docs/img/` の SVG と対応）。
 

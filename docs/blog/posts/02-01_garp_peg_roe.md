@@ -136,7 +136,7 @@ GARP だけ見ればコスモが魅力的です。では直近 6 ヶ月の株価
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02529,E02513,E02498,E24050,E01084" target="_blank" rel="noopener">
-<span class="repo-link-path">minnanosaiban.github.io/company-analysis（商社・石油5社の ROE・PER などを並べて比べる）</span>
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（商社・石油5社の最新期（ROE・PER など）を、表と棒グラフで比べる）</span>
 <i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
 </a>
 </div>

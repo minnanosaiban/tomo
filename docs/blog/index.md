@@ -21,6 +21,23 @@ twitter_card: summary
 私はＥＮＥＯＳの株主で、株主総会にも出席しています。無料で手に入る株価・決算短信・有価証券報告書をもとに、主に元売株・資源株を分析しています。本連載のチャートやアプリの Python コードは GitHub に公開しています。
 </p>
 
+## 関連サイト：企業分析
+
+連載で扱う有価証券報告書のデータを、ブラウザで**探して・比べられる**サイトを公開しています。ＥＮＥＯＳ以外の会社も、業種や財務指標の条件で絞り込んで見られます。
+
+<div class="toc-grid" style="margin-top: 0.8rem;">
+<a href="https://minnanosaiban.github.io/company-analysis/" class="toc-card" target="_blank" rel="noopener">
+<span class="toc-card-num">公開サイト</span>
+<span class="toc-card-title">企業分析</span>
+<span class="toc-card-desc">約500社の有報を、探して・比べる</span>
+</a>
+<a href="../tech/stock-analysis/" class="toc-card">
+<span class="toc-card-num">解説</span>
+<span class="toc-card-title">使い方と仕組み</span>
+<span class="toc-card-desc">条件の URL 共有・規約・作るうえでの判断</span>
+</a>
+</div>
+
 ## おすすめの読み順
 
 <div class="toc-grid" style="margin-top: 0.8rem;">

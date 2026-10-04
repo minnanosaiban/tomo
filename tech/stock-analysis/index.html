@@ -2132,6 +2132,7 @@
 <li><strong>対象を決める</strong>：「おすすめ（商社・石油13社）」「業種から選ぶ」「会社を検索して選ぶ」「全社」から選びます。</li>
 <li><strong>条件で絞り込む</strong>：「企業を探す」で、数値の範囲やキャッシュフローの符号を指定します。たとえば「ROE 10%以上・PER 15倍以下・日本基準」で72社に絞れます。</li>
 <li><strong>図で見る</strong>：該当した会社を、散布図・CFパターン・ポートフォリオにそのまま移して見られます。</li>
+<li><strong>会社を選んで、推移を見る・並べて比べる</strong>：「財務の推移」で、会社ごとの売上・利益・ROE・キャッシュフローの時系列を見られます。最大5社を重ねて比べることもできます。「会社を比べる」では、最大5社の最新の数値を、表と棒グラフで並べます。各ページ末尾の「次に見る」から、ページを行き来できます。</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../img/company-analysis-screen.png" data-desc-position="bottom"><img alt="企業を探す：条件で絞り込んだ結果の表。会社・業種・ROE・PER・自己資本比率・売上などが並び、見出しで並べ替えられる" src="../img/company-analysis-screen.png" width="1000"></a></p>
 <p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../img/company-analysis-valuation.png" data-desc-position="bottom"><img alt="バリュエーション散布図：横軸 ROE、縦軸 PER。業種ごとに色分けされた約480社の点と、中央値の点線。点の大きさは売上" src="../img/company-analysis-valuation.png" width="1000"></a></p>
@@ -2142,6 +2143,7 @@
 <li>商社・石油の ROE と PER：<a href="https://minnanosaiban.github.io/company-analysis/#/valuation?m=preset&amp;x=roe&amp;y=per">…/#/valuation?m=preset&amp;x=roe&amp;y=per</a></li>
 <li>卸売業のキャッシュフローの型：<a href="https://minnanosaiban.github.io/company-analysis/#/cashflow?m=ind&amp;ind=%E5%8D%B8%E5%A3%B2%E6%A5%AD">…/#/cashflow?m=ind&amp;ind=卸売業</a></li>
 <li>ROE 10%以上・PER 15倍以下・日本基準の会社：<a href="https://minnanosaiban.github.io/company-analysis/#/?roe=10..&amp;per=..15&amp;std=JP">…/#/?roe=10..&amp;per=..15&amp;std=JP</a></li>
+<li>三菱商事と三井物産を並べて比べる：<a href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02529,E02513">…/#/compare?cc=E02529,E02513</a></li>
 </ul>
 <p><code>?embed=1</code> を付けると、ヘッダを省いた<strong>埋め込み用の表示</strong>になります（出典の表示は残ります）。</p>
 <h2 id="_4">全体の構成</h2>
@@ -2173,7 +2175,7 @@
 <p>最初は、手元の分析アプリ（Streamlit）の4ページを、そのまま公開することを考えました。しかし、無料で公開できる Streamlit の置き場所は、アクセスがない間に<strong>スリープ</strong>し、開くまで待たされます。年に数回しか変わらないデータに、動かし続けるサーバーは、必要以上に重い仕組みです。</p>
 <p>そこで、<strong>ブラウザの中だけで動く静的サイト</strong>に作り直しました。サーバーがないので、スリープも、落ちる心配もありません。スマホでも軽く動き、ブログと同じ GitHub Pages に置けます。手元の分析アプリは、そのまま使い続けています。</p>
 <h3 id="python">Python の結果と照合して、不具合を見つけた</h3>
-<p>作り直しで怖いのは、<strong>手元の Python と、公開の JavaScript で、計算が食い違うこと</strong>です。そこで、絞り込み・CFパターンの分類・Treemap・セグメント推移・外れ値の範囲を、Python（pandas）で<strong>別に実装して</strong>期待値を作り、JavaScript の結果と照合するテストを書きました。計算が一致していることを確かめる、132件のテストです。</p>
+<p>作り直しで怖いのは、<strong>手元の Python と、公開の JavaScript で、計算が食い違うこと</strong>です。そこで、絞り込み・CFパターンの分類・Treemap・セグメント推移・外れ値の範囲を、Python（pandas）で<strong>別に実装して</strong>期待値を作り、JavaScript の結果と照合するテストを書きました。計算が一致していることを確かめる、144件のテストです。</p>
 <p>このテストは、実際に3つの不具合を見つけました。</p>
 <ol>
 <li><strong>「◯期前」の数え方がずれていた</strong>：セグメントがない期を飛ばしていたため、INPEX などで期の対応がずれていました。</li>

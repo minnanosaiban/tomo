@@ -1,18 +1,18 @@
 ---
-title: 決算・株価データの分析連載
+title: 有報ナビ
 ---
 
-# 決算・株価データの分析連載
+# 有報ナビ
 
-無料で入手できる決算短信・有価証券報告書・株価データを使った分析の連載と、その関連サイト「**企業分析**」の解説です。
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイト「**有報ナビ**」の解説です。連載「株価分析」（決算短信・有価証券報告書・株価データを使った分析）の関連サイトです。
 
 - 連載：[株価分析](../blog/index.md)（記事の一覧）
 - 公開サイト：[minnanosaiban.github.io/company-analysis](https://minnanosaiban.github.io/company-analysis/)
 - ソース：[github.com/minnanosaiban/company-analysis](https://github.com/minnanosaiban/company-analysis)（連載の記事ごとのコードは [github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)）
 
-このページは、企業分析サイトの使い方と、その仕組み、作るうえで判断したことの解説です。
+このページは、有報ナビの使い方と、その仕組み、作るうえで判断したことの解説です。
 
-## 企業分析：有価証券報告書を、探して・比べる
+## 有報ナビとは：有価証券報告書を、探して・比べる
 
 東証の主要企業（約500社）の**有価証券報告書**（EDINET）をもとに、企業を探し、セグメント・財務指標・キャッシュフローを比べられるサイトです。ブラウザだけで動き、サーバーはありません。
 
@@ -50,8 +50,8 @@ title: 決算・株価データの分析連載
 
 ## 全体の構成
 
-![企業分析のデータの流れ：EDINET から手元で取得・変換した有報 JSON を、公開データとして同期し、GitHub Pages から配信。ブラウザの中で絞り込みと描画をする](img/company-analysis-flow-light.svg#only-light)
-![企業分析のデータの流れ：EDINET から手元で取得・変換した有報 JSON を、公開データとして同期し、GitHub Pages から配信。ブラウザの中で絞り込みと描画をする](img/company-analysis-flow-dark.svg#only-dark)
+![有報ナビのデータの流れ：EDINET から手元で取得・変換した有報 JSON を、公開データとして同期し、GitHub Pages から配信。ブラウザの中で絞り込みと描画をする](img/company-analysis-flow-light.svg#only-light)
+![有報ナビのデータの流れ：EDINET から手元で取得・変換した有報 JSON を、公開データとして同期し、GitHub Pages から配信。ブラウザの中で絞り込みと描画をする](img/company-analysis-flow-dark.svg#only-dark)
 
 ビルド工程のない素の HTML / CSS / JavaScript で、図には [Apache ECharts](https://echarts.apache.org/) を使っています。ECharts はリポジトリに**同梱**し、外部の CDN には頼りません。
 

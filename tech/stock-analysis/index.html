@@ -10,10 +10,10 @@
         <link rel="canonical" href="https://minnanosaiban.github.io/tomo/tech/stock-analysis/">
       
       
-        <link rel="prev" href="../court-calendar/">
+        <link rel="prev" href="../hotline/">
       
       
-        <link rel="next" href="../hotline/">
+        <link rel="next" href="../../blog/">
       
       
         
@@ -321,14 +321,14 @@
               </li>
             
               <li>
-                <a href="./" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
-                  決算・株価データの分析連載
+                <a href="../hotline/" class="md-tabs__dropdown-link">
+                  ＥＮＥＯＳの内部通報制度をめぐる訴訟について
                 </a>
               </li>
             
               <li>
-                <a href="../hotline/" class="md-tabs__dropdown-link">
-                  ＥＮＥＯＳの内部通報制度をめぐる訴訟について
+                <a href="./" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+                  決算・株価データの分析連載
                 </a>
               </li>
             
@@ -797,6 +797,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../hotline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ＥＮＥＯＳの内部通報制度をめぐる訴訟について
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -965,13 +993,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「売上」の呼び名は、会社ごとに違う
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         できないこと・注意点
@@ -982,7 +1021,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         更新
@@ -996,34 +1035,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hotline/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ＥＮＥＯＳの内部通報制度をめぐる訴訟について
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2012,13 +2023,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「売上」の呼び名は、会社ごとに違う
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         できないこと・注意点
@@ -2029,7 +2051,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         更新
@@ -2157,15 +2179,24 @@
 <li><strong>金融（銀行・保険・証券）</strong>は、売上の定義が違います。一般の会社の「売上」と混ぜず、売上の欄を空にしています。</li>
 <li><strong>米国基準・IFRS・日本基準</strong>では、報告書の項目名が少しずつ違います。それぞれの項目名に対応させて、取り込んでいます。</li>
 </ul>
-<h2 id="_8">できないこと・注意点</h2>
+<h3 id="_8">「売上」の呼び名は、会社ごとに違う</h3>
+<p>当初は「売上高」と「売上収益」だけを「売上」として取り込んだため、取得できたのは <strong>83%</strong> でした。残りを調べると、原因は主に3つでした。</p>
+<ol>
+<li><strong>「営業収益」と呼ぶ会社</strong>（陸運・小売・不動産など約50社）。JR 各社やイオンなどです。</li>
+<li><strong>IFRS の会社で、経営指標の一覧に売上がなく、損益計算書にだけある</strong>（ソニー・トヨタなど）。トヨタは会社独自の項目名でした。</li>
+<li><strong>日本ハムのように、IFRS なのに「売上高（IFRS）」と呼ぶ</strong>会社。</li>
+</ol>
+<p>それぞれの項目名を、優先度の低い補完として追加し、<strong>93%</strong> まで取得できるようになりました。補完は、もともと取れていた会社の値を変えない（空欄だけを埋める）ように作り、変更前後の全データを比べて、<strong>既存の値が変わらないこと</strong>を確かめています。</p>
+<p>残りは銀行・保険などの金融です。売上の代わりに「経常収益」で報告されるため、一般の会社の売上と混ぜず、別の欄に入れています。</p>
+<h2 id="_9">できないこと・注意点</h2>
 <ul>
 <li>対象は東証の主要企業（約500社）です。それ以外の会社は、載っていません。</li>
 <li>有価証券報告書は年1回なので、<strong>最新の四半期の数字は載っていません</strong>。最新期は、会社ごとの直近の有報です。</li>
 <li>セグメント名は、日本語の名称が整っていない会社では、英字のキーを区切って表示しています。</li>
-<li>IFRS の会社の一部で、「売上」が空欄のものがあります（項目名の対応が、まだ足りていません）。</li>
+<li>「売上」は、売上高・売上収益・営業収益のいずれかです。最新期で、約93%の会社（463/497社）で取得できています。残りは銀行・保険などの金融で、経常収益などの別の項目で報告されるため、「売上」は空欄です。</li>
 <li>投資の助言ではありません。</li>
 </ul>
-<h2 id="_9">更新</h2>
+<h2 id="_10">更新</h2>
 <p>データは、手元で有価証券報告書を取得・変換し、公開用に同期して更新します。有報は年1回なので、更新は年に数回の予定です。更新日は、サイトの「データと注意」のページに出ています。</p>
 
 

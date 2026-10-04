@@ -33,6 +33,7 @@ title: 有報ナビ
 1. **対象を決める**：「おすすめ（商社・石油13社）」「業種から選ぶ」「会社を検索して選ぶ」「全社」から選びます。
 2. **条件で絞り込む**：「企業を探す」で、数値の範囲やキャッシュフローの符号を指定します。たとえば「ROE 10%以上・PER 15倍以下・日本基準」で72社に絞れます。
 3. **図で見る**：該当した会社を、散布図・CFパターン・ポートフォリオにそのまま移して見られます。
+4. **会社を選んで、推移を見る・並べて比べる**：「財務の推移」で、会社ごとの売上・利益・ROE・キャッシュフローの時系列を見られます。最大5社を重ねて比べることもできます。「会社を比べる」では、最大5社の最新の数値を、表と棒グラフで並べます。各ページ末尾の「次に見る」から、ページを行き来できます。
 
 ![企業を探す：条件で絞り込んだ結果の表。会社・業種・ROE・PER・自己資本比率・売上などが並び、見出しで並べ替えられる](img/company-analysis-screen.png){width="1000"}
 
@@ -47,6 +48,7 @@ title: 有報ナビ
 - 商社・石油の ROE と PER：[…/#/valuation?m=preset&x=roe&y=per](https://minnanosaiban.github.io/company-analysis/#/valuation?m=preset&x=roe&y=per)
 - 卸売業のキャッシュフローの型：[…/#/cashflow?m=ind&ind=卸売業](https://minnanosaiban.github.io/company-analysis/#/cashflow?m=ind&ind=%E5%8D%B8%E5%A3%B2%E6%A5%AD)
 - ROE 10%以上・PER 15倍以下・日本基準の会社：[…/#/?roe=10..&per=..15&std=JP](https://minnanosaiban.github.io/company-analysis/#/?roe=10..&per=..15&std=JP)
+- 三菱商事と三井物産を並べて比べる：[…/#/compare?cc=E02529,E02513](https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02529,E02513)
 
 `?embed=1` を付けると、ヘッダを省いた**埋め込み用の表示**になります（出典の表示は残ります）。
 
@@ -91,7 +93,7 @@ docs/
 
 ### Python の結果と照合して、不具合を見つけた
 
-作り直しで怖いのは、**手元の Python と、公開の JavaScript で、計算が食い違うこと**です。そこで、絞り込み・CFパターンの分類・Treemap・セグメント推移・外れ値の範囲を、Python（pandas）で**別に実装して**期待値を作り、JavaScript の結果と照合するテストを書きました。計算が一致していることを確かめる、132件のテストです。
+作り直しで怖いのは、**手元の Python と、公開の JavaScript で、計算が食い違うこと**です。そこで、絞り込み・CFパターンの分類・Treemap・セグメント推移・外れ値の範囲を、Python（pandas）で**別に実装して**期待値を作り、JavaScript の結果と照合するテストを書きました。計算が一致していることを確かめる、144件のテストです。
 
 このテストは、実際に3つの不具合を見つけました。
 

@@ -111,6 +111,17 @@ XBRL は、要素（タグ）と文脈（context）で値を表す XML です。
 - 純利益は 3 社そろって **2022 年がピーク**（在庫評価益の特殊年）― 直近はピークアウトし、ROE は優良ライン前後へ
 - **営業 CF は健在** ― 利益より現金は嘘をつきにくい。この視点がアクルーアル分析へつながる
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+この記事で JSON にした**有報のデータ**（売上・ROE・自己資本比率・営業 CF など）を、東証の主要企業（約500社）の分まで、ブラウザで探して・比べられるサイトを公開しています。元売 3 社も、会社と期を選ぶだけで、**ROE と自己資本比率の関係**を見られます（期は「1 期前」〜「4 期前」に切り替えられます）。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/valuation?m=co&co=E24050,E01084,E31632&x=equity_ratio&y=roe&lab=1" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（元売3社の ROE × 自己資本比率）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます（動かし方はリポジトリの README 参照）。

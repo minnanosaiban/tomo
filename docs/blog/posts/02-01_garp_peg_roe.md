@@ -123,6 +123,17 @@ GARP だけ見ればコスモが魅力的です。では直近 6 ヶ月の株価
 - 石油元売 3 社では **GARP 理想値のコスモが直近 6 ヶ月で下落**、ＥＮＥＯＳ・出光は GARP 評価と株価騰落の順位が逆転
 
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+この記事の GARP は PEG（成長）と ROE の組み合わせですが、公開サイトの散布図では、**ROE と PER**（稼ぐ力と割安さ）の関係を、商社・石油だけでなく、業種や全社（約500社）に広げて見られます。PEG（成長率）は含みません。また、PER は有価証券報告書に書かれた値（決算期末の時点）で、現在の株価から計算した値ではありません。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/valuation?m=preset&x=roe&y=per&lab=1" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（商社・石油の ROE × PER）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます（動かし方はリポジトリの README 参照）。

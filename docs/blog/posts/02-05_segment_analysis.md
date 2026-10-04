@@ -128,6 +128,24 @@ PEG・ROE・アクルーアル・予想検証は、すべて **企業合算** �
 - **減速 Worst**：セブン&アイ スーパーストア −51.9% ― 企業合算では見えない再編影響をセグメントで初可視化
 - **高営業利益率**：マキタ アジア 88.4% / アドバンテスト 50.9% / 東海旅客鉄道 運輸 46.7% ― 寡占・軽資産の高収益事業を発掘
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+この記事は決算短信のセグメントで、前期比を計算しました。公開サイトでは、**有価証券報告書**の事業セグメント（約420社・5期以上）を、会社を選んで**推移**で見られます。記事に出てくる丸紅や双日も選べます。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/segments?sc=E02498" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（丸紅のセグメント推移）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/portfolio?m=preset" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（商社・石油のセグメント構成）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**セグメント分析の計算方法**（JSON スキーマからの抽出・前期比成長率・加速判定・アクルーアルとのクロス）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。

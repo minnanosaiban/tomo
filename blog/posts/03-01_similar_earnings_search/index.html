@@ -1615,6 +1615,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公開サイトで試す
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#python" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1888,6 +1899,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公開サイトで試す
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#python" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2099,6 +2121,15 @@
 <li>見つかった「似た決算」を “物差し” にすれば、<strong>その銘柄自身の値動きまで読めるのか</strong> ― それが次回への問い</li>
 </ul>
 <p>次回（3-2）は、見つけた類似群を "物差し" にして、各銘柄の反応が <strong>似た者と同じ（典型）か、大きく外れた「個別ショック」か</strong> を <strong>K-NN で仕分け</strong> ます。値も方向そのものも当てられませんが、その "外れ" こそが「真っ先に IR を確認すべき銘柄」を浮かび上がらせます。</p>
+<h2 id="_4"><i class="fa-solid fa-chart-line"></i> 公開サイトで試す</h2>
+<p>記事で「似ている」と出た丸紅と総合商社4社（伊藤忠・住友・三井・双日）は、公開サイトでも、最新期の<strong>利益率・ROE・自己資本比率・キャッシュフロー</strong>を並べて確かめられます。類似度の計算そのものは含みません。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。</p>
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E02498,E02497,E02528,E02513,E02958" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（丸紅と類似の総合商社5社の最新期を、表と棒グラフで比べる）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 <h2 id="python"><i class="fa-brands fa-github"></i> Python コード</h2>
 <p>本記事のチャート画像・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。<strong>類似決算検索の計算方法（10 次元特徴量・z-score 正規化・コサイン類似度）</strong>は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。</p>
 <div class="repo-link-wrap">

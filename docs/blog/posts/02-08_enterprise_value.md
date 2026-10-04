@@ -72,6 +72,17 @@ DCF は「答えを出す道具」ではなく、**市場の値付けにどん�
 - **EV/営業CF は商社13〜18.5倍 vs 元売・資源2〜9倍** ― 市場は稼ぎの「続きやすさ」に値段を付けている。ただし営業CFがマイナスの期もあり、単年では判断しない
 - **簡易DCFは市場の前提を逆算する道具** ― 商社の EV は「いまのFCF」だけでは説明できず成長を織り込む。ＥＮＥＯＳの直近FCFは資産売却で跳ねており、**どの年を「実力」と見るかで評価は何倍も変わる**
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+公開サイトは有価証券報告書の数値だけを使うので、株価から作る EV や簡易DCF は含みません。ただし、その土台になる**営業CF・FCF・純資産・自己資本比率**は、石油・資源の5社で並べて見られます。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E00043,E00041,E24050,E01084,E31632" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（石油・資源5社の最新期を、表と棒グラフで比べる）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**有利子負債の抽出**（企業固有の拡張タグへの対応・日本基準とIFRSのタグの違い）と、**有報と決算短信の独立突合による検証**は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。

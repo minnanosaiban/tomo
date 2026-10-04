@@ -150,6 +150,17 @@ PEG・ROE やマルチファクター採点は、銘柄を「量」と「水準�
 - ただし **3 年累積では CF が純利益を上回り回収済み（114%）** ― 原油サイクル由来で利益操作ではなく、「単年」か「累積」かで評価が割れる
 
 
+## <i class="fa-solid fa-chart-line"></i> 公開サイトで試す
+
+利益にキャッシュの裏付けがあるかは、公開サイトでも、**純利益率と営業CF・FCF**を並べて確かめられます。アクルーアルそのものの計算は含みませんが、元売3社の利益と現金の動きを、同じ期で見比べられます。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。
+
+<div class="repo-link-wrap">
+<a class="repo-link" href="https://minnanosaiban.github.io/company-analysis/#/compare?cc=E24050,E01084,E31632" target="_blank" rel="noopener">
+<span class="repo-link-path">minnanosaiban.github.io/company-analysis（元売3社の最新期を、表と棒グラフで比べる）</span>
+<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+
 ## <i class="fa-brands fa-github"></i> Python コード
 
 本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**アクルーアル比率の計算方法**（Sloan 1996 の式・補助指標 CF/純利益・業種特性・ノイズフィルタ・Sloan 戦略のしきい値）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。

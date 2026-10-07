@@ -987,6 +987,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同期キーはQRコードで渡す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2073,6 +2084,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同期キーはQRコードで渡す
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2132,6 +2154,7 @@
   sw.js            Service Worker（オフライン用キャッシュ）
   manifest.json    ホーム画面に追加するための設定（PWA）
   relagrid/        関係図の描画部分（RelaGrid から同梱）
+  vendor/qrcode.js QRコードの生成（qrcode-generator、同梱）
 src/worker.js      同期 API。暗号文の保存と取得だけ
 migrations/        D1（データベース）のテーブル定義
 wrangler.jsonc     Workers の設定（静的アセット + D1）
@@ -2262,6 +2285,18 @@ wrangler.jsonc     Workers の設定（静的アセット + D1）
 </tbody>
 </table>
 <p>照合には、一致するまでの時間で中身を推測されないよう、<code>crypto.subtle.timingSafeEqual</code> を使っています。</p>
+<h3 id="qr">同期キーはQRコードで渡す</h3>
+<p>同期キーは60文字ほどあり、スマホで手入力するのは現実的ではありません。そこで、設定画面の「スマホで接続（QRコード）」で、PCの画面にQRコードを出し、スマホのカメラで読み取るだけで接続できるようにしています。</p>
+<p>QRコードに入れるのは、アプリのURLの末尾に、同期キーを付けたリンクです。</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">qrcode</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"M"</span><span class="p">);</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">addData</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">origin</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"#sync="</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">sync</span><span class="p">.</span><span class="nx">token</span><span class="p">));</span>
+</code></pre></div>
+<p>同期キーは <code>#</code> より後ろ（フラグメント）に入れます。この部分は、ブラウザがサーバーに<strong>送らない</strong>ので、Cloudflare のアクセス記録にも残りません。スマホでリンクを開くと、設定画面が自動で開き、同期キーが入った状態になります。そのうえで、アドレス欄からは <code>history.replaceState</code> で消します。あとは、パスフレーズを入力するだけで接続できます。</p>
+<ul>
+<li><strong>同期キーだけでは中身を読めません。</strong> データを読むには、別に覚えておくパスフレーズが必要です。QRコードを人に見られても、すぐにデータが読まれるわけではありません。ただし、同期キーがあれば暗号文を取得できてしまうので、人に見られない場所で表示するよう、画面に注意書きを出しています</li>
+<li><strong>QRコードの生成は、ブラウザの中で行います。</strong> 生成に使う <a href="https://github.com/kazuhikoarase/qrcode-generator">qrcode-generator</a>（MIT）は、外部から読み込まず、アプリに同梱しています。同期キーを外部のサービスに渡して画像を作ってもらうことは、していません</li>
+<li><strong>すでに同期している端末で開いたときは、何もしません。</strong> 「この端末はすでに同期しています」と表示するだけで、上書きはしません</li>
+</ul>
 <h3 id="_8">送るのは、変わったものだけ</h3>
 <p>同期のたびに全件を送ると、解析結果の大きい英文が増えるほど重くなります。そこで、最後に同期した時点の<strong>各レコードのハッシュ</strong>を端末に覚えておき、いまの中身のハッシュと違うものだけを送ります。手元から消えたレコードは「削除」として送ります。</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hashOf</span><span class="p">(</span><span class="nx">o</span><span class="p">);</span>

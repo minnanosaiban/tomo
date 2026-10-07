@@ -106,6 +106,18 @@ hide:
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０８</p>
+<p class="about-work-title">英文構造アナライザー <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p>
+集めた英文をＡＩで分解して学ぶ、ＴＯＥＩＣ対策向けの英語学習アプリです。文の構造（ＳＶＯＣ・文型・時制）の解説に加え、英文・単語のグループ分け、RelaGridによる関係図、絵文字イラスト、読み上げでのシャドーイングに対応しています。英文や設定はブラウザ内に保存され、スマホのホーム画面に追加して外出先でも使えます。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Gemini API・PWA（Cloudflare Workers）</p>
+<p>
+<a href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" class="about-btn" target="_blank" rel="noopener">英文構造アナライザーを開く <i class="bi bi-box-arrow-up-right"></i></a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">０９</p>
 <p class="about-work-title">ＥＮＥＯＳの内部通報制度をめぐる訴訟について <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
 ＥＮＥＯＳをめぐる訴訟の記録サイトも自作しています。判決文・準備書面をアコーディオンで開いて読め、本文はMarkdownとしてコピー・ダウンロードもできます。
@@ -117,7 +129,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-num">０９</p>
+<p class="about-work-num">１０</p>
 <p class="about-work-title">有報ナビ <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
 有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
@@ -132,7 +144,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-num">１０</p>
+<p class="about-work-num">１１</p>
 <p class="about-work-title">決算・株価データの分析連載 <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
 <p>
 無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
@@ -145,18 +157,6 @@ hide:
 </ul>
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
-</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-num">１１</p>
-<p class="about-work-title">英文構造アナライザー <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
-<p>
-集めた英文をＡＩで分解して学ぶ、ＴＯＥＩＣ対策向けの英語学習アプリです。文の構造（ＳＶＯＣ・文型・時制）の解説に加え、英文・単語のグループ分け、RelaGridによる関係図、絵文字イラスト、読み上げでのシャドーイングに対応しています。英文や設定はブラウザ内に保存され、スマホのホーム画面に追加して外出先でも使えます。
-</p>
-<p class="fig-meta">使用技術：JavaScript・Gemini API・PWA（Cloudflare Workers）</p>
-<p>
-<a href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" class="about-btn" target="_blank" rel="noopener">英文構造アナライザーを開く <i class="bi bi-box-arrow-up-right"></i></a>
 </p>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 title: 運営者について
-description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・決算/株価データ分析連載・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
+description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・英文構造アナライザー・決算/株価データ分析連載・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
 twitter_card: summary
@@ -145,6 +145,18 @@ hide:
 </ul>
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
+</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">１１</p>
+<p class="about-work-title">英文構造アナライザー <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p>
+集めた英文をＡＩで分解して学ぶ、ＴＯＥＩＣ対策向けの英語学習アプリです。文の構造（ＳＶＯＣ・文型・時制）の解説に加え、英文・単語のグループ分け、RelaGridによる関係図、絵文字イラスト、読み上げでのシャドーイングに対応しています。英文や設定はブラウザ内に保存され、スマホのホーム画面に追加して外出先でも使えます。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Gemini API・PWA（Cloudflare Workers）</p>
+<p>
+<a href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" class="about-btn" target="_blank" rel="noopener">英文構造アナライザーを開く <i class="bi bi-box-arrow-up-right"></i></a>
 </p>
 </div>
 

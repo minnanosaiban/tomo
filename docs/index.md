@@ -1,5 +1,5 @@
 ---
-title: 運営者について
+title: サイト運営者について
 description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・英文構造アナライザー・決算/株価データ分析連載・株価データ取得ツール・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
@@ -12,7 +12,7 @@ hide:
 <div class="center-container" markdown>
 
 <div class="hero-band" markdown>
-# 運営者について
+# サイト運営者について
 <p>
 ウェブサイト「ＥＮＥＯＳの内部通報制度をめぐる訴訟について」は通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・Ｅ資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
 </p>

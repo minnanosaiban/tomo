@@ -1,6 +1,6 @@
 ---
 title: 運営者について
-description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・英文構造アナライザー・決算/株価データ分析連載・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
+description: 本サイトの運営者（通報者本人）と、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・英文構造アナライザー・決算/株価データ分析連載・株価データ取得ツール・ＥＮＥＯＳの内部通報制度をめぐる訴訟など制作物の紹介です。
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
 twitter_card: summary
@@ -161,6 +161,15 @@ hide:
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
 </p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-num">１２</p>
+<p class="about-work-title">株価データ取得ツール</p>
+<p>
+決算短信・有価証券報告書・株価・適時開示などのデータ取得と、データ品質のチェックを、ひとつの画面にまとめたツールです。日次セットのワンクリック実行、取得済み期間の確認、実行ログの表示に加え、データの遅れ・欠損・株式分割の取り込み漏れ・日付抜けを点検できます。データはすべてこのパソコンの中だけに保存されます。
+</p>
+<p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
 </div>
 
 </div>

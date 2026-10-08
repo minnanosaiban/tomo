@@ -3,6 +3,21 @@
 -#}
 {% extends "base.html" %}
 
+{#- <title>。front matter の seo_title があればそれだけを使う（検索結果に出るタイトルなので、検索されたい語を先頭に置く）。
+    無いページは、テーマ標準と同じ「ページ名 - サイト名」。title: の方は、ヘッダーの表示や og:title に使われる。
+    （hotline の overrides/main.html と同じ仕組み） -#}
+{% block htmltitle %}
+  {% if page and page.meta and page.meta.seo_title %}
+    <title>{{ page.meta.seo_title }}</title>
+  {% elif page and page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} - {{ config.site_name }}</title>
+  {% elif page and page.title and not page.is_homepage %}
+    <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
+  {% endif %}
+{% endblock %}
+
 {% block extrahead %}
   <meta name="msvalidate.01" content="9593088485776550C2589B62968B9D78">
   <meta property="og:site_name" content="{{ config.site_name }}">

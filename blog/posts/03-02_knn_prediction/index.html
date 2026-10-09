@@ -1173,14 +1173,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../EX-03_kessan_note_app/" class="md-nav__link">
+      <a href="../EX-03_data_hub/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    番外編 Note記事の下書きを作成
+    番外編 データ取得を「押すだけ」にする
   
 
     
@@ -2193,7 +2193,7 @@
 </ul>
 <p>ここに本記事の芯があります ― 大事なのは値を当てることではなく、<strong>群れからどれだけ外れたか</strong>。外れが小さければ「数字で読める＝AI に足す情報は薄い」、大きければ「数字の外の材料を急いで集めよ」。この <strong>2 つに振り分ける</strong> のが、K-NN の使いどころです。</p>
 <blockquote>
-<p>💡 <strong>API とコストについて</strong>：この分析ノートは、実際の embedding API・LLM API を一度も呼んでいません（要約・embedding は Claude が代理で出力しています）。仮に実 API で全 8,049 イベントを要約・embedding 化しても、Haiku 4.5 なら <strong>約 3,100 円</strong> の見積もりで収まります。</p>
+<p>💡 <strong>API とコストについて</strong>：この分析は、実際の embedding API・LLM API を一度も呼んでいません（要約・embedding は Claude が代理で出力しています）。仮に実 API で全 8,049 イベントを要約・embedding 化しても、Haiku 4.5 なら <strong>約 3,100 円</strong> の見積もりで収まります。</p>
 </blockquote>
 <hr>
 <h2 id="_1">まとめ</h2>
@@ -2203,7 +2203,7 @@
 <li>ポジ例 ティラド +63pp・カカクコム +34pp（物語で動いた）／ネガ例 エムケー精工 −28pp・ピー・シー・エー −23pp（資料で見える警戒材料）。主要銘柄では 丸紅 −9.39% / 双日 −4.25% が <strong>個別ショック</strong>、ＥＮＥＯＳ −4.68%（外れ −2.37pp）は <strong>典型寄り</strong></li>
 <li>使い方は <strong>外れ大＝要 IR 確認、外れ小＝数字で読める</strong> の二分。AI は予言の魔法ではなく、<strong>異変を見つける仕分け器</strong></li>
 </ul>
-<p>機械学習分析編は今後も手法を追加していく予定です。データ駆動投資の差別化要素は「データを使う」から「データを持つ・整理する・AI と組み合わせる」へ ― この分析ノートがそのスタート地点になれば幸いです。</p>
+<p>機械学習分析編は今後も手法を追加していく予定です。データ駆動投資の差別化要素は「データを使う」から「データを持つ・整理する・AI と組み合わせる」へ ― この分析がそのスタート地点になれば幸いです。</p>
 <hr>
 <h2 id="_2"><i class="fa-solid fa-chart-line"></i> 公開サイトで試す</h2>
 <p>記事の仕分けで取り上げた丸紅・双日・ＥＮＥＯＳは、公開サイトでも、最新期の財務を並べて見比べられます。K-NN の仕分けや株価の反応は含みません。有報ベースなので、記事の数値とは、期や定義が異なる場合があります。</p>
@@ -2215,7 +2215,7 @@
 </div>
 
 <h2 id="python"><i class="fa-brands fa-github"></i> Python コード</h2>
-<p>本記事のチャート画像・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。<strong>K-NN 分類の実装（似た決算 Top-K・近傍平均からの外れ量・個別ショック抽出・K=5/15/30 比較）</strong>は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます。</p>
+<p>本記事のチャート画像・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。<strong>K-NN 分類の実装（似た決算 Top-K・近傍平均からの外れ量・個別ショック抽出・K=5/15/30 比較）</strong>は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この記事と同じものが再現できます。</p>
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/03-02_knn" target="_blank" rel="noopener">
 <span class="repo-link-path">github.com/minnanosaiban/blog/03-02_knn</span>

@@ -13,7 +13,7 @@
         <link rel="prev" href="../01-02_collect_other_data/">
       
       
-        <link rel="next" href="../EX-03_kessan_note_app/">
+        <link rel="next" href="../EX-03_data_hub/">
       
       
         
@@ -1336,14 +1336,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../EX-03_kessan_note_app/" class="md-nav__link">
+      <a href="../EX-03_data_hub/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    番外編 Note記事の下書きを作成
+    番外編 データ取得を「押すだけ」にする
   
 
     
@@ -2158,7 +2158,7 @@
 </table>
 <p>そこで対応表を作成して、<strong>分析できるかたちの「JSON」</strong> に変換します。JSON に変換した後は、Python の数行で全銘柄を横串分析できます。</p>
 <h2 id="json-3-7">JSON 化した有報で、元売 3 社の 7 年を読む</h2>
-<p>有報 XBRL は過去年度分も無料で取得でき、業績指標の時系列を表現できます。ここでは、2023〜2025 年提出の有報 3 本（主要経営指標 5 年表）を重ねて 2019/3〜2025/3 の 7 期分を構成し、代表的な業績指標を使って石油元売 3 社のチャートを作成しました。後の分析ノートでは、JSON 化したデータを使い、アクルーアル分析やセグメント分析など、さらに深い分析を行っていきます。</p>
+<p>有報 XBRL は過去年度分も無料で取得でき、業績指標の時系列を表現できます。ここでは、2023〜2025 年提出の有報 3 本（主要経営指標 5 年表）を重ねて 2019/3〜2025/3 の 7 期分を構成し、代表的な業績指標を使って石油元売 3 社のチャートを作成しました。後の記事では、JSON 化したデータを使い、アクルーアル分析やセグメント分析など、さらに深い分析を行っていきます。</p>
 <h3 id="_1">規模は回復、財務体質はむしろ改善</h3>
 <p>売上高（左）と自己資本比率（右）を、同じ 7 年で重ねたチャートです。</p>
 <p class="fig-meta"><i class="fa-solid fa-expand"></i> クリックで拡大</p>
@@ -2231,7 +2231,7 @@
 </div>
 
 <h2 id="python"><i class="fa-brands fa-github"></i> Python コード</h2>
-<p>本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます（動かし方はリポジトリの README 参照）。</p>
+<p>本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この記事と同じものが再現できます（動かし方はリポジトリの README 参照）。</p>
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/01-03_xbrl_json" target="_blank" rel="noopener">
 <span class="repo-link-path">github.com/minnanosaiban/blog/01-03_xbrl_json</span>

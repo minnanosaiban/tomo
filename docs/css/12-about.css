@@ -48,16 +48,17 @@
 .md-typeset .about-work p {
   margin: 0 !important;
 }
-.md-typeset .about-work .about-work-num {
-  font-size: 13px !important;
+/* 番号はタイトルの前（青い縦棒の右）に、小さなグレーで置く。項目にカーソルが乗っている間だけ少し濃く・字間が開く */
+.md-typeset .about-work .about-work-no {
+  font-size: 13px;
   letter-spacing: 0.28em;
-  color: var(--md-default-fg-color--light) !important;
-  margin-bottom: 0.2rem !important;
+  color: var(--md-default-fg-color--light);
+  margin-right: 0.7em;
+  vertical-align: 0.1em;
   transition: color 0.25s ease, letter-spacing 0.25s ease;
 }
-/* 番号は項目にカーソルが乗っている間だけ字間が少し開く（気づいた人だけに見える微細な反応） */
-.md-typeset .about-work:hover .about-work-num {
-  color: var(--md-default-fg-color) !important;
+.md-typeset .about-work:hover .about-work-no {
+  color: var(--md-default-fg-color);
   letter-spacing: 0.34em;
 }
 .md-typeset .about-work .about-work-title {
@@ -114,11 +115,11 @@
   margin-top: 0.9rem !important;
 }
 
-/* 番号の下の「技術解説」「GitHub」リンク。番号と同じ大きさの文字で、青文字だけ（下線なし） */
+/* タイトルの下の「技術解説」「GitHub」リンク。番号と同じ大きさの文字で、青文字だけ（下線なし） */
 .md-typeset .about-work p.about-work-links {
   font-size: 13px !important;
   line-height: 1.6 !important;
-  margin: 0 0 0.45rem 0 !important;
+  margin: 0 0 0.7rem 0.74rem !important;
 }
 .md-typeset .about-work p.about-work-links .arrow-link i {
   margin-right: 0.15em;

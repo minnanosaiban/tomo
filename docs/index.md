@@ -142,7 +142,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データの検証析</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データの検証</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>

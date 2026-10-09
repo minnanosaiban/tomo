@@ -139,7 +139,7 @@ Fama-French、Carhart、Q-factor など機関投資家のクオンツモデル�
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます（動かし方はリポジトリの README 参照）。
+本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この記事と同じものが再現できます（動かし方はリポジトリの README 参照）。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/02-02_multifactor" target="_blank" rel="noopener">

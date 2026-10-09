@@ -92,6 +92,16 @@
 .md-typeset .about-work .about-work-title .gh-link:hover {
   color: var(--md-link-color);
 }
+/* タイトル自体のリンク（制作物の公開ページへ）。普段は見出しの色のまま、ホバーでリンク色＋下線 */
+.md-typeset .about-work .about-work-title .work-link {
+  color: inherit;
+  text-decoration: none;
+}
+.md-typeset .about-work .about-work-title .work-link:hover {
+  color: var(--md-link-color);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 .md-typeset .about-work p:has(> .about-btn),
 .md-typeset .about-work p:has(> .arrow-link) {
   margin-top: 0.9rem !important;

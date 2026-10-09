@@ -150,9 +150,6 @@ hide:
 無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
 </p>
 <p class="fig-meta">使用技術：Python・pandas・matplotlib・Streamlit</p>
-<p>
-<a class="arrow-link" href="blog/">検証記事一覧はこちら</a>
-</p>
 </div>
 
 <div class="about-work width-40" markdown>

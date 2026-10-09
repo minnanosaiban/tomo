@@ -112,7 +112,7 @@ twitter_card: summary_large_image
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**類似決算検索の計算方法（10 次元特徴量・z-score 正規化・コサイン類似度）**は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。
+本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**類似決算検索の計算方法（10 次元特徴量・z-score 正規化・コサイン類似度）**は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/03-01_similarity" target="_blank" rel="noopener">

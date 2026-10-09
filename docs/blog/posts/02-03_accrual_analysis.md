@@ -163,7 +163,7 @@ PEG・ROE やマルチファクター採点は、銘柄を「量」と「水準�
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**アクルーアル比率の計算方法**（Sloan 1996 の式・補助指標 CF/純利益・業種特性・ノイズフィルタ・Sloan 戦略のしきい値）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。
+本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**アクルーアル比率の計算方法**（Sloan 1996 の式・補助指標 CF/純利益・業種特性・ノイズフィルタ・Sloan 戦略のしきい値）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/02-03_accrual" target="_blank" rel="noopener">

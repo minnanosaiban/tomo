@@ -42,7 +42,7 @@ twitter_card: summary_large_image
 
 ## 金融庁 EDINET から有報を取得する
 
-有報は、**PDF と XBRL**（タグ付きデータ）の二つの形式で入手することができます。XBRL は EDINET 公式 API で取得できます。`type=1` で XBRL 書類一式、`type=5` で XBRL を CSV 化したデータ一式が取得でき、本連載では `type=5` を使用します。
+有報は、**PDF と XBRL**（タグ付きデータ）の二つの形式で入手することができます。XBRL は EDINET 公式 API で取得できます。`type=1` で XBRL 書類一式、`type=5` で XBRL を CSV 化したデータ一式が取得でき、この分析ノートでは `type=5` を使用します。
 
 業績推移はヤフーファイナンスや株探などのサービスで確認できますが、期間は3～5年です。有報を遡って足せば **10 年超**の業績時系列も組めます。また、データを取得することで、銘柄の業績を比較した可視化が可能です。
 
@@ -86,7 +86,7 @@ soup = BeautifulSoup(requests.get(url, headers={"User-Agent": "Mozilla/5.0"}).te
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます（動かし方はリポジトリの README 参照）。
+本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます（動かし方はリポジトリの README 参照）。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/01-02_1_chart_multi" target="_blank" rel="noopener">

@@ -1,6 +1,6 @@
 ---
 title: 株価分析 ― ENEOS株主が無料データで読み解く決算・XBRL・機械学習
-description: ENEOS株主が、無料で手に入る株価・決算短信・有価証券報告書をもとに元売株・資源株を分析する連載です。チャートとアプリのPythonコードはGitHubで公開しています。
+description: ENEOS株主が、無料で手に入る株価・決算短信・有価証券報告書をもとに元売株・資源株を分析する分析ノートです。チャートとアプリのPythonコードはGitHubで公開しています。
 url: https://minnanosaiban.github.io/tomo/blog/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
 twitter_card: summary
@@ -18,12 +18,12 @@ twitter_card: summary
 <p class="blog-main-title">株価分析</p>
 
 <p>
-私はＥＮＥＯＳの株主で、株主総会にも出席しています。無料で手に入る株価・決算短信・有価証券報告書をもとに、主に元売株・資源株を分析しています。本連載のチャートやアプリの Python コードは GitHub に公開しています。
+私はＥＮＥＯＳの株主で、株主総会にも出席しています。無料で手に入る株価・決算短信・有価証券報告書をもとに、主に元売株・資源株を分析しています。この分析ノートのチャートやアプリの Python コードは GitHub に公開しています。
 </p>
 
 ## 関連サイト：有報ナビ
 
-連載で扱う有価証券報告書のデータを、ブラウザで**探して・比べられる**サイトを公開しています。ＥＮＥＯＳ以外の会社も、業種や財務指標の条件で絞り込んで見られます。
+分析ノートで扱う有価証券報告書のデータを、ブラウザで**探して・比べられる**サイトを公開しています。ＥＮＥＯＳ以外の会社も、業種や財務指標の条件で絞り込んで見られます。
 
 <div class="toc-grid" style="margin-top: 0.8rem;">
 <a href="https://minnanosaiban.github.io/company-analysis/" class="toc-card" target="_blank" rel="noopener">
@@ -68,7 +68,7 @@ twitter_card: summary
 </a>
 </div>
 
-## 連載目次
+## 分析ノート目次
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> 無料データを取得編</p>
 <div class="toc-grid">

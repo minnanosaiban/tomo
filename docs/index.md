@@ -142,7 +142,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データの分析連載</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データの検証析</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
@@ -156,7 +156,7 @@ hide:
 <li><span class="n">2-6</span><a href="blog/posts/02-06_segment_core_stocks/">コングロマリット・ディスカウント</a><span class="d">総合商社・ＥＮＥＯＳをセグメントで読み解く</span></li>
 </ul>
 <p>
-<a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
+<a class="arrow-link" href="blog/">検証記事一覧はこちら</a>
 </p>
 </div>
 

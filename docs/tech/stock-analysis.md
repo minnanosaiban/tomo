@@ -4,11 +4,11 @@ title: 有報ナビ
 
 # 有報ナビ
 
-有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイト「**有報ナビ**」の解説です。連載「株価分析」（決算短信・有価証券報告書・株価データを使った分析）の関連サイトです。
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイト「**有報ナビ**」の解説です。分析ノート「株価分析」（決算短信・有価証券報告書・株価データを使った分析）の関連サイトです。
 
-- 連載：[株価分析](../blog/index.md)（記事の一覧）
+- 分析ノート：[株価分析](../blog/index.md)（記事の一覧）
 - 公開サイト：[minnanosaiban.github.io/company-analysis](https://minnanosaiban.github.io/company-analysis/)
-- ソース：[github.com/minnanosaiban/company-analysis](https://github.com/minnanosaiban/company-analysis)（連載の記事ごとのコードは [github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)）
+- ソース：[github.com/minnanosaiban/company-analysis](https://github.com/minnanosaiban/company-analysis)（分析ノートの記事ごとのコードは [github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)）
 
 このページは、有報ナビの使い方と、その仕組み、作るうえで判断したことの解説です。
 
@@ -16,7 +16,7 @@ title: 有報ナビ
 
 東証の主要企業（約500社）の**有価証券報告書**（EDINET）をもとに、企業を探し、セグメント・財務指標・キャッシュフローを比べられるサイトです。ブラウザだけで動き、サーバーはありません。
 
-連載で扱った分析のうち、**有価証券報告書だけで足りるもの**（事業の構成、収益性、キャッシュフローの型）を、誰でも触れる形にしました。「ＥＮＥＯＳ以外の会社も見てみたい」という読者の方が、自分で探せることを目指しています。
+分析ノートで扱った分析のうち、**有価証券報告書だけで足りるもの**（事業の構成、収益性、キャッシュフローの型）を、誰でも触れる形にしました。「ＥＮＥＯＳ以外の会社も見てみたい」という読者の方が、自分で探せることを目指しています。
 
 | ページ | できること |
 |---|---|

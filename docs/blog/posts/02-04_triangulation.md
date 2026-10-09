@@ -152,7 +152,7 @@ CG（+311% と +42%）だけ見れば両者とも「強気」ですが、**意�
 FY2025 本決算を経た 8 社を、予想検証（GA・CG）とアクルーアルで並べたのが下の表です。
 
 <p class="fig-meta"><i class="fa-solid fa-expand"></i> クリックで拡大</p>
-<p class="fig-meta">使用データ<br><i class="fa-solid fa-caret-right"></i>TDnet（決算短信 XBRL）：予想検証 GA・CG（2026年3月期本決算＋翌期会社予想）<br><i class="fa-solid fa-caret-right"></i>証券会社のアプリ：コンセンサスEPS(予)<br><i class="fa-solid fa-caret-right"></i>EDINET（有報 XBRL）：アクルーアル（連載2-3の7年平均、2019〜2025年3月期）</p>
+<p class="fig-meta">使用データ<br><i class="fa-solid fa-caret-right"></i>TDnet（決算短信 XBRL）：予想検証 GA・CG（2026年3月期本決算＋翌期会社予想）<br><i class="fa-solid fa-caret-right"></i>証券会社のアプリ：コンセンサスEPS(予)<br><i class="fa-solid fa-caret-right"></i>EDINET（有報 XBRL）：アクルーアル（分析ノート2-3の7年平均、2019〜2025年3月期）</p>
 
 ![総合商社 8 社 予想検証 × アクルーアル](img/02-04_triangulation/05_trading_companies.png){width="1200"}
 
@@ -182,7 +182,7 @@ FY2025 本決算を経た 8 社を、予想検証（GA・CG）とアクルーア
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**予想検証の計算方法**（3 ソースの統合・3 ペアの乖離率・4 象限分類・アクルーアルとのクロス）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます。
+本記事のチャート画像・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。**予想検証の計算方法**（3 ソースの統合・3 ペアの乖離率・4 象限分類・アクルーアルとのクロス）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/02-04_triangulation" target="_blank" rel="noopener">

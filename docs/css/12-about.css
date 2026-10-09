@@ -102,7 +102,7 @@
 .md-typeset .about-work .about-work-title .work-link:hover {
   color: var(--md-link-color);
 }
-/* 制作物の項目内のリンク（技術解説へ・GitHubへ・連載の全記事一覧）は青文字だけ。下線は付けない */
+/* 制作物の項目内のリンク（技術解説へ・GitHubへ・分析ノートの全記事一覧）は青文字だけ。下線は付けない */
 .md-typeset .about-work .arrow-link,
 .md-typeset .about-work .arrow-link:hover {
   text-decoration: none;

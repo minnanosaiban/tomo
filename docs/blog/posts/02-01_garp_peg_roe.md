@@ -143,7 +143,7 @@ GARP だけ見ればコスモが魅力的です。では直近 6 ヶ月の株価
 
 ## <i class="fa-brands fa-github"></i> Python コード
 
-本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、本連載と同じものが再現できます（動かし方はリポジトリの README 参照）。
+本記事のチャート画像・アプリ・データ取得・成形スクリプトは、すべて **GitHub に公開**しています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この分析ノートと同じものが再現できます（動かし方はリポジトリの README 参照）。
 
 <div class="repo-link-wrap">
 <a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/02-01_PEG_ROE" target="_blank" rel="noopener">

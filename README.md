@@ -2,7 +2,7 @@
 
 **https://minnanosaiban.github.io/tomo/**
 
-通報者本人が作った制作物の紹介（ポートフォリオ）と、決算・株価データ分析の連載を載せたサイトです。MkDocs Material 製で、GitHub Pages で公開しています。
+通報者本人が作った制作物の紹介（ポートフォリオ）と、決算・株価データの分析ノートを載せたサイトです。MkDocs Material 製で、GitHub Pages で公開しています。
 
 ## 載せているもの
 
@@ -10,7 +10,7 @@
 |---|---|
 | Home（`docs/index.md`） | 制作物の一覧と運営者について |
 | 技術解説（`docs/tech/`） | 各制作物の仕組みと、作るうえで判断したことの解説 |
-| 株価分析（`docs/blog/`） | 決算・株価データ分析の連載 |
+| 株価分析（`docs/blog/`） | 決算・株価データの分析ノート |
 
 ### 技術解説の一覧
 
@@ -43,7 +43,7 @@
 docs/
   index.md        Home
   tech/           技術解説
-  blog/           決算・株価データ分析の連載
+  blog/           決算・株価データの分析ノート
   img/            図（SVG）・カード画像
   css/ js/        スタイルとスクリプト
 overrides/        MkDocs Material のテンプレート上書き・フック

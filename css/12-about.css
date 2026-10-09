@@ -114,6 +114,16 @@
   margin-top: 0.9rem !important;
 }
 
+/* 番号の下の「技術解説」「GitHub」リンク。番号と同じ大きさの文字で、青文字だけ（下線なし） */
+.md-typeset .about-work p.about-work-links {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  margin: 0 0 0.45rem 0 !important;
+}
+.md-typeset .about-work p.about-work-links .arrow-link i {
+  margin-right: 0.15em;
+}
+
 /* 控えめボタン（無彩色チップ。ライト/ダークは Material 変数が吸収。
    旧: .x-share と同系だったが、.x-share は2026-08-20にサイトの青へ変更済み）。
    2026-09-23: ホバーで少し持ち上がる（box-shadow＋translateY）反応を追加、

@@ -46,7 +46,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">RelaGrid　関係図</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">関係図エディタ RelaGrid</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/relagrid/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -94,19 +94,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。傍聴で応援している人たちのニーズから生まれました。掲載希望は boutyounavi@gmail.com へ。
-</p>
-<p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-analyzer/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -118,7 +106,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -130,19 +118,19 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
-<a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+<a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
+民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。傍聴で応援している人たちのニーズから生まれました。掲載希望は boutyounavi@gmail.com へ。
 </p>
-<p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
+<p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="blog/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
@@ -153,7 +141,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">12</span>株価データ取得ツール</p>
+<p class="about-work-title"><span class="about-work-no">11</span>株価データ取得ツール</p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/data-hub/"><i class="bi bi-tools"></i> 技術解説</a>
 </p>
@@ -161,6 +149,18 @@ hide:
 決算短信・有価証券報告書・株価・適時開示などのデータ取得と、データ品質のチェックを、ひとつの画面にまとめたツールです。データはすべてこのパソコンの中だけに保存されます。
 </p>
 <p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">12</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 </div>
 
 </div>

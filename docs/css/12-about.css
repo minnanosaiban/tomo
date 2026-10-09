@@ -102,6 +102,10 @@
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+/* 「技術解説へ」「GitHubへ」が縦に並ぶときは、2つ目の上の余白を詰める */
+.md-typeset .about-work p:has(> .arrow-link) + p:has(> .arrow-link) {
+  margin-top: 0.35rem !important;
+}
 .md-typeset .about-work p:has(> .about-btn),
 .md-typeset .about-work p:has(> .arrow-link) {
   margin-top: 0.9rem !important;

@@ -23,7 +23,7 @@ hide:
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０１</p>
-<p class="about-work-title"><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 ＰＤＦの墨消し・検索、手書き風の書き込み、結合・分割・回転、メタデータの編集・削除を行えるツールです。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
@@ -31,11 +31,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/pdf-tools/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０２</p>
-<p class="about-work-title"><a class="work-link" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener">サイドノート作成</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener">サイドノート作成</a> <a class="gh-link" aria-label="開く" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 文章や画像にコメントをサイドに添えてＰＤＦ化できるツールです。ＭＤファイルは様々なデザインで表示できます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
@@ -43,11 +46,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/sidenote/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０３</p>
-<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">RelaGrid　関係図</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">RelaGrid　関係図</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 グリッドに人物や会社を置いて矢印でつなぐ、関係図エディタです。ＰＮＧやＳＶＧのほか、Ｘに投稿しやすい縦画像でも書き出せます。ブラウザだけで動作します。
 </p>
@@ -55,11 +61,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/relagrid/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０４</p>
-<p class="about-work-title"><a class="work-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener">スキャン墨消し</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener">スキャン墨消し</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 スキャンしたPDF・画像を OCR して、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
 </p>
@@ -67,11 +76,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/scan-ocr/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０５</p>
-<p class="about-work-title"><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショＰＤＦ化</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショＰＤＦ化</a> <a class="gh-link" aria-label="開く" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 スマホのスクリーンショットを２×２でＡ４に並べ、整理しやすいＰＤＦにまとめます。メールやチャットにその場でそのまま送れます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
@@ -79,11 +91,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/screenshot-pdf/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０６</p>
-<p class="about-work-title"><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Ｘスクショ管理ツール</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Ｘスクショ管理ツール</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 Ｘ（旧Twitter）の投稿を後から確認できる形で保存・整理するためのデスクトップアプリです。嫌がらせの証拠保全に活用できます。処理はすべてローカルのＰＣ内で完結し、外部には送信されません。
 </p>
@@ -91,11 +106,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/screenshot-x/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０７</p>
-<p class="about-work-title"><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。傍聴で応援している人たちのニーズから生まれました。掲載希望は boutyounavi@gmail.com へ。
 </p>
@@ -103,11 +121,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０８</p>
-<p class="about-work-title"><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 ＴＯＥＩＣ対策向けの英語学習アプリです。文の構造（ＳＶＯＣ・文型・時制）の解説に加え、英文・単語のグループ分け、関係図・絵文字イラスト表示、読み上げでのシャドーイングに対応しています。
 </p>
@@ -115,11 +136,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/eng-analyzer/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">０９</p>
-<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 自身が公開したウェブサイト「ＥＮＥＯＳの内部通報制度をめぐる訴訟について」は Zensical で作成しています。ミニマルデザインを取り入れ、Zensical の標準機能ではない部分は JS/CSS で実装しています。
 </p>
@@ -127,11 +151,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">１０</p>
-<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
 </p>
@@ -139,11 +166,14 @@ hide:
 <p>
 <a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説へ</a>
 </p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
+</p>
 </div>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-num">１１</p>
-<p class="about-work-title"><a class="work-link" href="blog/">決算・株価データの分析連載</a> <a class="gh-link" aria-label="GitHub" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></p>
+<p class="about-work-title"><a class="work-link" href="blog/">決算・株価データの分析連載</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p>
 無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
 </p>
@@ -155,6 +185,9 @@ hide:
 </ul>
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
+</p>
+<p>
+<a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
 

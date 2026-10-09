@@ -22,7 +22,7 @@ hide:
 <p class="about-sec-title width-40">制作物</p>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０１</span><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/pdf-tools/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -34,7 +34,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０２</span><a class="work-link" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener">サイドノート作成</a> <a class="gh-link" aria-label="開く" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener">サイドノート作成</a> <a class="gh-link" aria-label="開く" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/sidenote/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -46,7 +46,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０３</span><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">RelaGrid　関係図</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener">RelaGrid　関係図</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/relagrid/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -58,7 +58,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０４</span><a class="work-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener">スキャン墨消し</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">04</span><a class="work-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener">スキャン墨消し</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/scan-ocr/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -70,7 +70,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０５</span><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショＰＤＦ化</a> <a class="gh-link" aria-label="開く" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">05</span><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショＰＤＦ化</a> <a class="gh-link" aria-label="開く" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/screenshot-pdf/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -82,7 +82,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０６</span><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Ｘスクショ管理ツール</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">06</span><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Ｘスクショ管理ツール</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/screenshot-x/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -94,7 +94,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０７</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -106,7 +106,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０８</span><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-analyzer/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -118,7 +118,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">０９</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -130,7 +130,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">１０</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -142,7 +142,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">１１</span><a class="work-link" href="blog/">決算・株価データの分析連載</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データの分析連載</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
@@ -161,7 +161,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">１２</span>株価データ取得ツール</p>
+<p class="about-work-title"><span class="about-work-no">12</span>株価データ取得ツール</p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/data-hub/"><i class="bi bi-tools"></i> 技術解説</a>
 </p>

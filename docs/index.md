@@ -30,8 +30,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・PDF.js・pdf-lib（Cloudflare Pages）</p>
 <p>
 <a class="arrow-link" href="tech/pdf-tools/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -45,8 +43,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・PDF.js（Cloudflare Pages）</p>
 <p>
 <a class="arrow-link" href="tech/sidenote/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -60,8 +56,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript（GitHub Pages）</p>
 <p>
 <a class="arrow-link" href="tech/relagrid/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -75,8 +69,6 @@ hide:
 <p class="fig-meta">使用技術：Python（ローカルＷｅｂアプリ）</p>
 <p>
 <a class="arrow-link" href="tech/scan-ocr/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -90,8 +82,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・pdf-lib（Cloudflare Pages）</p>
 <p>
 <a class="arrow-link" href="tech/screenshot-pdf/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -105,8 +95,6 @@ hide:
 <p class="fig-meta">使用技術：Python・Playwright・Tkinter（PyInstallerでexe化・GitHub Releases配布）</p>
 <p>
 <a class="arrow-link" href="tech/screenshot-x/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -120,8 +108,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
 <p>
 <a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -135,8 +121,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・Gemini API・Web Crypto（AES-GCM）・PWA（Cloudflare Workers・D1）</p>
 <p>
 <a class="arrow-link" href="tech/eng-analyzer/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -150,8 +134,6 @@ hide:
 <p class="fig-meta">使用技術：Zensical（MkDocs互換）・JavaScript・GitHub Pages</p>
 <p>
 <a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -165,8 +147,6 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 <p>
 <a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説へ</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>
@@ -185,8 +165,6 @@ hide:
 </ul>
 <p>
 <a class="arrow-link" href="blog/">連載の全記事一覧はこちら</a>
-</p>
-<p>
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHubへ</a>
 </p>
 </div>

@@ -92,19 +92,22 @@
 .md-typeset .about-work .about-work-title .gh-link:hover {
   color: var(--md-link-color);
 }
-/* タイトル自体のリンク（制作物の公開ページへ）。普段は見出しの色のまま、ホバーでリンク色＋下線 */
+/* タイトル自体のリンク（制作物の公開ページへ）。普段は見出しの色のまま、ホバーでリンク色（下線なし） */
 .md-typeset .about-work .about-work-title .work-link {
   color: inherit;
   text-decoration: none;
 }
 .md-typeset .about-work .about-work-title .work-link:hover {
   color: var(--md-link-color);
-  text-decoration: underline;
-  text-underline-offset: 6px;
 }
-/* 「技術解説へ」「GitHubへ」が縦に並ぶときは、2つ目の上の余白を詰める */
-.md-typeset .about-work p:has(> .arrow-link) + p:has(> .arrow-link) {
-  margin-top: 0.35rem !important;
+/* 制作物の項目内のリンク（技術解説へ・GitHubへ・連載の全記事一覧）は青文字だけ。下線は付けない */
+.md-typeset .about-work .arrow-link,
+.md-typeset .about-work .arrow-link:hover {
+  text-decoration: none;
+}
+/* 「技術解説へ」「GitHubへ」は同じ段落に横並びで置く。2つ目の左に間隔を取る */
+.md-typeset .about-work .arrow-link + .arrow-link {
+  margin-left: 1.6em;
 }
 .md-typeset .about-work p:has(> .about-btn),
 .md-typeset .about-work p:has(> .arrow-link) {

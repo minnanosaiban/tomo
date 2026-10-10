@@ -94,31 +94,19 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文構造アナライザー</a> <a class="gh-link" aria-label="開く" href="https://eng-analyzer.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/eng-analyzer/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/eng-analyzer" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-ＴＯＥＩＣ対策向けの英語学習アプリです。文の構造（ＳＶＯＣ・文型・時制）の解説に加え、英文・単語のグループ分け、関係図・絵文字イラスト表示、読み上げでのシャドーイングに対応しています。
-</p>
-<p class="fig-meta">使用技術：JavaScript・Gemini API・Web Crypto（AES-GCM）・PWA（Cloudflare Workers・D1）</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-study/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。英文構造アナライザーを試作として作り直し、Ｇｅｍｉｎｉでの解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Ｃｌａｕｄｅから英文を預ける受信箱に対応しています。
+ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Ｇｅｍｉｎｉでの解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Ｃｌａｕｄｅから英文を預ける受信箱に対応しています。
 </p>
 <p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -130,7 +118,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -142,7 +130,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">11</span><a class="work-link" href="blog/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="blog/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="blog/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
@@ -153,7 +141,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">12</span>株価データ取得ツール</p>
+<p class="about-work-title"><span class="about-work-no">11</span>株価データ取得ツール</p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/data-hub/"><i class="bi bi-tools"></i> 技術解説</a>
 </p>
@@ -164,7 +152,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">13</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">12</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>

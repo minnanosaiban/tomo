@@ -3,35 +3,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="ランダムフォレストで決算指標からCARの上下を予測するも失敗。その過程で見えた「特徴量重要度」という指標の落とし穴を解説します。">
+        <meta name="description" content="通報者本人が作成した、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データの検証です。">
       
       
       
-        <link rel="canonical" href="https://minnanosaiban.github.io/tomo/blog/posts/03-04_random_forest/">
+        <link rel="canonical" href="https://minnanosaiban.github.io/tomo/tech/eng-study/">
       
       
-        <link rel="prev" href="../03-03_earnings_clustering/">
+        <link rel="prev" href="../eng-analyzer/">
       
       
-        <link rel="next" href="../03-05_price_clustering/">
+        <link rel="next" href="../hotline/">
       
       
         
       
       
-      <link rel="icon" href="../../../img/favicon.png">
+      <link rel="icon" href="../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
   
-    <title>ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ - サイト運営者の制作物について</title>
+    <title>英語学習アプリ - サイト運営者の制作物について</title>
   
 
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,21 +50,21 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/01-color.css">
+      <link rel="stylesheet" href="../../css/01-color.css">
     
-      <link rel="stylesheet" href="../../../css/02-layout.css">
+      <link rel="stylesheet" href="../../css/02-layout.css">
     
-      <link rel="stylesheet" href="../../../css/03-typeset.css">
+      <link rel="stylesheet" href="../../css/03-typeset.css">
     
-      <link rel="stylesheet" href="../../../css/05-card.css">
+      <link rel="stylesheet" href="../../css/05-card.css">
     
-      <link rel="stylesheet" href="../../../css/06-link-text.css">
+      <link rel="stylesheet" href="../../css/06-link-text.css">
     
-      <link rel="stylesheet" href="../../../css/07-link-button.css">
+      <link rel="stylesheet" href="../../css/07-link-button.css">
     
-      <link rel="stylesheet" href="../../../css/10-blog-reset.css">
+      <link rel="stylesheet" href="../../css/10-blog-reset.css">
     
-      <link rel="stylesheet" href="../../../css/12-about.css">
+      <link rel="stylesheet" href="../../css/12-about.css">
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;family=Noto+Serif+JP:wght@400;700&amp;display=swap">
     
@@ -72,7 +72,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,25 +82,19 @@
   <meta property="og:site_name" content="サイト運営者の制作物について">
     
     
-      <style>
-        .md-typeset h1 { font-size: 2em !important; font-weight: 300 !important; line-height: 1.3 !important; margin: 0 0 1.25em 0 !important; }
-        .md-nav--secondary .md-nav__item > .md-nav,
-        .md-nav--secondary .md-nav__item > .md-nav .md-nav__item > .md-nav { display: none !important; }
-      </style>
-    
   
   
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ">
-    <meta name="twitter:description" content="ランダムフォレストで決算指標からCARの上下を予測するも失敗。その過程で見えた「特徴量重要度」という指標の落とし穴を解説します。">
-    <meta name="twitter:image" content="https://minnanosaiban.github.io/tomo/blog/posts/img/03-04_random_forest/00_thumbnail.png">
-    <meta property="og:title" content="ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ">
-    <meta property="og:description" content="ランダムフォレストで決算指標からCARの上下を予測するも失敗。その過程で見えた「特徴量重要度」という指標の落とし穴を解説します。">
-    <meta property="og:image" content="https://minnanosaiban.github.io/tomo/blog/posts/img/03-04_random_forest/00_thumbnail.png">
-    <meta property="og:url" content="https://minnanosaiban.github.io/tomo/blog/posts/03-04_random_forest/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="英語学習アプリ">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="../..">
+    <meta property="og:title" content="英語学習アプリ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="../..">
+    <meta property="og:url" content="https://example.com">
   
 
-  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -120,7 +114,7 @@
     
     
     
-    <body class="blog-post-page blog-article-page" dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -153,7 +147,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            <a href="../../.." class="header-site-link">
+            <a href="../.." class="header-site-link">
               サイト運営者の制作物について
             </a>
           </span>
@@ -161,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ
+              英語学習アプリ
             
           </span>
         </div>
@@ -230,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   Home
@@ -245,132 +239,6 @@
   
   
   
-  
-    
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      <li class="md-tabs__item md-tabs__item--dropdown">
-        <details class="md-tabs__dropdown-details">
-          <summary class="md-tabs__link">
-            
-  
-  技術解説
-
-            <i class="bi bi-chevron-down md-tabs__caret" aria-hidden="true"></i>
-          </summary>
-          <ul class="md-tabs__dropdown">
-            
-              <li>
-                <a href="../../../tech/pdf-tools/" class="md-tabs__dropdown-link">
-                  ＰＤＦツール
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/sidenote/" class="md-tabs__dropdown-link">
-                  サイドノート作成
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/relagrid/" class="md-tabs__dropdown-link">
-                  関係図エディタ RelaGrid
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/scan-ocr/" class="md-tabs__dropdown-link">
-                  スキャン墨消し
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/screenshot-pdf/" class="md-tabs__dropdown-link">
-                  スクショＰＤＦ化
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/screenshot-x/" class="md-tabs__dropdown-link">
-                  Ｘスクショ管理ツール
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/eng-analyzer/" class="md-tabs__dropdown-link">
-                  英文構造アナライザー
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/eng-study/" class="md-tabs__dropdown-link">
-                  英語学習アプリ
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/hotline/" class="md-tabs__dropdown-link">
-                  ウェブサイトデザイン
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/court-calendar/" class="md-tabs__dropdown-link">
-                  応援傍聴ナビ
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/data-hub/" class="md-tabs__dropdown-link">
-                  株価データ取得ツール
-                </a>
-              </li>
-            
-              <li>
-                <a href="../../../tech/stock-analysis/" class="md-tabs__dropdown-link">
-                  有報ナビ
-                </a>
-              </li>
-            
-          </ul>
-        </details>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
     
   
   
@@ -378,7 +246,19 @@
       
       
         
-          
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -398,6 +278,120 @@
           <summary class="md-tabs__link">
             
   
+  技術解説
+
+            <i class="bi bi-chevron-down md-tabs__caret" aria-hidden="true"></i>
+          </summary>
+          <ul class="md-tabs__dropdown">
+            
+              <li>
+                <a href="../pdf-tools/" class="md-tabs__dropdown-link">
+                  ＰＤＦツール
+                </a>
+              </li>
+            
+              <li>
+                <a href="../sidenote/" class="md-tabs__dropdown-link">
+                  サイドノート作成
+                </a>
+              </li>
+            
+              <li>
+                <a href="../relagrid/" class="md-tabs__dropdown-link">
+                  関係図エディタ RelaGrid
+                </a>
+              </li>
+            
+              <li>
+                <a href="../scan-ocr/" class="md-tabs__dropdown-link">
+                  スキャン墨消し
+                </a>
+              </li>
+            
+              <li>
+                <a href="../screenshot-pdf/" class="md-tabs__dropdown-link">
+                  スクショＰＤＦ化
+                </a>
+              </li>
+            
+              <li>
+                <a href="../screenshot-x/" class="md-tabs__dropdown-link">
+                  Ｘスクショ管理ツール
+                </a>
+              </li>
+            
+              <li>
+                <a href="../eng-analyzer/" class="md-tabs__dropdown-link">
+                  英文構造アナライザー
+                </a>
+              </li>
+            
+              <li>
+                <a href="./" class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+                  英語学習アプリ
+                </a>
+              </li>
+            
+              <li>
+                <a href="../hotline/" class="md-tabs__dropdown-link">
+                  ウェブサイトデザイン
+                </a>
+              </li>
+            
+              <li>
+                <a href="../court-calendar/" class="md-tabs__dropdown-link">
+                  応援傍聴ナビ
+                </a>
+              </li>
+            
+              <li>
+                <a href="../data-hub/" class="md-tabs__dropdown-link">
+                  株価データ取得ツール
+                </a>
+              </li>
+            
+              <li>
+                <a href="../stock-analysis/" class="md-tabs__dropdown-link">
+                  有報ナビ
+                </a>
+              </li>
+            
+          </ul>
+        </details>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--dropdown">
+        <details class="md-tabs__dropdown-details">
+          <summary class="md-tabs__link">
+            
+  
   株価分析
 
             <i class="bi bi-chevron-down md-tabs__caret" aria-hidden="true"></i>
@@ -405,31 +399,31 @@
           <ul class="md-tabs__dropdown">
             
               <li>
-                <a href="../../" class="md-tabs__dropdown-link">
+                <a href="../../blog/" class="md-tabs__dropdown-link">
                   株価分析 ― ENEOS株主が無料データで読み解く決算・XBRL・機械学習
                 </a>
               </li>
             
               <li>
-                <a href="../../.." class="md-tabs__dropdown-link">
+                <a href="../.." class="md-tabs__dropdown-link">
                   <i class="fa-solid fa-layer-group"></i> 無料データを取得編
                 </a>
               </li>
             
               <li>
-                <a href="../../.." class="md-tabs__dropdown-link">
+                <a href="../.." class="md-tabs__dropdown-link">
                   <i class="fa-solid fa-layer-group"></i> 決算データで分析編
                 </a>
               </li>
             
               <li>
-                <a href="../../.." class="md-tabs__dropdown-link md-tabs__dropdown-link--active">
+                <a href="../.." class="md-tabs__dropdown-link">
                   <i class="fa-solid fa-layer-group"></i> 機械学習チャレンジ編
                 </a>
               </li>
             
               <li>
-                <a href="../../glossary/" class="md-tabs__dropdown-link">
+                <a href="../../blog/glossary/" class="md-tabs__dropdown-link">
                   <i class="fa-solid fa-layer-group"></i> 用語集
                 </a>
               </li>
@@ -469,9 +463,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="サイト運営者の制作物について" class="md-nav__button md-logo" aria-label="サイト運営者の制作物について" data-md-component="logo">
+    <a href="../.." title="サイト運営者の制作物について" class="md-nav__button md-logo" aria-label="サイト運営者の制作物について" data-md-component="logo">
       
-  <img src="../../../img/card1.png" alt="logo">
+  <img src="../../img/card1.png" alt="logo">
 
     </a>
     サイト運営者の制作物について
@@ -511,7 +505,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../.." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   
@@ -554,8 +548,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -587,21 +583,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2">
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -619,7 +616,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -637,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/pdf-tools/" class="md-nav__link">
+      <a href="../pdf-tools/" class="md-nav__link">
         
   
   
@@ -665,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/sidenote/" class="md-nav__link">
+      <a href="../sidenote/" class="md-nav__link">
         
   
   
@@ -693,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/relagrid/" class="md-nav__link">
+      <a href="../relagrid/" class="md-nav__link">
         
   
   
@@ -721,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/scan-ocr/" class="md-nav__link">
+      <a href="../scan-ocr/" class="md-nav__link">
         
   
   
@@ -749,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/screenshot-pdf/" class="md-nav__link">
+      <a href="../screenshot-pdf/" class="md-nav__link">
         
   
   
@@ -777,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/screenshot-x/" class="md-nav__link">
+      <a href="../screenshot-x/" class="md-nav__link">
         
   
   
@@ -805,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/eng-analyzer/" class="md-nav__link">
+      <a href="../eng-analyzer/" class="md-nav__link">
         
   
   
@@ -830,10 +827,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../tech/eng-study/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    英語学習アプリ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -849,6 +873,159 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        試作から、何を変えたか
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4つの単位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        登録
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="登録">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samples-iu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        samples のＩＵは、位置の番号だけを答えさせて作った
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発音記号（ＩＰＡ）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学習対象選択
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学習
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        暗号化したクラウド同期と受信箱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="暗号化したクラウド同期と受信箱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受信箱
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作るなかで直したこと
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限界
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -861,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/hotline/" class="md-nav__link">
+      <a href="../hotline/" class="md-nav__link">
         
   
   
@@ -889,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/court-calendar/" class="md-nav__link">
+      <a href="../court-calendar/" class="md-nav__link">
         
   
   
@@ -917,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/data-hub/" class="md-nav__link">
+      <a href="../data-hub/" class="md-nav__link">
         
   
   
@@ -945,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/stock-analysis/" class="md-nav__link">
+      <a href="../stock-analysis/" class="md-nav__link">
         
   
   
@@ -977,8 +1154,6 @@
       
   
   
-    
-  
   
   
     
@@ -1000,23 +1175,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../blog/" class="md-nav__link ">
               
   
   
@@ -1034,13 +1208,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1076,13 +1250,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1091,7 +1262,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2">
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -1127,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01_get_stock_prices/" class="md-nav__link">
+      <a href="../../blog/posts/01-01_get_stock_prices/" class="md-nav__link">
         
   
   
@@ -1155,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02_collect_other_data/" class="md-nav__link">
+      <a href="../../blog/posts/01-02_collect_other_data/" class="md-nav__link">
         
   
   
@@ -1183,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03_xbrl_to_json/" class="md-nav__link">
+      <a href="../../blog/posts/01-03_xbrl_to_json/" class="md-nav__link">
         
   
   
@@ -1211,7 +1382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EX-03_data_hub/" class="md-nav__link">
+      <a href="../../blog/posts/EX-03_data_hub/" class="md-nav__link">
         
   
   
@@ -1271,13 +1442,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1286,7 +1454,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3">
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1322,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-01_garp_peg_roe/" class="md-nav__link">
+      <a href="../../blog/posts/02-01_garp_peg_roe/" class="md-nav__link">
         
   
   
@@ -1350,7 +1518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-02_multifactor_scoreboard/" class="md-nav__link">
+      <a href="../../blog/posts/02-02_multifactor_scoreboard/" class="md-nav__link">
         
   
   
@@ -1378,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-03_accrual_analysis/" class="md-nav__link">
+      <a href="../../blog/posts/02-03_accrual_analysis/" class="md-nav__link">
         
   
   
@@ -1406,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-04_triangulation/" class="md-nav__link">
+      <a href="../../blog/posts/02-04_triangulation/" class="md-nav__link">
         
   
   
@@ -1434,7 +1602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-05_segment_analysis/" class="md-nav__link">
+      <a href="../../blog/posts/02-05_segment_analysis/" class="md-nav__link">
         
   
   
@@ -1462,7 +1630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-06_segment_core_stocks/" class="md-nav__link">
+      <a href="../../blog/posts/02-06_segment_core_stocks/" class="md-nav__link">
         
   
   
@@ -1490,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-07_narrative_car/" class="md-nav__link">
+      <a href="../../blog/posts/02-07_narrative_car/" class="md-nav__link">
         
   
   
@@ -1518,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-08_enterprise_value/" class="md-nav__link">
+      <a href="../../blog/posts/02-08_enterprise_value/" class="md-nav__link">
         
   
   
@@ -1551,10 +1719,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1575,21 +1741,20 @@
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4">
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1607,7 +1772,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1625,7 +1790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-01_similar_earnings_search/" class="md-nav__link">
+      <a href="../../blog/posts/03-01_similar_earnings_search/" class="md-nav__link">
         
   
   
@@ -1653,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-02_knn_prediction/" class="md-nav__link">
+      <a href="../../blog/posts/03-02_knn_prediction/" class="md-nav__link">
         
   
   
@@ -1681,7 +1846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-03_earnings_clustering/" class="md-nav__link">
+      <a href="../../blog/posts/03-03_earnings_clustering/" class="md-nav__link">
         
   
   
@@ -1706,37 +1871,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    3-4 ランダムフォレスト
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../blog/posts/03-04_random_forest/" class="md-nav__link">
         
   
   
@@ -1752,92 +1890,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ランダムフォレストで「上 / 下」を当てられるか試す
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        予測精度で「当たらないこと」を確認
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        特徴量重要度で「効く指標の罠」を観測
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eneos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ＥＮＥＯＳ ― モデルの予測はコイン投げ
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        まとめ
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python コード
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1850,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-05_price_clustering/" class="md-nav__link">
+      <a href="../../blog/posts/03-05_price_clustering/" class="md-nav__link">
         
   
   
@@ -1878,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-06_price_anomaly/" class="md-nav__link">
+      <a href="../../blog/posts/03-06_price_anomaly/" class="md-nav__link">
         
   
   
@@ -1914,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glossary/" class="md-nav__link">
+      <a href="../../blog/glossary/" class="md-nav__link">
         
   
   
@@ -1972,7 +2024,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ランダムフォレストで「上 / 下」を当てられるか試す
+        試作から、何を変えたか
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4つの単位
       
     </span>
   </a>
@@ -1983,7 +2046,35 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        予測精度で「当たらないこと」を確認
+        登録
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="登録">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samples-iu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        samples のＩＵは、位置の番号だけを答えさせて作った
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        発音記号（ＩＰＡ）
       
     </span>
   </a>
@@ -1994,18 +2085,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        特徴量重要度で「効く指標の罠」を観測
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eneos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ＥＮＥＯＳ ― モデルの予測はコイン投げ
+        学習対象選択
       
     </span>
   </a>
@@ -2016,7 +2096,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        まとめ
+        学習
       
     </span>
   </a>
@@ -2024,10 +2104,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python コード
+        暗号化したクラウド同期と受信箱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="暗号化したクラウド同期と受信箱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        受信箱
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作るなかで直したこと
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限界
       
     </span>
   </a>
@@ -2051,67 +2170,140 @@
 
 
 
-<h1 id="_1">ランダムフォレスト ― 予測は失敗、「特徴量重要度」の落とし穴を学ぶ</h1>
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../img/03-04_random_forest/00_thumbnail.png" data-desc-position="bottom"><img alt="ランダムフォレスト" src="../img/03-04_random_forest/00_thumbnail.png" width="1280"></a></p>
-<p>「機械学習を使えば、決算の良し悪しから株価の反応を予測できるはず」。そう期待したくなります。本記事は <strong>ランダムフォレスト</strong> という別の手法で、もう一度「決算 10 指標から CAR（決算前後の超過リターン）の上下を当てられるか」を検証します。</p>
-<p>結論を先に書くと <strong>当てられません</strong>。しかもその過程で、<strong>「特徴量重要度」という指標そのものの落とし穴</strong> が見えてきます。</p>
-<p class="fig-meta">データ出典<br><i class="fa-solid fa-caret-right"></i>TDnet：決算短信 XBRL から作成した決算10次元特徴量（3-1で生成、287銘柄）<br><i class="fa-solid fa-caret-right"></i>2026/3期 CAR（events_2026、287銘柄でマッチ）</p>
-
-<div class="ref-quiet">
-<a class="ref-card ref-card--quiet" href="https://zero2one.jp/ai-word/random-forest/" target="_blank" rel="noopener">
-<span class="ref-card-body">
-<span class="ref-card-title">ランダムフォレスト とは</span>
-<span class="ref-card-desc">多数の決定木の多数決で予測するアンサンブル学習 ― zero to one AI用語集</span>
-</span>
-</a>
-</div>
-
-<!-- more -->
-
-<h2 id="_2">ランダムフォレストで「上 / 下」を当てられるか試す</h2>
-<p>ランダムフォレストは、多数の決定木の多数決で予測する定番の機械学習手法です。記事 3-1／3-2 と同じ <strong>決算 10 指標</strong>（YoY 各種・利益率・配当成長・セグメント情報）を入力に、<strong>CAR[-1,+5] の符号（上 / 下）を分類</strong> させます。</p>
-<div class="keypoint">対象 287 銘柄のうち <strong>上昇 40%・下落 60%</strong>。つまり <strong>「全部 "下" と答えるだけで 59.9% 当たる</strong>」（＝多数派ベースライン）。モデルはこれを超えて初めて「予測できた」と言えます。評価は、データを 5 分割して順に検証する <strong>交差検証</strong> と、一部を取り置いて試す <strong>ホールドアウト</strong> で行います。</div>
-<h2 id="_3">予測精度で「当たらないこと」を確認</h2>
-<p class="fig-meta"><i class="fa-solid fa-expand"></i> クリックで拡大</p>
-<p class="fig-meta">使用データ<br><i class="fa-solid fa-caret-right"></i>TDnet（決算短信 XBRL）：10次元特徴量（287銘柄、2026年3月期）<br><i class="fa-solid fa-caret-right"></i>yfinance：日足、CAR[-1,+5]（TOPIX超過）</p>
-
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../img/03-04_random_forest/01_accuracy.png" data-desc-position="bottom"><img alt="予測精度とAUC" src="../img/03-04_random_forest/01_accuracy.png" width="1200"></a></p>
+<h1 id="_1">英語学習アプリ</h1>
+<p>ＴＯＥＩＣ対策向けの英語学習アプリです。学ぶ単位を、<strong>英文・意味句・イントネーション・ユニット（ＩＵ）・単語</strong>の4つにそろえ、表のように選んで、1枚のカードで学びます。<a href="../eng-analyzer/">英文構造アナライザー</a>を試作として、設計から作り直しました。英文は端末に保存し、クラウド同期を使うときは<strong>端末の中で暗号化してから</strong>送ります。</p>
 <ul>
-<li><strong>交差検証の正解率 0.589 &lt; ベースライン 0.599</strong> ― ランダムフォレストは「常に下」と言うだけのルールにすら勝てません</li>
-<li>ホールドアウト（test）では <strong>0.540</strong> とさらに低下。<strong>AUC</strong>（1 に近いほど精度が高く 0.5 はデタラメ）<strong>も 0.55 前後</strong> で、ほぼ当てずっぽう</li>
-<li><strong>別手法でも予測は失敗</strong> ― 3-2 の K-NN（相関 r ≈ 0）と独立に、「数値特徴量だけで市場反応は当てられない」が裏付けられました</li>
+<li>公開ページ：<a href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/">eng-study.scratch-2026-10-07-cb3f9c.workers.dev</a></li>
+<li>ソース：<a href="https://github.com/minnanosaiban/eng-study">github.com/minnanosaiban/eng-study</a></li>
 </ul>
-<h2 id="_4">特徴量重要度で「効く指標の罠」を観測</h2>
-<p>「当たらない」のは分かった。では <strong>どの決算指標が効いているのか</strong>？ ここに落とし穴があります。重要度には測り方が 2 つあり、<strong>①分岐に使われた回数を数える方式（impurity）</strong> と <strong>②その指標の値をわざとシャッフルして精度がどれだけ落ちるか試す方式（permutation）</strong> で、結果が食い違うのです。</p>
-<p class="fig-meta"><i class="fa-solid fa-expand"></i> クリックで拡大</p>
-<p class="fig-meta">使用データ<br><i class="fa-solid fa-caret-right"></i>TDnet（決算短信 XBRL）：10次元特徴量（287銘柄、2026年3月期）</p>
-
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" href="../img/03-04_random_forest/02_importance.png" data-desc-position="bottom"><img alt="特徴量重要度の2つの測り方" src="../img/03-04_random_forest/02_importance.png" width="1200"></a></p>
+<p>このページは、その仕組みと、作るうえで判断したことの解説です。</p>
+<h2 id="_2">試作から、何を変えたか</h2>
+<p>試作は、機能ごとに画面が並んでいました。新しいアプリは、使う順に「<strong>登録 → 学習対象選択 → 学習</strong>」の3段にしました。構成は、スプレッドシートに、機能を行として書き出して考えました。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>試作</th>
+<th>新しいアプリ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>学ぶ単位</td>
+<td>英文と単語</td>
+<td>英文・意味句・ＩＵ・単語</td>
+</tr>
+<tr>
+<td>画面</td>
+<td>機能ごと（モード）</td>
+<td>登録 → 選択 → 学習</td>
+</tr>
+<tr>
+<td>選び方</td>
+<td>一覧から1文ずつ</td>
+<td>表で、チェック・ランダム・グループ・絞り込み</td>
+</tr>
+<tr>
+<td>保存先</td>
+<td>localStorage（約5MB）</td>
+<td>IndexedDB</td>
+</tr>
+<tr>
+<td>発音記号</td>
+<td>単語だけ</td>
+<td>単語・意味句・ＩＵ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4">4つの単位</h2>
+<table>
+<thead>
+<tr>
+<th>単位</th>
+<th>中身</th>
+<th>区切りの基準</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>英文</td>
+<td>1文</td>
+<td>—</td>
+</tr>
+<tr>
+<td>意味句</td>
+<td>英文を、意味のまとまりで区切ったもの（和訳つき）</td>
+<td>意味</td>
+</tr>
+<tr>
+<td>ＩＵ</td>
+<td>英文を、息継ぎ・音の区切りで区切ったもの</td>
+<td>音</td>
+</tr>
+<tr>
+<td>単語</td>
+<td>単語・熟語（意味・品詞・頻出度・例文つき）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>意味句とＩＵは、どちらも英文を前から区切りますが、区切る場所は同じとは限りません。そこで、<strong>区切りは、それぞれ別に持ちます</strong>。ただし、どちらも、<strong>つなぐと原文と一致するものだけ</strong>を受け付けます。</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">iu</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// …各区切りの t を確かめる</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">norm</span><span class="p">(</span><span class="nx">out</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="p">.</span><span class="nx">t</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">))</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">norm</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>英文の表に、意味句（<code>slash</code>）とＩＵ（<code>iu</code>）を持たせ、「英文から取り出す」で、意味句・ＩＵ・単語の表を作ります。難易度とグループは、その英文のものを引き継ぎます。</p>
+<h2 id="_3">登録</h2>
+<p>登録の経路は、4つあります。</p>
 <ul>
-<li><strong>左（①impurity）</strong> では、営利 YoY・包括 YoY・純利 YoY が上位に並び、いかにも「効いている」ように見えます</li>
-<li>しかし <strong>右（②permutation＝実際に試す方式）</strong> で測ると <strong>どれもほぼ 0</strong>。それどころか営利 YoY・売上 YoY は <strong>マイナス</strong>（シャッフルした方が精度が上がる＝ただのノイズだった）</li>
-<li>①は「分岐に使われた回数」を数えるだけなので、<strong>値が細かく散らばる指標を過大評価</strong> します。<strong>"効いて見える" 指標も、実際には効いていない</strong> ― 重要度は ②permutation で確かめるのが鉄則</li>
+<li><strong>サンプル</strong>：オリジナルの英文90文を、解析つきで入れます。ＡＰＩは要りません。</li>
+<li><strong>貼り付け・ファイル</strong>：<code>.csv</code>・<code>.txt</code>・<code>.json</code>。同じ英文は、足りない項目だけを足します（解析・状態・記録は上書きしません）。</li>
+<li><strong>ＡＩ（Gemini）</strong>：和訳・意味句・区切りの形・品詞・ＩＵ・単語・文法・ＴＯＥＩＣの観点・4択を、まとめて付けます。方法は2つ。<strong>Gemini ＡＰＩ</strong>は、1文ずつ自動で呼びます（止められる。エラーで中断）。<strong>コピペモード</strong>は、ＡＰＩキーが要りません。プロンプトを Gemini に貼り、返事を貼り戻します（5文ずつ）。</li>
+<li><strong>受信箱</strong>：Claude Code などが、英文を預けます（後述）。</li>
 </ul>
-<h2 id="eneos">ＥＮＥＯＳ ― モデルの予測はコイン投げ</h2>
-<p>この分析の中核 ＥＮＥＯＳ について、ランダムフォレストが出した上昇確率は <strong>0.53</strong>（ほぼ五分五分）。一方、実際の CAR[-1,+5] は <strong>−4.68%（下落）</strong> でした。</p>
-<p>つまりモデルは「分からない」と言ったに等しく、結果も外しています。ＥＮＥＯＳ を動かしたのは決算の数値ではなく、記事 2-7（CAR）で見た <strong>業績予想修正への市場反応</strong> や、のれん減損・在庫影響といった <strong>数値外の構造要因</strong> でした。数字のパターンからは、やはり読めません。</p>
-<h2 id="_5">まとめ</h2>
+<p>ＡＩの返事は、そのままでは入れません。区切りをつなぐと原文と一致するか、品詞コードが正しいか、4択の形が正しいか、を検査し、<strong>通らない部分だけ見送って、ほかは入れます</strong>。入れた英文は「未確認」になります。ＡＰＩキーは、この端末のブラウザの中だけに保存し、バックアップや同期には入れません。</p>
+<h3 id="samples-iu">samples のＩＵは、位置の番号だけを答えさせて作った</h3>
+<p>samples の90文には、ＩＵも先に入れました。ここでも、ＡＩに文字を書き写させると、ずれやすいので、<strong>語を並べた表を渡し、「何番目から何番目まで」だけを答えさせました</strong>。機械で確かめたのは、すき間も重なりもなく全部の語を覆っていること、1文あたり1〜6個であること、1つが10語以内であること、です。90文とも通りました。249個のＩＵの語数は、4〜7語が中心です。</p>
+<h2 id="ipa">発音記号（ＩＰＡ）</h2>
 <ul>
-<li>ランダムフォレストでも CAR の方向は当てられない（<strong>CV 正解率 0.589 &lt; ベースライン 0.599</strong>、AUC 0.55）。K-NN（3-2）と独立に同じ結論</li>
-<li><strong>impurity 重要度は「効く」ように見せるが、permutation で測るとほぼ 0</strong> ― 重要度指標そのものの過大評価バイアスという発見</li>
-<li>数値だけで市場反応は予測できない。機械学習は <strong>予測の魔法ではなく、整理・発見の道具</strong>（この分析を貫く結論）</li>
-<li>ＥＮＥＯＳ も予測はコイン投げ。株価を動かすのは数値外の材料（構造要因・IR・市場の解釈）</li>
+<li><strong>単語</strong>：samples の379語は、ＡＩではなく、<strong>発音辞書（CMU Pronouncing Dictionary、アメリカ英語）から機械的に</strong>作りました。ＡＩに任せると誤りが混じるためです。新しく解析する英文の単語は、ＡＩが付けるので、誤りが混じりえます。</li>
+<li><strong>意味句・ＩＵ</strong>：語ごとの辞書の発音を、<strong>つないだもの</strong>です。<code>of</code>・<code>to</code> などは弱い発音にしてあります。文全体での、弱い発音や音のつながりは出ません。</li>
+<li>辞書に無い語は、手で付けました。ＩＰＡには、使える文字だけを受け付けます。</li>
 </ul>
-<h2 id="python"><i class="fa-brands fa-github"></i> Python コード</h2>
-<p>本記事のチャート画像・データ取得・成形スクリプトは、すべて <strong>GitHub に公開</strong>しています。<strong>ランダムフォレストの実装</strong>（交差検証・ホールドアウト・permutation importance・impurity との比較）は、リポジトリの README にまとめています。データは提供元の利用規約により再配布できませんが、データを各自取得すれば、この記事と同じものが再現できます。</p>
-<div class="repo-link-wrap">
-<a class="repo-link" href="https://github.com/minnanosaiban/blog/tree/main/03-04_random_forest" target="_blank" rel="noopener">
-<span class="repo-link-path">github.com/minnanosaiban/blog/03-04_random_forest</span>
-<i class="repo-link-arrow fa-solid fa-arrow-up-right-from-square"></i>
-</a>
-</div>
-
-<hr>
+<h2 id="_4">学習対象選択</h2>
+<p>どの単位でも、同じ3つの選び方です。</p>
+<ol>
+<li><strong>チェックボックス</strong>：表で選ぶ。並べ替え・絞り込み・全選択ができる</li>
+<li><strong>ランダム</strong>：絞り込んだ範囲から、Ｎ件</li>
+<li><strong>グループ</strong>：グループで絞る</li>
+</ol>
+<p>絞り込みは、グループ・状態・難易度に加えて、意味句とＩＵでは、<strong>語数</strong>（1〜2／3〜5／6以上）と<strong>文中の位置</strong>（文頭・文中・文末）で行えます。選んだ結果が「学習セット」になり、学習画面は、その並びを順にたどります。</p>
+<h2 id="_5">学習</h2>
+<ul>
+<li><strong>英文</strong>：表示を、全文・スラッシュリーディング・区切りの形・品詞の色分けから<strong>どれか1つ</strong>選びます。補助（ＩＰＡ・和訳・文法・単語・ＴＯＥＩＣの観点・4択）は、<strong>入り切り</strong>です。読み上げは、1回聞く・区切りごとに聞く（読んでいる区切りが色付きになる）。</li>
+<li><strong>単語・意味句・ＩＵ</strong>：1枚のカードで学びます。意味（意味句は和訳）は隠してあり、見ると復習が1回増えます。ＩＵは、声に出して練習したら「練習した」で、復習が1回増えます。意味句とＩＵは、文の中での位置と、文の和訳も見られます。</li>
+<li>ショートカット：← → で前後、スペースで読み上げ、数字やアルファベットで表示・補助の切り替え。</li>
+</ul>
+<h2 id="_6">暗号化したクラウド同期と受信箱</h2>
+<p>設計は、試作と同じです。パスフレーズから鍵を作り（ＰＢＫＤＦ２・60万回）、英文・単語・意味句・ＩＵを <strong>AES-GCM で暗号化してから</strong> Cloudflare D1 に保存します。サーバーは暗号文しか持たないので、中身は読めません。2台目は、同期キー（または QR コード）とパスフレーズで接続します。変更は、前回の同期から<strong>変わったものだけ</strong>を、数秒後に送ります。</p>
+<p>試作から変えた点が、1つあります。<strong>暗号鍵を、取り出せない形（<code>extractable: false</code>）で、この端末の IndexedDB に置く</strong>ようにしました。試作は、鍵を文字列にして localStorage に置いていました。</p>
+<h3 id="_7">受信箱</h3>
+<p>Claude Code は、利用者のデータに直接書き込めません。そこで、書き込み専用の合言葉で、内容を<strong>公開鍵（RSA-OAEP）で暗号化して</strong>預けます。復号できるのは、パスフレーズを知る端末だけです。受け取るときは、使う項目だけを取り出し、<strong>状態・復習回数は取り込みません</strong>（外から「覚えた」にはできません）。同じ英文・単語・区切りは、足りない項目だけを足します。</p>
+<p>ローカルの Worker と D1 で、次を確かめました。保管庫の作成、受信箱の合言葉の発行、<code>inbox-send.mjs</code> での送信、同期での受け取り、別の端末での接続。「覚えた」にしようとした英文は未学習のまま入り、すでにある発音記号は上書きされず、手元にだけあった同じ英文は1つにまとまりました。</p>
+<h2 id="_8">作るなかで直したこと</h2>
+<ul>
+<li><strong>並び順</strong>：貼り付けた英文が、再読み込みのたびに入れ替わりました。id が、時刻と乱数でできていて、同じ瞬間に作ったものの順が決まらなかったためです。id に連番を入れ、<strong>作った順に並ぶ</strong>形にしました。</li>
+<li><strong>空の和訳</strong>：和訳が空文字のとき、「足りない」と見なされず、足されませんでした。空文字も、無いものとして扱うようにしました。</li>
+<li><strong>同期で戻ってくる自分の変更</strong>：送ったものが同期で戻ってきたとき、受信として数えていました。内容が同じなら、数えないようにしました。</li>
+</ul>
+<h2 id="_9">限界</h2>
+<ul>
+<li>英文全体やＩＵの発音記号は、語の発音をつないだものです。弱い発音や音のつながりは出ません。ＡＩで解析した英文の意味句・ＩＵには、発音記号が付きません。</li>
+<li>ＡＩの解析は、検査を通ったものだけを入れますが、<strong>内容の正しさまでは検査できません</strong>。区切りの形のラベル、文法の説明、ＩＵの区切り位置などは、誤りが混じりえます。入れた英文を「未確認」にしているのは、そのためです。</li>
+<li>シャドーイング・聞き取り練習、記録と復習の集計、単語の4択は、これから作ります。</li>
+<li>ＡＰＩの呼び出しは、返事を差し替えた試験までで、実際の Gemini の返事での確認は、これからです。</li>
+</ul>
 
 
 
@@ -2172,12 +2364,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.expand", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.expand", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../js/custom.js"></script>
       
     
   

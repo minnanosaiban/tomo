@@ -179,4 +179,15 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・KaTeX・MkDocs Material（GitHub Pages）</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">04</span>ウェブサイトデザイン</p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/web-design/"><i class="bi bi-tools"></i> 技術解説</a>
+</p>
+<p>
+裁判記録・決算株価検証・Ｅ資格ノートと、このサイトに共通するデザインの考え方です。紺1色と無彩色、罫線より余白、という原則と、4サイトの見た目をそろえ続ける共通ＣＳＳの運用をまとめています。
+</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・CSS・GitHub Pages</p>
+</div>
+
 </div>

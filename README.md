@@ -23,7 +23,8 @@
 | スクショＰＤＦ化 | [`screenshot-pdf.md`](docs/tech/screenshot-pdf.md) |
 | Ｘスクショ管理ツール | [`screenshot-x.md`](docs/tech/screenshot-x.md)（準備中） |
 | 応援傍聴ナビ | [`court-calendar.md`](docs/tech/court-calendar.md) |
-| ＥＮＥＯＳの内部通報制度をめぐる訴訟について | [`hotline.md`](docs/tech/hotline.md) |
+| 内部通報制度をめぐる裁判記録 | [`hotline.md`](docs/tech/hotline.md) |
+| ウェブサイトデザイン | [`web-design.md`](docs/tech/web-design.md) |
 | 有報ナビ | [`stock-analysis.md`](docs/tech/stock-analysis.md) |
 | E資格 動く数式ノート | [`e-shikaku.md`](docs/tech/e-shikaku.md) |
 

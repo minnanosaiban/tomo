@@ -18,3 +18,8 @@
 .md-typeset p.about-work-links .arrow-link i {
   margin-right: 0.15em;
 }
+
+/* tomo 固有：技術解説の一覧カード。説明文が1行でも2行でも、全カードの高さを揃える（説明文を2行分の高さで確保） */
+.toc-grid .toc-card .toc-card-desc {
+  min-height: 3em; /* line-height 1.5 × 2行 */
+}

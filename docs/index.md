@@ -15,7 +15,7 @@ hide:
 <div class="hero-band" markdown>
 # サイト運営者について
 <p>
-ウェブサイト「<a href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ＥＮＥＯＳの内部通報制度をめぐる訴訟について</a>」は通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・E資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
+ウェブサイト「<a href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ENEOSの内部通報制度をめぐる訴訟について</a>」は通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・E資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
 </p>
 </div>
 
@@ -40,7 +40,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ＲＯＥ・ＰＥＲ・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
 </p>
 <p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 </div>
@@ -52,21 +52,21 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
+TOEIC対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（API・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
 </p>
-<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini ＡＰＩ・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
+<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>
 
 <p class="about-sec-title width-40">ツール</p>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">PDFツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/pdf-tools/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＰＤＦの墨消し・検索、手書き風の書き込み、結合・分割・回転、メタデータの編集・削除を行えるツールです。処理はすべてブラウザ内で完結し、外部送信はありません。
+PDFの墨消し・検索、手書き風の書き込み、結合・分割・回転、メタデータの編集・削除を行えるツールです。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・PDF.js・pdf-lib（Cloudflare Pages）</p>
 </div>
@@ -78,7 +78,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-文章や画像にコメントをサイドに添えてＰＤＦ化できるツールです。ＭＤファイルは様々なデザインで表示できます。処理はすべてブラウザ内で完結し、外部送信はありません。
+文章や画像にコメントをサイドに添えてPDF化できるツールです。MDファイルは様々なデザインで表示できます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・PDF.js（Cloudflare Pages）</p>
 </div>
@@ -90,7 +90,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-グリッドに人物や会社を置いて矢印でつなぐ、関係図エディタです。ＰＮＧやＳＶＧのほか、Ｘに投稿しやすい縦画像でも書き出せます。ブラウザだけで動作します。
+グリッドに人物や会社を置いて矢印でつなぐ、関係図エディタです。PNGやSVGのほか、Xに投稿しやすい縦画像でも書き出せます。ブラウザだけで動作します。
 </p>
 <p class="fig-meta">使用技術：JavaScript（GitHub Pages）</p>
 </div>
@@ -102,31 +102,31 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-スキャンしたＰＤＦ・画像をＯＣＲして、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
+スキャンしたPDF・画像をOCRして、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
 </p>
 <p class="fig-meta">使用技術：Python（ローカルWebアプリ）</p>
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">05</span><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショＰＤＦ化</a> <a class="gh-link" aria-label="開く" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">05</span><a class="work-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener">スクショPDF化</a> <a class="gh-link" aria-label="開く" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/screenshot-pdf/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-スマホのスクリーンショットを2×2でA4に並べ、整理しやすいＰＤＦにまとめます。メールやチャットにその場でそのまま送れます。処理はすべてブラウザ内で完結し、外部送信はありません。
+スマホのスクリーンショットを2×2でA4に並べ、整理しやすいPDFにまとめます。メールやチャットにその場でそのまま送れます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・pdf-lib（Cloudflare Pages）</p>
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">06</span><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Ｘスクショ管理ツール</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">06</span><a class="work-link" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener">Xスクショ管理ツール</a> <a class="gh-link" aria-label="開く" href="https://github.com/minnanosaiban/screenshot-x/releases/latest" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/screenshot-x/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-Ｘ（旧Twitter）の投稿を後から確認できる形で保存・整理するためのデスクトップアプリです。嫌がらせの証拠保全に活用できます。処理はすべてローカルのＰＣ内で完結し、外部には送信されません。
+X（旧Twitter）の投稿を後から確認できる形で保存・整理するためのデスクトップアプリです。嫌がらせの証拠保全に活用できます。処理はすべてローカルのPC内で完結し、外部には送信されません。
 </p>
 <p class="fig-meta">使用技術：Python・Playwright・Tkinter（PyInstallerでexe化・GitHub Releases配布）</p>
 </div>
@@ -174,7 +174,7 @@ E資格の範囲を、数式の要点と、数式・図・数値が連動して�
 <a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＥＮＥＯＳの内部通報制度をめぐる訴訟について、通報者本人が公開しているウェブサイトです。裁判の経過や主張、株主総会に関する記録を掲載しています。
+ENEOSの内部通報制度をめぐる訴訟について、通報者本人が公開しているウェブサイトです。裁判の経過や主張、株主総会に関する記録を掲載しています。
 </p>
 <p class="fig-meta">使用技術：Zensical（MkDocs互換）・GitHub Pages</p>
 </div>
@@ -185,9 +185,9 @@ E資格の範囲を、数式の要点と、数式・図・数値が連動して�
 <a class="arrow-link" href="tech/web-design/"><i class="bi bi-tools"></i> 技術解説</a>
 </p>
 <p>
-裁判記録・決算株価検証・E資格ノートと、このサイトに共通するデザインの考え方です。紺1色と無彩色、罫線より余白、という原則と、4サイトの見た目をそろえ続ける共通ＣＳＳの運用をまとめています。
+裁判記録・決算株価検証・E資格ノートと、このサイトに共通するデザインの考え方です。紺1色と無彩色、罫線より余白、という原則と、4サイトの見た目をそろえ続ける共通CSSの運用をまとめています。
 </p>
-<p class="fig-meta">使用技術：Zensical（MkDocs互換）・ＣＳＳ・GitHub Pages</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・CSS・GitHub Pages</p>
 </div>
 
 </div>

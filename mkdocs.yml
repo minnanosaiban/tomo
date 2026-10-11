@@ -16,12 +16,12 @@ nav:
           - 有報ナビ: tech/stock-analysis.md
           - 英語学習アプリ: tech/eng-study.md
       - ツール:
-          - ＰＤＦツール: tech/pdf-tools.md
+          - PDFツール: tech/pdf-tools.md
           - サイドノート作成: tech/sidenote.md
           - 関係図エディタ RelaGrid: tech/relagrid.md
           - スキャン墨消し: tech/scan-ocr.md
-          - スクショＰＤＦ化: tech/screenshot-pdf.md
-          - Ｘスクショ管理ツール: tech/screenshot-x.md
+          - スクショPDF化: tech/screenshot-pdf.md
+          - Xスクショ管理ツール: tech/screenshot-x.md
           - 株価データ取得ツール: tech/data-hub.md
       - ウェブサイト:
           - E資格 動く数式ノート: tech/e-shikaku.md

@@ -113,7 +113,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Ｇｅｍｉｎｉでの解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Ｃｌａｕｄｅから英文を預ける受信箱に対応しています。
+ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
 </p>
 <p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>
@@ -125,7 +125,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。傍聴で応援している人たちのニーズから生まれました。掲載希望は boutyounavi@gmail.com へ。
+民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。カレンダー・掲示板・タイムライン化などのアプリを組み合わせています。傍聴で応援している人たちのニーズから生まれました。
 </p>
 <p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
 </div>

@@ -10,7 +10,7 @@
 |---|---|
 | Home（`docs/index.md`） | 制作物の一覧と運営者について |
 | 技術解説（`docs/tech/`） | 各制作物の仕組みと、作るうえで判断したことの解説 |
-| 決算・株価データ検証 | 2026-10-11 に別サイト [kessan-kabuka](https://minnanosaiban.github.io/kessan-kabuka/) へ分離（`docs/blog/` には旧URLからの転送ページだけを残している） |
+| 決算・株価データ検証 | 2026-10-11 に別サイト [kessan-kabuka](https://minnanosaiban.github.io/kessan-kabuka/) へ分離（旧URL `tomo/blog/` の転送ページは削除済み） |
 
 ### 技術解説の一覧
 
@@ -58,7 +58,6 @@ math: true
 docs/
   index.md        Home
   tech/           技術解説
-  blog/           旧URLからの転送ページ（決算・株価データ検証は kessan-kabuka へ移転）
   img/            図（SVG）・カード画像
   css/shared/     共通デザイン（minna-design から同期。直接編集しない）
   css/ js/        スタイルとスクリプト

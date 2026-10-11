@@ -29,13 +29,6 @@
       https://minnanosaiban.github.io/favicon.png（サブパス/hotline/の外・404）を指しており、
       2つ目のicon linkとして後に並ぶぶんブラウザ・クローラに優先されて壊れたアイコンになっていた
       （2026-08-22、Google検索結果でアイコンが出ない問題で発覚・削除）。 -#}
-  {#- 転送だけのページ（旧 URL の受け皿。docs/blog/ 以下）。front matter の redirect_to へ飛ばす。
-      GitHub Pages ではサーバー側の301が使えないので、meta refresh と JS で行う（hotline と同じ仕組み）。
-      JS 側は location.hash を転送先に引き継ぐ。 -#}
-  {% if page and page.meta and page.meta.redirect_to %}
-    <meta http-equiv="refresh" content="0; url={{ page.meta.redirect_to | url }}">
-    <script>location.replace({{ (page.meta.redirect_to | url) | tojson }} + location.hash)</script>
-  {% endif %}
   {#- 検索結果に出したくないページは、front matter に robots: noindex と書く。 -#}
   {% if page and page.meta and page.meta.robots %}
     <meta name="robots" content="{{ page.meta.robots }}">

@@ -30,7 +30,7 @@ nav:
           - ウェブサイトデザイン: tech/web-design.md
 
 # 決算・株価データ検証は https://minnanosaiban.github.io/kessan-kabuka/ に移転した（2026-10-11）。
-# docs/blog/ には旧URLからの転送ページ（front matter の redirect_to）だけを残している。nav には載せない。
+# 旧 docs/blog/（転送ページだけ）は 2026-10-11 に削除した。
 
 extra_css:
   - css/shared/tokens.css   # 共通（minna-design から sync.bat で同期。直接編集しない）

@@ -61,11 +61,11 @@ exclude_docs: |
   blog/posts/EX-02_intraday_ml.md
 
 extra_css:
-  - css/01-color.css
+  - css/shared/tokens.css   # 共通（minna-design から sync.bat で同期。直接編集しない）
+  - css/shared/base.css
   - css/02-layout.css
   - css/03-typeset.css
   - css/05-card.css
-  - css/06-link-text.css
   - css/07-link-button.css
   - css/10-blog-reset.css
   - css/12-about.css

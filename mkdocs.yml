@@ -11,6 +11,7 @@ nav:
   - Home:
       - index.md
   - 技術解説:
+      - tech/index.md
       - アプリ:
           - 応援傍聴ナビ: tech/court-calendar.md
           - 有報ナビ: tech/stock-analysis.md

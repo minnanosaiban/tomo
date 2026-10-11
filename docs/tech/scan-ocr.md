@@ -7,7 +7,7 @@ title: スキャン墨消し
 スキャンしたＰＤＦ・画像を **ＯＣＲして、検索できるＰＤＦ・Markdown・ＪＳＯＮの3つを一度に作る**ローカルWebアプリです。人名・住所などを黒塗りしてからＯＣＲする「墨消し」機能も付いています。**文書は自分のパソコンの外に出ません。** サーバーはこのパソコンの `127.0.0.1` で動き、ＯＣＲもこのパソコンの中で行います。
 
 - ソース：[github.com/minnanosaiban/scan-ocr](https://github.com/minnanosaiban/scan-ocr)
-- ＯＣＲエンジン：[YomiToku](https://github.com/kotaro-kinoshita/yomitoku)（日本語文書に特化。CC BY-NC-SA 4.0 のため非商用のみ）
+- ＯＣＲエンジン：[YomiToku](https://github.com/kotaro-kinoshita/yomitoku)（日本語文書に特化。ＣＣ BY-NC-SA 4.0 のため非商用のみ）
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

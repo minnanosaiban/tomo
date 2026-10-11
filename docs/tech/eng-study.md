@@ -60,7 +60,7 @@ samples の90文には、ＩＵも先に入れました。ここでも、ＡＩ�
 
 ## 発音記号（ＩＰＡ）
 
-発音記号は、**ＡＩに書かせず、発音辞書から作ります**。ＡＩに任せると、もっともらしい誤りが混じるためです。辞書は、CMU Pronouncing Dictionary（Carnegie Mellon University が作った、アメリカ英語の発音辞書）を使います。
+発音記号は、**ＡＩに書かせず、発音辞書から作ります**。ＡＩに任せると、もっともらしい誤りが混じるためです。辞書は、ＣＭＵ Pronouncing Dictionary（Carnegie Mellon University が作った、アメリカ英語の発音辞書）を使います。
 
 ### どこに付くか
 
@@ -94,7 +94,7 @@ samples の意味句・ＩＵ・単語、976件について、アプリが辞書
 - **辞書の注釈**：辞書の一部の値に、`# …` という注釈が付いていて、変換でエラーになりました。注釈を取り除いてから変換するようにしました。
 - **ハイフンの語**：最初は、ハイフンを含む語を辞書に載せていませんでした。そのため、`full-time` を、`full` と `time` に分けて、それぞれに強い強勢（ˈ）が付きました。辞書には、`full-time` の発音（強い強勢と、弱い強勢が1つずつ）があるので、ハイフンの語も載せるようにして、一致しました。
 
-出典：[CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict)。使用条件は、元の辞書の配布元の表示に従います（`public/dict/NOTICE.txt`）。
+出典：[ＣＭＵ Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict)。使用条件は、元の辞書の配布元の表示に従います（`public/dict/NOTICE.txt`）。
 
 ## 学習対象選択
 

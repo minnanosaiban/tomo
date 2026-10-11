@@ -1,6 +1,6 @@
 ---
 title: サイト運営者について
-description: ENEOS（エネオス）の内部通報制度をめぐる訴訟の原告です。裁判・株主総会2026に関するウェブサイト以外に、実務経験（企業価値分析・Pythonデータ分析・Ｅ資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
+description: ENEOS（エネオス）の内部通報制度をめぐる訴訟の原告です。裁判・株主総会2026に関するウェブサイト以外に、実務経験（企業価値分析・Pythonデータ分析・E資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
 seo_title: ENEOS（エネオス）通報者本人の制作物｜通報・裁判・株主総会の記録も
 url: https://minnanosaiban.github.io/tomo/
 image: https://minnanosaiban.github.io/tomo/img/card1.png
@@ -54,7 +54,7 @@ hide:
 <p>
 ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
 </p>
-<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
+<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini ＡＰＩ・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>
 
 <p class="about-sec-title width-40">ツール</p>
@@ -102,7 +102,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-スキャンしたＰＤＦ・画像を ＯＣＲして、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
+スキャンしたＰＤＦ・画像をＯＣＲして、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
 </p>
 <p class="fig-meta">使用技術：Python（ローカルWebアプリ）</p>
 </div>

@@ -26,6 +26,7 @@ nav:
           - 株価データ取得ツール: tech/data-hub.md
       - ウェブサイト:
           - E資格 動く数式ノート: tech/e-shikaku.md
+          - 決算・株価データ検証: tech/kessan-kabuka.md
           - 内部通報制度をめぐる裁判記録: tech/hotline.md
           - ウェブサイトデザイン: tech/web-design.md
 

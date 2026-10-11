@@ -72,13 +72,18 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">E資格 動く数式ノート</span>
 <span class="toc-card-desc">数式・図・数値が連動して動く試験対策ノート</span>
 </a>
-<a href="hotline/" class="toc-card">
+<a href="kessan-kabuka/" class="toc-card">
 <span class="toc-card-num">02</span>
+<span class="toc-card-title">決算・株価データ検証</span>
+<span class="toc-card-desc">図・コード・記事をつなぐ作りと、再現性の工夫</span>
+</a>
+<a href="hotline/" class="toc-card">
+<span class="toc-card-num">03</span>
 <span class="toc-card-title">内部通報制度をめぐる裁判記録</span>
 <span class="toc-card-desc">判決文・準備書面・株主総会の記録サイトの作り方</span>
 </a>
 <a href="web-design/" class="toc-card">
-<span class="toc-card-num">03</span>
+<span class="toc-card-num">04</span>
 <span class="toc-card-title">ウェブサイトデザイン</span>
 <span class="toc-card-desc">4サイト共通のミニマルなデザインシステム</span>
 </a>

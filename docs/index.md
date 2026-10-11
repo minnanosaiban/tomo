@@ -159,6 +159,7 @@ E資格の範囲を、数式の要点と、数式・図・数値が連動して�
 <div class="about-work width-40" markdown>
 <p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://minnanosaiban.github.io/kessan-kabuka/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/kessan-kabuka/"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
+<a class="arrow-link" href="tech/kessan-kabuka/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>

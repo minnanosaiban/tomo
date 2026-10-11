@@ -19,7 +19,7 @@ hide:
 </p>
 </div>
 
-<p class="about-sec-title width-40">制作物</p>
+<p class="about-sec-title width-40">ツール</p>
 
 <div class="about-work width-40" markdown>
 <p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener">ＰＤＦツール</a> <a class="gh-link" aria-label="開く" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
@@ -94,7 +94,20 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">07</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">07</span>株価データ取得ツール</p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/data-hub/"><i class="bi bi-tools"></i> 技術解説</a>
+</p>
+<p>
+決算短信・有価証券報告書・株価・適時開示などのデータ取得と、データ品質のチェックを、ひとつの画面にまとめたツールです。データはすべてこのパソコンの中だけに保存されます。
+</p>
+<p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
+</div>
+
+<p class="about-sec-title width-40">アプリ</p>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-study/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -106,19 +119,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ウェブサイトデザイン</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-自身が公開したウェブサイト「ＥＮＥＯＳの内部通報制度をめぐる訴訟について」は Zensical で作成しています。ミニマルデザインを取り入れ、Zensical の標準機能ではない部分は JS/CSS で実装しています。
-</p>
-<p class="fig-meta">使用技術：Zensical（MkDocs互換）・JavaScript・GitHub Pages</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -130,29 +131,7 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">10</span><a class="work-link" href="https://minnanosaiban.github.io/kessan-kabuka/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/kessan-kabuka/"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
-</p>
-<p class="fig-meta">使用技術：Python・pandas・matplotlib・Streamlit</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">11</span>株価データ取得ツール</p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/data-hub/"><i class="bi bi-tools"></i> 技術解説</a>
-</p>
-<p>
-決算短信・有価証券報告書・株価・適時開示などのデータ取得と、データ品質のチェックを、ひとつの画面にまとめたツールです。データはすべてこのパソコンの中だけに保存されます。
-</p>
-<p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">12</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -163,8 +142,33 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 </div>
 
+<p class="about-sec-title width-40">ウェブサイト</p>
+
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">13</span><a class="work-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener">E資格 動く数式ノート</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">内部通報制度をめぐる裁判記録</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+ＥＮＥＯＳの内部通報制度をめぐる訴訟について、通報者本人が公開しているウェブサイトです。裁判の経過や主張、株主総会に関する記録を掲載しています。
+</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・GitHub Pages</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://minnanosaiban.github.io/kessan-kabuka/">決算・株価データ検証</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/kessan-kabuka/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="https://github.com/minnanosaiban/blog" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+無料で入手できる決算短信・有価証券報告書・株価データを用いた検証の実務例です。
+</p>
+<p class="fig-meta">使用技術：Python・pandas・matplotlib・Streamlit</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener">E資格 動く数式ノート</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/e-shikaku/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>

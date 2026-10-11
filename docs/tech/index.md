@@ -7,7 +7,7 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 
 作ったアプリ・ツール・ウェブサイトごとに、その仕組みと、作るうえで判断したことを解説しています。
 
-<p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> アプリ</p>
+<p class="toc-phase-label" style="margin-top: 2.2rem;"><i class="fa-solid fa-layer-group"></i> アプリ</p>
 <div class="toc-grid">
 <a href="court-calendar/" class="toc-card">
 <span class="toc-card-num">01</span>

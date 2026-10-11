@@ -79,8 +79,8 @@ exit /b 1
 
 :pushed
 
-echo === Commit ^& Push to blog (C:\minnanosaibanlog) ===
-pushd "C:\minnanosaibanlog"
+echo === Commit ^& Push to blog (C:\minnanosaiban\blog) ===
+pushd "C:\minnanosaiban\blog"
 if %errorlevel% neq 0 (
     echo [ERROR] cd to the blog repo failed.
     pause

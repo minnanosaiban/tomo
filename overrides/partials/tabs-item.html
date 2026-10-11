@@ -39,7 +39,9 @@
     {% endif %}
     {% set index = _.index %}
     {% set first = index or nav_item.children | first %}
-    {% if first.children and first.children | selectattr("children") | list | length == 0 and nav_item.children | selectattr("children") | list | length == nav_item.children | length %}
+    {% set sections = nav_item.children | selectattr("children") | list %}
+    {% set has_pages = nav_item.children | rejectattr("children") | rejectattr("is_index") | list | length > 0 %}
+    {% if sections | length > 0 and not has_pages and sections[0].children | selectattr("children") | list | length == 0 %}
       {# 子がすべてセクション（アプリ／ツール／ウェブサイト）のとき：区切り見出し付きのドロップダウン #}
       <li class="{{ class }} md-tabs__item--dropdown">
         <details class="md-tabs__dropdown-details">
@@ -48,7 +50,14 @@
             <i class="bi bi-chevron-down md-tabs__caret" aria-hidden="true"></i>
           </summary>
           <ul class="md-tabs__dropdown">
-            {% for group in nav_item.children %}
+            {% if index %}
+              <li>
+                <a href="{{ index.url | url }}" class="md-tabs__dropdown-link{% if index.active %} md-tabs__dropdown-link--active{% endif %}">
+                  {{ index.title }}
+                </a>
+              </li>
+            {% endif %}
+            {% for group in sections %}
               <li class="md-tabs__dropdown-group">ー{{ group.title }}ー</li>
               {% for child in group.children %}
                 <li>

@@ -7,69 +7,78 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 
 作ったアプリ・ツール・ウェブサイトごとに、その仕組みと、作るうえで判断したことを解説しています。
 
-
-## アプリ
-
-<div class="toc-grid" style="margin-top: 0.8rem;">
+<p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> アプリ</p>
+<div class="toc-grid">
 <a href="court-calendar/" class="toc-card">
+<span class="toc-card-num">01</span>
 <span class="toc-card-title">応援傍聴ナビ</span>
 <span class="toc-card-desc">民事裁判の期日と傍聴席の様子を共有するカレンダー</span>
 </a>
 <a href="stock-analysis/" class="toc-card">
+<span class="toc-card-num">02</span>
 <span class="toc-card-title">有報ナビ</span>
 <span class="toc-card-desc">有価証券報告書を条件で探して比べる公開サイト</span>
 </a>
 <a href="eng-study/" class="toc-card">
+<span class="toc-card-num">03</span>
 <span class="toc-card-title">英語学習アプリ</span>
 <span class="toc-card-desc">TOEIC対策。暗号化クラウド同期つき</span>
 </a>
 </div>
 
-## ツール
-
-<div class="toc-grid" style="margin-top: 0.8rem;">
+<p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ツール</p>
+<div class="toc-grid">
 <a href="pdf-tools/" class="toc-card">
+<span class="toc-card-num">01</span>
 <span class="toc-card-title">PDFツール</span>
 <span class="toc-card-desc">墨消し・結合・分割・メタデータ編集（ブラウザ内で完結）</span>
 </a>
 <a href="sidenote/" class="toc-card">
+<span class="toc-card-num">02</span>
 <span class="toc-card-title">サイドノート作成</span>
 <span class="toc-card-desc">文章・PDF・スクショに右側で注釈を付ける</span>
 </a>
 <a href="relagrid/" class="toc-card">
+<span class="toc-card-num">03</span>
 <span class="toc-card-title">関係図エディタ RelaGrid</span>
 <span class="toc-card-desc">グリッドに置いて矢印でつなぐ。DSLと同期</span>
 </a>
 <a href="scan-ocr/" class="toc-card">
+<span class="toc-card-num">04</span>
 <span class="toc-card-title">スキャン墨消し</span>
 <span class="toc-card-desc">黒塗りしてOCR。検索できるPDFなどを一度に作成</span>
 </a>
 <a href="screenshot-pdf/" class="toc-card">
+<span class="toc-card-num">05</span>
 <span class="toc-card-title">スクショPDF化</span>
 <span class="toc-card-desc">スマホのスクショを1ページ4枚のA4 PDFに</span>
 </a>
 <a href="screenshot-x/" class="toc-card">
+<span class="toc-card-num">06</span>
 <span class="toc-card-title">Xスクショ管理ツール</span>
 <span class="toc-card-desc">投稿を証拠として撮影・整理・書き出し</span>
 </a>
 <a href="data-hub/" class="toc-card">
+<span class="toc-card-num">07</span>
 <span class="toc-card-title">株価データ取得ツール</span>
 <span class="toc-card-desc">株価・開示・ニュースの取得と品質チェック</span>
 </a>
 </div>
 
-## ウェブサイト
-
-<div class="toc-grid" style="margin-top: 0.8rem;">
+<p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ウェブサイト</p>
+<div class="toc-grid">
 <a href="e-shikaku/" class="toc-card">
+<span class="toc-card-num">01</span>
 <span class="toc-card-title">E資格 動く数式ノート</span>
 <span class="toc-card-desc">数式・図・数値が連動して動く試験対策ノート</span>
 </a>
 <a href="hotline/" class="toc-card">
+<span class="toc-card-num">02</span>
 <span class="toc-card-title">内部通報制度をめぐる裁判記録</span>
 <span class="toc-card-desc">判決文・準備書面・株主総会の記録サイトの作り方</span>
 </a>
 <a href="web-design/" class="toc-card">
+<span class="toc-card-num">03</span>
 <span class="toc-card-title">ウェブサイトデザイン</span>
 <span class="toc-card-desc">4サイト共通のミニマルなデザインシステム</span>
 </a>

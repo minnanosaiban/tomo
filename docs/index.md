@@ -19,6 +19,44 @@ hide:
 </p>
 </div>
 
+<p class="about-sec-title width-40">アプリ</p>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。カレンダー・掲示板・タイムライン化などのアプリを組み合わせています。傍聴で応援している人たちのニーズから生まれました。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
+</p>
+<p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
+</div>
+
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/eng-study/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
+</div>
+
 <p class="about-sec-title width-40">ツール</p>
 
 <div class="about-work width-40" markdown>
@@ -104,56 +142,18 @@ hide:
 <p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
 </div>
 
-<p class="about-sec-title width-40">アプリ</p>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/eng-study/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-ＴＯＥＩＣ対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（ＡＰＩ・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
-</p>
-<p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">02</span><a class="work-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener">応援傍聴ナビ</a> <a class="gh-link" aria-label="開く" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/court-calendar/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-民事裁判の期日や傍聴席の様子をみんなで共有できるカレンダーサイトです。カレンダー・掲示板・タイムライン化などのアプリを組み合わせています。傍聴で応援している人たちのニーズから生まれました。
-</p>
-<p class="fig-meta">使用技術：JavaScript・Cloudflare Pages（Functions・D1・R2）</p>
-</div>
-
-<div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener">有報ナビ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
-<p class="about-work-links">
-<a class="arrow-link" href="tech/stock-analysis/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-</p>
-<p>
-有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
-</p>
-<p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
-</div>
-
 <p class="about-sec-title width-40">ウェブサイト</p>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">内部通報制度をめぐる裁判記録</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">01</span><a class="work-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener">E資格 動く数式ノート</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
-<a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+<a class="arrow-link" href="tech/e-shikaku/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-ＥＮＥＯＳの内部通報制度をめぐる訴訟について、通報者本人が公開しているウェブサイトです。裁判の経過や主張、株主総会に関する記録を掲載しています。
+Ｅ資格の範囲を、数式の要点と、数式・図・数値が連動して動く図でまとめたノートです。数式の行にマウスを乗せると図の対応する部分が光り、スライダーを動かすと式の数値も変わります。公開は一部のページで、順次追加しています。
 </p>
-<p class="fig-meta">使用技術：Zensical（MkDocs互換）・GitHub Pages</p>
+<p class="fig-meta">使用技術：JavaScript・KaTeX・MkDocs Material（GitHub Pages）</p>
 </div>
 
 <div class="about-work width-40" markdown>
@@ -168,15 +168,15 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener">E資格 動く数式ノート</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">内部通報制度をめぐる裁判記録</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
-<a class="arrow-link" href="tech/e-shikaku/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+<a class="arrow-link" href="tech/hotline/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-Ｅ資格の範囲を、数式の要点と、数式・図・数値が連動して動く図でまとめたノートです。数式の行にマウスを乗せると図の対応する部分が光り、スライダーを動かすと式の数値も変わります。公開は一部のページで、順次追加しています。
+ＥＮＥＯＳの内部通報制度をめぐる訴訟について、通報者本人が公開しているウェブサイトです。裁判の経過や主張、株主総会に関する記録を掲載しています。
 </p>
-<p class="fig-meta">使用技術：JavaScript・KaTeX・MkDocs Material（GitHub Pages）</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・GitHub Pages</p>
 </div>
 
 <div class="about-work width-40" markdown>

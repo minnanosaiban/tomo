@@ -25,6 +25,7 @@
 | 応援傍聴ナビ | [`court-calendar.md`](docs/tech/court-calendar.md) |
 | ＥＮＥＯＳの内部通報制度をめぐる訴訟について | [`hotline.md`](docs/tech/hotline.md) |
 | 有報ナビ | [`stock-analysis.md`](docs/tech/stock-analysis.md) |
+| E資格 動く数式ノート | [`e-shikaku.md`](docs/tech/e-shikaku.md) |
 
 解説の図は、[RelaGrid](https://minnanosaiban.github.io/relagrid/) で描いたものが多くあります。図の元になった記述（DSL）は、RelaGrid リポジトリの `examples/` にあります（`docs/img/` の SVG と対応）。
 
@@ -36,6 +37,19 @@
 | **公開する** | **`deploy.bat`**（ビルド → `mkdocs gh-deploy` → IndexNow → main へ push。`C:\minnanosaiban\blog` リポジトリへの push も含む） |
 
 依存は `requirements.txt` にあります。
+
+## 数式を書くとき
+
+ページの先頭（front matter）に `math: true` と書いたページだけ、数式（KaTeX）が使えます。書かないページは、これまでと同じ HTML のままで、KaTeX は読み込みません。
+
+```yaml
+---
+title: ページ名
+math: true
+---
+```
+
+本文では、行内は `$...$`、ブロックは `$$...$$`（前後に空行）で書きます。仕組みは、`mkdocs.yml` の `pymdownx.arithmatex`（目印を HTML にする）、`overrides/main.html`（`math: true` のページだけ KaTeX を読み込む）、`docs/js/katex-init.js`（描画）の3つです。
 
 ## 構成
 

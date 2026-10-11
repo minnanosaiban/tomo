@@ -1,5 +1,5 @@
 site_name: サイト運営者の制作物について
-site_description: 通報者本人が作成した、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データの検証です。
+site_description: 通報者本人が作成した、ＰＤＦツール・サイドノート作成・RelaGrid・スキャン墨消し・スクショＰＤＦ化・Ｘスクショ管理ツール・応援傍聴ナビ・E資格 動く数式ノート・ＥＮＥＯＳ訴訟の記録サイトなどの紹介と、決算/株価データの検証です。
 site_url: https://minnanosaiban.github.io/tomo/
 site_dir: site
 
@@ -26,6 +26,7 @@ nav:
       - 応援傍聴ナビ: tech/court-calendar.md
       - 株価データ取得ツール: tech/data-hub.md
       - 有報ナビ: tech/stock-analysis.md
+      - E資格 動く数式ノート: tech/e-shikaku.md
   - 株価分析:
       - blog/index.md
       - <i class="fa-solid fa-layer-group"></i> 無料データを取得編:
@@ -260,8 +261,8 @@ markdown_extensions:
     # - pymdownx.snippets:  # 全てのページの末尾に追加する
       # auto_append:
         # - includes/mkdocs.md
-  # - pymdownx.arithmatex: # 数式
-    # generic: true # 数式を汎用的に処理
+  - pymdownx.arithmatex: # 数式（描画は front matter に math: true と書いたページだけ。overrides/main.html）
+      generic: true # 数式を汎用的に処理
   # - pymdownx.highlight: # コードブロックのハイライト
       # anchor_linenums: true
       # line_spans: __span

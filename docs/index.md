@@ -163,4 +163,16 @@ hide:
 <p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">13</span><a class="work-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener">E資格 動く数式ノート</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/e-shikaku/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+Ｅ資格の範囲を、数式の要点と、数式・図・数値が連動して動く図でまとめたノートです。数式の行にマウスを乗せると図の対応する部分が光り、スライダーを動かすと式の数値も変わります。公開は一部のページで、順次追加しています。
+</p>
+<p class="fig-meta">使用技術：JavaScript・KaTeX・MkDocs Material（GitHub Pages）</p>
+</div>
+
 </div>

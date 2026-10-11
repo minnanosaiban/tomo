@@ -2,7 +2,7 @@
 
 **https://minnanosaiban.github.io/tomo/**
 
-通報者本人が作った制作物の紹介（ポートフォリオ）と、決算・株価データの検証を載せたサイトです。MkDocs Material 製で、GitHub Pages で公開しています。
+通報者本人が作った制作物の紹介（ポートフォリオ）のサイトです。MkDocs Material 製で、GitHub Pages で公開しています。
 
 ## 載せているもの
 
@@ -10,7 +10,7 @@
 |---|---|
 | Home（`docs/index.md`） | 制作物の一覧と運営者について |
 | 技術解説（`docs/tech/`） | 各制作物の仕組みと、作るうえで判断したことの解説 |
-| 株価分析（`docs/blog/`） | 決算・株価データの検証 |
+| 決算・株価データ検証 | 2026-10-11 に別サイト [kessan-kabuka](https://minnanosaiban.github.io/kessan-kabuka/) へ分離（`docs/blog/` には旧URLからの転送ページだけを残している） |
 
 ### 技術解説の一覧
 
@@ -57,13 +57,14 @@ math: true
 docs/
   index.md        Home
   tech/           技術解説
-  blog/           決算・株価データの検証
+  blog/           旧URLからの転送ページ（決算・株価データ検証は kessan-kabuka へ移転）
   img/            図（SVG）・カード画像
+  css/shared/     共通デザイン（minna-design から同期。直接編集しない）
   css/ js/        スタイルとスクリプト
 overrides/        MkDocs Material のテンプレート上書き・フック
 scripts/          IndexNow への通知
 hikae/            ローカル退避用（Git 管理せず、push しない）
-DESIGN_SYSTEM.md  このサイトのデザインシステム
+DESIGN_SYSTEM.md  hotline 時代のコンポーネント棚卸し（履歴）。現行の共通デザインは minna-design
 ```
 
 ## 経緯
@@ -71,3 +72,4 @@ DESIGN_SYSTEM.md  このサイトのデザインシステム
 - 2026-09-23 に、このリポジトリは `hotline` → `kabuka` → `tomo` の順に改名しました（ポートフォリオの機能も持たせるため）
 - ＥＮＥＯＳの内部通報制度をめぐる訴訟の内容（旧 Home・`agm/`・`trial/`）は、会社に伝えているＵＲＬを引き継いだ新しい `hotline` リポジトリ（**https://minnanosaiban.github.io/hotline/**）に移り、このリポジトリからは削除しました。旧 `about/index.md` の内容が、このサイトの Home に昇格しました
 - 削除した agm/trial 専用のコンポーネントをデモしていた見本帳（`docs/styleguide.md`）と、専用の `docs/css/11-trial.css`・`docs/css/13-carousel.css`・`docs/js/qa-carousel.js`・`docs/js/toc-toggle.js`・`overrides/hooks/doc_indent.py` も合わせて削除しました（`DESIGN_SYSTEM.md` に注記があります）
+- 2026-10-11 に、決算・株価データ検証を別リポジトリ [kessan-kabuka](https://github.com/minnanosaiban/kessan-kabuka)（Zensical 製）へ分離しました。共通デザインは [minna-design](https://github.com/minnanosaiban/minna-design) に切り出し、tomo・hotline・kessan-kabuka で共有します（同期は minna-design の `sync.bat`）

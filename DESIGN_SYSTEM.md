@@ -1,3 +1,8 @@
+> **2026-10-11 追記**: 現行の共通デザイン（色・余白・文字・共通部品のルール）は
+> [minna-design](https://github.com/minnanosaiban/minna-design) の `DESIGN_SYSTEM.md` が正本。tomo の共通CSSは `docs/css/shared/`
+> （minna-design から同期）に移り、`01-color.css`・`06-link-text.css` は削除、`02-layout.css`・`03-typeset.css` から重複分を除いた。
+> 決算・株価データ検証（`docs/blog/`・`10-blog-reset.css`）は kessan-kabuka へ分離した。この文書は hotline 時代の棚卸し記録として残す。
+
 # hotline デザインシステム — コンポーネント一覧
 
 作成: 2026-08-17。`docs/css/01〜12`（9ファイル）と実ページ（Home / agm / trial / about / blog）を突き合わせて棚卸しした。

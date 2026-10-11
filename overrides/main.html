@@ -29,22 +29,16 @@
       https://minnanosaiban.github.io/favicon.png（サブパス/hotline/の外・404）を指しており、
       2つ目のicon linkとして後に並ぶぶんブラウザ・クローラに優先されて壊れたアイコンになっていた
       （2026-08-22、Google検索結果でアイコンが出ない問題で発覚・削除）。 -#}
-  {% if page %}
-    {% set src = page.file.src_path | replace('\\', '/') %}
-    {% if src == 'blog/index.md' %}
-      <style>.md-typeset h1 { display: none !important; }</style>
-    {% elif src.startswith('blog/posts/') %}
-      <style>
-        .md-typeset h1 { font-size: 2em !important; font-weight: 300 !important; line-height: 1.3 !important; margin: 0 0 1.25em 0 !important; }
-        .md-nav--secondary .md-nav__item > .md-nav,
-        .md-nav--secondary .md-nav__item > .md-nav .md-nav__item > .md-nav { display: none !important; }
-      </style>
-    {% elif 'judgement_2025' in src %}
-      <style>
-        .md-nav--secondary .md-nav__item > .md-nav,
-        .md-nav--secondary .md-nav__item > .md-nav .md-nav__item > .md-nav { display: block !important; }
-      </style>
-    {% endif %}
+  {#- 転送だけのページ（旧 URL の受け皿。docs/blog/ 以下）。front matter の redirect_to へ飛ばす。
+      GitHub Pages ではサーバー側の301が使えないので、meta refresh と JS で行う（hotline と同じ仕組み）。
+      JS 側は location.hash を転送先に引き継ぐ。 -#}
+  {% if page and page.meta and page.meta.redirect_to %}
+    <meta http-equiv="refresh" content="0; url={{ page.meta.redirect_to | url }}">
+    <script>location.replace({{ (page.meta.redirect_to | url) | tojson }} + location.hash)</script>
+  {% endif %}
+  {#- 検索結果に出したくないページは、front matter に robots: noindex と書く。 -#}
+  {% if page and page.meta and page.meta.robots %}
+    <meta name="robots" content="{{ page.meta.robots }}">
   {% endif %}
   {% if page and page.meta %}
     <meta name="twitter:card" content="{{ page.meta.twitter_card | default('summary') }}">

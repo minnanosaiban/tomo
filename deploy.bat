@@ -1,64 +1,128 @@
 @echo off
-chcp 65001 >nul
 setlocal
 
-rem --- メモ（初回設定やコマンド確認用） ---
-rem pip install -r requirements.txt
-rem git clone https://github.com/minnanosaiban/tomo.git
-rem git remote set-url origin https://github.com/minnanosaiban/tomo.git
-rem python -m mkdocs serve
-rem --------------------------------------
+rem ============================================================
+rem  tomo deploy (GitHub Pages, built by GitHub Actions)
+rem  Double-click after editing to publish the site.
+rem
+rem  Steps:
+rem    1. Build check with Zensical. Stops here if the build fails.
+rem    2. Commit and push to GitHub (main). Skipped when nothing is new;
+rem       a failed push is retried up to 3 times.
+rem    3. GitHub Actions builds and publishes the site (about 30 seconds).
+rem       This script waits for it and reports success or failure. If GitHub gets
+rem       stuck (no result after 4 minutes) the run is cancelled and re-run once
+rem       by itself; the previous version of the site stays online meanwhile.
+rem    4. Notify IndexNow (Bing etc.). A failure here is not fatal.
+rem
+rem  First-time setup (run once in this folder):
+rem    python -m venv .venv
+rem    .venv\Scripts\pip install -r requirements.txt
+rem
+rem  Preview only: serve.bat     Build only: build.bat
+rem  Site:    https://minnanosaiban.github.io/tomo/
+rem  Actions: https://github.com/minnanosaiban/tomo/actions
+rem ============================================================
 
-echo === Deploy to GitHub Pages ===
+set PYTHONUTF8=1
+
+echo === Deploy tomo to GitHub Pages ===
 cd /d "%~dp0"
-
-echo === Check Current Directory ===
 echo Current: %CD%
 
-echo === MkDocs build ===
-rem --- ここを python -m mkdocs に書き換え ---
-python -m mkdocs build --clean
-if %errorlevel% neq 0 (
-    echo Build failed.
+echo === Check the environment ===
+if not exist ".venv\Scripts\zensical.exe" (
+    echo [ERROR] .venv\Scripts\zensical.exe was not found.
+    echo         Run once in this folder:
+    echo           python -m venv .venv
+    echo           .venv\Scripts\pip install -r requirements.txt
     pause
-    exit /b
+    exit /b 1
 )
 
-echo === MkDocs deploy to gh-pages ===
-rem --- ここを python -m mkdocs に書き換え ---
-python -m mkdocs gh-deploy --force
+echo === Build check ===
+.venv\Scripts\zensical.exe build --clean
 if %errorlevel% neq 0 (
-    echo Deploy failed.
+    echo [ERROR] Build failed. Nothing was pushed.
     pause
-    exit /b
+    exit /b 1
 )
 
-echo === Notify IndexNow ===
-powershell -ExecutionPolicy Bypass -File "%~dp0scripts\indexnow_ping.ps1"
-if %errorlevel% neq 0 echo IndexNow ping failed (non-blocking, continuing).
-
-echo === Commit ^& Push to main (tomo) ===
+echo === Commit ^& Push to GitHub, main ===
 git add .
-rem ビルド成果物(site/)をmainブランチのコミット対象から外す
-git reset site/ >nul 2>&1
 git commit -m "Update main source" || echo No changes to commit
-git push origin main --force
 
-echo === Commit ^& Push to blog (C:\minnanosaiban\blog) ===
-cd /d "C:\minnanosaiban\blog"
+rem Push only when there is something new: commits that are not on origin/main yet.
+set AHEAD=
+for /f %%n in ('git rev-list --count origin/main..HEAD 2^>nul') do set AHEAD=%%n
+if "%AHEAD%"=="0" (
+    echo Nothing new to push.
+    goto pushed
+)
+
+set TRIES=0
+:do_push
+set /a TRIES+=1
+rem Errors such as Empty reply from server are often network or HTTP/2 hiccups. From the 2nd try, use HTTP/1.1.
+if %TRIES% equ 1 git push -u origin main
+if %TRIES% gtr 1 git -c http.version=HTTP/1.1 push -u origin main
+if %errorlevel% equ 0 goto pushed
+if %TRIES% lss 3 (
+    echo [WARN] Push failed on try %TRIES% of 3. Trying again in 5 seconds.
+    %SystemRoot%\System32\timeout.exe /t 5 /nobreak >nul
+    goto do_push
+)
+echo [ERROR] Git push failed 3 times. Check the network, VPN, proxy and sign-in, then run this again.
+echo         Your commit is saved on this PC and will be pushed next time.
+pause
+exit /b 1
+
+:pushed
+
+echo === Commit ^& Push to blog (C:\minnanosaibanlog) ===
+pushd "C:\minnanosaibanlog"
 if %errorlevel% neq 0 (
-    echo cd to blog repo failed.
+    echo [ERROR] cd to the blog repo failed.
     pause
-    exit /b
+    exit /b 1
 )
 git add .
 git commit -m "Update blog scripts" || echo No changes to commit
 git push origin main --force
 if %errorlevel% neq 0 (
-    echo repos/blog push failed.
+    echo [ERROR] blog repo push failed.
+    popd
     pause
-    exit /b
+    exit /b 1
+)
+popd
+
+echo === Wait for GitHub Actions to publish the site ===
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\wait_deploy.ps1"
+if %errorlevel% equ 2 (
+    echo [ERROR] GitHub did not finish publishing the site, even after one automatic re-run.
+    echo         The previous version of the site stays online. Your commit is already pushed.
+    echo         Wait a few minutes and run this again, or open:
+    echo         https://github.com/minnanosaiban/tomo/actions
+    pause
+    exit /b 1
+)
+if %errorlevel% equ 3 (
+    echo [WARN] The deploy could not be confirmed, so IndexNow is skipped.
+    echo        Check the site, then run scripts\indexnow_ping.ps1 by hand if needed.
+    goto done
+)
+if %errorlevel% neq 0 (
+    echo [ERROR] The deploy on GitHub Actions failed. Open the log:
+    echo         https://github.com/minnanosaiban/tomo/actions
+    pause
+    exit /b 1
 )
 
+echo === Notify IndexNow ===
+powershell -ExecutionPolicy Bypass -File "%~dp0scripts\indexnow_ping.ps1"
+if %errorlevel% neq 0 echo IndexNow ping failed - not fatal, continuing.
+
+:done
 echo === Done ===
 pause

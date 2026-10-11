@@ -6,7 +6,7 @@ title: 有報ナビ
 
 有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイト「**有報ナビ**」の解説です。「株価分析」（決算短信・有価証券報告書・株価データを使った分析）の関連サイトです。
 
-- 株価分析：[記事の一覧](../blog/index.md)
+- 決算・株価データ検証：[記事の一覧](https://minnanosaiban.github.io/kessan-kabuka/)
 - 公開サイト：[minnanosaiban.github.io/company-analysis](https://minnanosaiban.github.io/company-analysis/)
 - ソース：[github.com/minnanosaiban/company-analysis](https://github.com/minnanosaiban/company-analysis)（記事ごとのコードは [github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)）
 

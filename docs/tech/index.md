@@ -1,8 +1,6 @@
 ---
 title: 技術解説
 description: 運営者が作ったアプリ・ツール・ウェブサイトの、仕組みと作るうえで判断したことの解説の一覧です。
-hide:
-  - toc
 ---
 
 # 技術解説
@@ -10,9 +8,9 @@ hide:
 作ったアプリ・ツール・ウェブサイトごとに、その仕組みと、作るうえで判断したことを解説しています。
 
 
-<p class="toc-phase-label">アプリ</p>
+## アプリ
 
-<div class="toc-grid">
+<div class="toc-grid" style="margin-top: 0.8rem;">
 <a href="court-calendar/" class="toc-card">
 <span class="toc-card-title">応援傍聴ナビ</span>
 <span class="toc-card-desc">民事裁判の期日と傍聴席の様子を共有するカレンダー</span>
@@ -27,9 +25,9 @@ hide:
 </a>
 </div>
 
-<p class="toc-phase-label">ツール</p>
+## ツール
 
-<div class="toc-grid">
+<div class="toc-grid" style="margin-top: 0.8rem;">
 <a href="pdf-tools/" class="toc-card">
 <span class="toc-card-title">PDFツール</span>
 <span class="toc-card-desc">墨消し・結合・分割・メタデータ編集（ブラウザ内で完結）</span>
@@ -60,9 +58,9 @@ hide:
 </a>
 </div>
 
-<p class="toc-phase-label">ウェブサイト</p>
+## ウェブサイト
 
-<div class="toc-grid">
+<div class="toc-grid" style="margin-top: 0.8rem;">
 <a href="e-shikaku/" class="toc-card">
 <span class="toc-card-title">E資格 動く数式ノート</span>
 <span class="toc-card-desc">数式・図・数値が連動して動く試験対策ノート</span>

@@ -4,10 +4,12 @@ title: サイドノート作成
 
 # サイドノート作成
 
-文章・Markdown・スクリーンショット・ＰＤＦに、右側の「サイドノート」で注釈を付けるツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**開いた資料も、書いたコメントも、自分のパソコンの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
+<p class="about-work-links">
+<a class="arrow-link" href="https://sidenote-tool.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/sidenote" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[sidenote-tool.pages.dev](https://sidenote-tool.pages.dev/)
-- ソース：[github.com/minnanosaiban/sidenote](https://github.com/minnanosaiban/sidenote)
+文章・Markdown・スクリーンショット・ＰＤＦに、右側の「サイドノート」で注釈を付けるツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**開いた資料も、書いたコメントも、自分のパソコンの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

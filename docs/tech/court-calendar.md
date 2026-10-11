@@ -4,12 +4,14 @@ title: 応援傍聴ナビ
 
 # 応援傍聴ナビ
 
+<p class="about-work-links">
+<a class="arrow-link" href="https://court-calendar-6q8.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/court-calendar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+
 民事裁判の期日（いつ・どこで開かれるか）と、傍聴席の様子をみんなで共有するカレンダーサイトです。友人と共同運営しています。事件ごとの詳細ページ（争点・当事者・期日・訴訟資料・写真）、傍聴に行った人が書き込む「行ってきたよ」掲示板、Ｘで共有したときに出るカード画像の自動生成などの機能があります。
 
 サーバーは自前では持たず、Cloudflare の Pages（ページとＡＰＩ）・D1（データベース）・R2（ファイル置き場）だけで動いています。フロントエンドはビルド工程のない素のＨＴＭＬ / ＣＳＳ / JavaScript で、フレームワークは使っていません。
-
-- 公開ページ：[court-calendar-6q8.pages.dev](https://court-calendar-6q8.pages.dev/)
-- ソース：[github.com/minnanosaiban/court-calendar](https://github.com/minnanosaiban/court-calendar)
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

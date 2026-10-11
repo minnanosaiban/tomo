@@ -5,10 +5,12 @@ math: true
 
 # E資格 動く数式ノート
 
-E資格（JDLA Deep Learning for ENGINEER）の範囲を、**数式の要点**と、**数式・図・数値が連動して動く図**でまとめたノートです。試験直前の見直しに使えるよう、文章は短く、式を中心にしています。式を眺めて分からなかったところは、スライダーを動かして確かめられます。サーバーはなく、静的ファイルを GitHub Pages に置いているだけです。
+<p class="about-work-links">
+<a class="arrow-link" href="https://minnanosaiban.github.io/e-shikaku/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[minnanosaiban.github.io/e-shikaku](https://minnanosaiban.github.io/e-shikaku/)
-- ソース：[github.com/minnanosaiban/e-shikaku](https://github.com/minnanosaiban/e-shikaku)
+E資格（JDLA Deep Learning for ENGINEER）の範囲を、**数式の要点**と、**数式・図・数値が連動して動く図**でまとめたノートです。試験直前の見直しに使えるよう、文章は短く、式を中心にしています。式を眺めて分からなかったところは、スライダーを動かして確かめられます。サーバーはなく、静的ファイルを GitHub Pages に置いているだけです。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。公開している範囲は、まだ一部です（末尾の「限界と使うときの注意」を参照）。
 

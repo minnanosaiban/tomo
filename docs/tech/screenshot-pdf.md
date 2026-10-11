@@ -4,10 +4,12 @@ title: スクショPDF化
 
 # スクショＰＤＦ化
 
-スマホのスクショを、1ページ4枚（2×2）のA4のＰＤＦにまとめて、そのままメールやチャットで送れるツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**スクショもＰＤＦも、スマホの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
+<p class="about-work-links">
+<a class="arrow-link" href="https://screenshot-pdf.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[screenshot-pdf.pages.dev](https://screenshot-pdf.pages.dev/)
-- ソース：[github.com/minnanosaiban/screenshot-pdf](https://github.com/minnanosaiban/screenshot-pdf)
+スマホのスクショを、1ページ4枚（2×2）のA4のＰＤＦにまとめて、そのままメールやチャットで送れるツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**スクショもＰＤＦも、スマホの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

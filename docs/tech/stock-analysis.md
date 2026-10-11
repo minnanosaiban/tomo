@@ -4,11 +4,15 @@ title: 有報ナビ
 
 # 有報ナビ
 
+<p class="about-work-links">
+<a class="arrow-link" href="https://minnanosaiban.github.io/company-analysis/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+
 有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイト「**有報ナビ**」の解説です。「株価分析」（決算短信・有価証券報告書・株価データを使った分析）の関連サイトです。
 
 - 決算・株価データ検証：[記事の一覧](https://minnanosaiban.github.io/kessan-kabuka/)
-- 公開サイト：[minnanosaiban.github.io/company-analysis](https://minnanosaiban.github.io/company-analysis/)
-- ソース：[github.com/minnanosaiban/company-analysis](https://github.com/minnanosaiban/company-analysis)（記事ごとのコードは [github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)）
+- 記事ごとのコード：[github.com/minnanosaiban/blog](https://github.com/minnanosaiban/blog)
 
 このページは、有報ナビの使い方と、その仕組み、作るうえで判断したことの解説です。
 

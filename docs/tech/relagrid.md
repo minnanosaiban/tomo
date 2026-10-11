@@ -4,10 +4,12 @@ title: 関係図エディタ RelaGrid
 
 # 関係図エディタ RelaGrid
 
-グリッドにアイコンのノードを置き、矢印でつないで関係図を作るツールです。マウスで描く方法と、短いテキスト（ＤＳＬ）で書く方法があり、両者は常に同期します。サーバーはなく、静的ファイルを GitHub Pages に置いているだけです。**描いた図は、自分のパソコンの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
+<p class="about-work-links">
+<a class="arrow-link" href="https://minnanosaiban.github.io/relagrid/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/relagrid" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[minnanosaiban.github.io/relagrid](https://minnanosaiban.github.io/relagrid/)
-- ソース：[github.com/minnanosaiban/relagrid](https://github.com/minnanosaiban/relagrid)
+グリッドにアイコンのノードを置き、矢印でつないで関係図を作るツールです。マウスで描く方法と、短いテキスト（ＤＳＬ）で書く方法があり、両者は常に同期します。サーバーはなく、静的ファイルを GitHub Pages に置いているだけです。**描いた図は、自分のパソコンの外に出ません。** 処理はすべてブラウザの中（JavaScript）で行います。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

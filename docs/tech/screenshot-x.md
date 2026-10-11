@@ -4,9 +4,11 @@ title: Xスクショ管理ツール
 
 # Ｘスクショ管理ツール
 
-Ｘ（旧Twitter）の公開アカウントの投稿を、**アドレスバー（投稿ＵＲＬ）ごと**1件ずつスクリーンショットして貯め、あとから期間と重要度で選んで、ＰＤＦや提出用フォルダに書き出すWindowsのデスクトップアプリです。投稿を証拠として残し、提出できる形に整えるために作りました。**撮影も保管も、すべて自分のパソコンの中で完結します。**
+<p class="about-work-links">
+<a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-x" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- ソース・exe配布：[github.com/minnanosaiban/screenshot-x](https://github.com/minnanosaiban/screenshot-x)
+Ｘ（旧Twitter）の公開アカウントの投稿を、**アドレスバー（投稿ＵＲＬ）ごと**1件ずつスクリーンショットして貯め、あとから期間と重要度で選んで、ＰＤＦや提出用フォルダに書き出すWindowsのデスクトップアプリです。投稿を証拠として残し、提出できる形に整えるために作りました。**撮影も保管も、すべて自分のパソコンの中で完結します。**
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

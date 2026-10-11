@@ -4,10 +4,12 @@ title: 英語学習アプリ
 
 # 英語学習アプリ
 
-ＴＯＥＩＣ対策向けの英語学習アプリです。学ぶ単位を、**英文・意味句・イントネーション・ユニット（ＩＵ）・単語**の4つにそろえ、表のように選んで、1枚のカードで学びます。以前に作った試作のアプリ（公開は終了しました）を元に、設計から作り直しました。英文は端末に保存し、クラウド同期を使うときは**端末の中で暗号化してから**送ります。
+<p class="about-work-links">
+<a class="arrow-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[eng-study.scratch-2026-10-07-cb3f9c.workers.dev](https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/)
-- ソース：[github.com/minnanosaiban/eng-study](https://github.com/minnanosaiban/eng-study)
+ＴＯＥＩＣ対策向けの英語学習アプリです。学ぶ単位を、**英文・意味句・イントネーション・ユニット（ＩＵ）・単語**の4つにそろえ、表のように選んで、1枚のカードで学びます。以前に作った試作のアプリ（公開は終了しました）を元に、設計から作り直しました。英文は端末に保存し、クラウド同期を使うときは**端末の中で暗号化してから**送ります。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

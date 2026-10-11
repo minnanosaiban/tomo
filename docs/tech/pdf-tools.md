@@ -4,10 +4,12 @@ title: PDFツール
 
 # ＰＤＦツール
 
-ＰＤＦの加工を1か所にまとめた、ブラウザだけで動くツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**ＰＤＦは自分のパソコンの外に出ません。** 開いたファイルの処理はすべてブラウザの中（JavaScript）で行います。
+<p class="about-work-links">
+<a class="arrow-link" href="https://pdf-tools-agb.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[pdf-tools-agb.pages.dev](https://pdf-tools-agb.pages.dev/)
-- ソース：[github.com/minnanosaiban/pdf-tools](https://github.com/minnanosaiban/pdf-tools)
+ＰＤＦの加工を1か所にまとめた、ブラウザだけで動くツールです。サーバーはなく、静的ファイルを Cloudflare Pages に置いているだけです。**ＰＤＦは自分のパソコンの外に出ません。** 開いたファイルの処理はすべてブラウザの中（JavaScript）で行います。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。
 

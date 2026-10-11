@@ -6,10 +6,12 @@ seo_title: ENEOS（エネオス）通報裁判の記録サイトの作り方｜�
 
 # 内部通報制度をめぐる裁判記録
 
-「ＥＮＥＯＳの内部通報制度をめぐる訴訟について」は、裁判文書（準備書面・判決文・証拠のＰＤＦ）と、株主総会での質疑応答を公開しているサイトです。静的サイトジェネレーターの **Zensical**（Material for MkDocs の後継）で作り、GitHub Pages で公開しています。サーバーもデータベースもありません。
+<p class="about-work-links">
+<a class="arrow-link" href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/hotline" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
 
-- 公開ページ：[minnanosaiban.github.io/hotline](https://minnanosaiban.github.io/hotline/)
-- ソース：[github.com/minnanosaiban/hotline](https://github.com/minnanosaiban/hotline)
+「ＥＮＥＯＳの内部通報制度をめぐる訴訟について」は、裁判文書（準備書面・判決文・証拠のＰＤＦ）と、株主総会での質疑応答を公開しているサイトです。静的サイトジェネレーターの **Zensical**（Material for MkDocs の後継）で作り、GitHub Pages で公開しています。サーバーもデータベースもありません。
 
 このページは、**Zensical の標準機能ではない部分、独自に工夫した部分**の解説です。デザインの考え方と4サイト共通の仕組みは、[ウェブサイトデザイン](web-design.md)にまとめています。末尾の「デザインシステム」の節は、このサイトの部品と値の詳細です。
 

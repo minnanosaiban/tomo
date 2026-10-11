@@ -1,0 +1,20 @@
+/* tomo 固有：技術解説ページ最上部の「公開サイト」「GitHub」リンク。
+   トップページの制作物項目（.about-work 内）と同じ見た目：青文字・下線なし・横並びで間隔あり */
+.md-typeset p.about-work-links {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 1.2rem 0;
+}
+
+.md-typeset p.about-work-links .arrow-link,
+.md-typeset p.about-work-links .arrow-link:hover {
+  text-decoration: none;
+}
+
+.md-typeset p.about-work-links .arrow-link + .arrow-link {
+  margin-left: 1.6em;
+}
+
+.md-typeset p.about-work-links .arrow-link i {
+  margin-right: 0.15em;
+}

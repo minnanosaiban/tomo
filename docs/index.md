@@ -15,7 +15,7 @@ hide:
 <div class="hero-band" markdown>
 # サイト運営者について
 <p>
-ウェブサイト「<a href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ＥＮＥＯＳの内部通報制度をめぐる訴訟について</a>」は通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・Ｅ資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
+ウェブサイト「<a href="https://minnanosaiban.github.io/hotline/" target="_blank" rel="noopener">ＥＮＥＯＳの内部通報制度をめぐる訴訟について</a>」は通報者本人が作成しています。裁判に関する掲載以外に、実務経験（企業価値分析・Pythonデータ分析・E資格ホルダー）を活かして、「ちょっと面倒」を軽くするツールを作成しています。
 </p>
 </div>
 
@@ -40,7 +40,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/company-analysis" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ROE・PER・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
+有価証券報告書を、業種や財務指標の条件で探して比べられる公開サイトです。東証の主要企業（約500社）を、ＲＯＥ・ＰＥＲ・自己資本比率やキャッシュフローの型で絞り込み、セグメント別の利益や推移も見られます。
 </p>
 <p class="fig-meta">使用技術：JavaScript・Apache ECharts・GitHub Pages</p>
 </div>
@@ -102,9 +102,9 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/scan-ocr" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-スキャンしたPDF・画像を OCR して、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
+スキャンしたＰＤＦ・画像を ＯＣＲして、テキストレイヤを載せるツールです。「墨消し」機能もあり、資料の個人名などの墨消し作業にも使えます。処理はすべてパソコンの中だけで完結します。
 </p>
-<p class="fig-meta">使用技術：Python（ローカルＷｅｂアプリ）</p>
+<p class="fig-meta">使用技術：Python（ローカルWebアプリ）</p>
 </div>
 
 <div class="about-work width-40" markdown>
@@ -114,7 +114,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/screenshot-pdf" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-スマホのスクリーンショットを２×２でＡ４に並べ、整理しやすいＰＤＦにまとめます。メールやチャットにその場でそのまま送れます。処理はすべてブラウザ内で完結し、外部送信はありません。
+スマホのスクリーンショットを2×2でA4に並べ、整理しやすいＰＤＦにまとめます。メールやチャットにその場でそのまま送れます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・pdf-lib（Cloudflare Pages）</p>
 </div>
@@ -139,7 +139,7 @@ hide:
 <p>
 決算短信・有価証券報告書・株価・適時開示などのデータ取得と、データ品質のチェックを、ひとつの画面にまとめたツールです。データはすべてこのパソコンの中だけに保存されます。
 </p>
-<p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルＷｅｂアプリ）</p>
+<p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルWebアプリ）</p>
 </div>
 
 <p class="about-sec-title width-40">ウェブサイト</p>
@@ -151,7 +151,7 @@ hide:
 <a class="arrow-link" href="https://github.com/minnanosaiban/e-shikaku" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-Ｅ資格の範囲を、数式の要点と、数式・図・数値が連動して動く図でまとめたノートです。数式の行にマウスを乗せると図の対応する部分が光り、スライダーを動かすと式の数値も変わります。公開は一部のページで、順次追加しています。
+E資格の範囲を、数式の要点と、数式・図・数値が連動して動く図でまとめたノートです。数式の行にマウスを乗せると図の対応する部分が光り、スライダーを動かすと式の数値も変わります。公開は一部のページで、順次追加しています。
 </p>
 <p class="fig-meta">使用技術：JavaScript・KaTeX・MkDocs Material（GitHub Pages）</p>
 </div>
@@ -185,9 +185,9 @@ hide:
 <a class="arrow-link" href="tech/web-design/"><i class="bi bi-tools"></i> 技術解説</a>
 </p>
 <p>
-裁判記録・決算株価検証・Ｅ資格ノートと、このサイトに共通するデザインの考え方です。紺1色と無彩色、罫線より余白、という原則と、4サイトの見た目をそろえ続ける共通ＣＳＳの運用をまとめています。
+裁判記録・決算株価検証・E資格ノートと、このサイトに共通するデザインの考え方です。紺1色と無彩色、罫線より余白、という原則と、4サイトの見た目をそろえ続ける共通ＣＳＳの運用をまとめています。
 </p>
-<p class="fig-meta">使用技術：Zensical（MkDocs互換）・CSS・GitHub Pages</p>
+<p class="fig-meta">使用技術：Zensical（MkDocs互換）・ＣＳＳ・GitHub Pages</p>
 </div>
 
 </div>

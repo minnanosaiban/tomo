@@ -10,7 +10,7 @@
 |---|---|
 | Home（`docs/index.md`） | 制作物の一覧と運営者について |
 | 技術解説（`docs/tech/`） | 各制作物の仕組みと、作るうえで判断したことの解説 |
-| 決算・株価データ検証 | 2026-10-11 に別サイト [kessan-kabuka](https://minnanosaiban.github.io/kessan-kabuka/) へ分離（`docs/blog/` には旧URLからの転送ページだけを残している） |
+| 決算・株価データ検証 | 2026-10-11 に別サイト [kessan-kabuka](https://minnanosaiban.github.io/kessan-kabuka/) へ分離（`docs/blog/` には旧ＵＲＬからの転送ページだけを残している） |
 
 ### 技術解説の一覧
 
@@ -28,7 +28,7 @@
 | 有報ナビ | [`stock-analysis.md`](docs/tech/stock-analysis.md) |
 | E資格 動く数式ノート | [`e-shikaku.md`](docs/tech/e-shikaku.md) |
 
-解説の図は、[RelaGrid](https://minnanosaiban.github.io/relagrid/) で描いたものが多くあります。図の元になった記述（DSL）は、RelaGrid リポジトリの `examples/` にあります（`docs/img/` の SVG と対応）。
+解説の図は、[RelaGrid](https://minnanosaiban.github.io/relagrid/) で描いたものが多くあります。図の元になった記述（ＤＳＬ）は、RelaGrid リポジトリの `examples/` にあります（`docs/img/` のＳＶＧと対応）。
 
 ## 動かし方
 
@@ -41,7 +41,7 @@
 
 ## 数式を書くとき
 
-ページの先頭（front matter）に `math: true` と書いたページだけ、数式（KaTeX）が使えます。書かないページは、これまでと同じ HTML のままで、KaTeX は読み込みません。
+ページの先頭（front matter）に `math: true` と書いたページだけ、数式（KaTeX）が使えます。書かないページは、これまでと同じＨＴＭＬのままで、KaTeX は読み込みません。
 
 ```yaml
 ---
@@ -50,7 +50,7 @@ math: true
 ---
 ```
 
-本文では、行内は `$...$`、ブロックは `$$...$$`（前後に空行）で書きます。仕組みは、`mkdocs.yml` の `pymdownx.arithmatex`（目印を HTML にする）、`overrides/main.html`（`math: true` のページだけ KaTeX を読み込む）、`docs/js/katex-init.js`（描画）の3つです。
+本文では、行内は `$...$`、ブロックは `$$...$$`（前後に空行）で書きます。仕組みは、`mkdocs.yml` の `pymdownx.arithmatex`（目印をＨＴＭＬにする）、`overrides/main.html`（`math: true` のページだけ KaTeX を読み込む）、`docs/js/katex-init.js`（描画）の3つです。
 
 ## 構成
 

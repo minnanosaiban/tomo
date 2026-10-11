@@ -39,7 +39,29 @@
     {% endif %}
     {% set index = _.index %}
     {% set first = index or nav_item.children | first %}
-    {% if first.children %}
+    {% if first.children and first.children | selectattr("children") | list | length == 0 and nav_item.children | selectattr("children") | list | length == nav_item.children | length %}
+      {# 子がすべてセクション（アプリ／ツール／ウェブサイト）のとき：区切り見出し付きのドロップダウン #}
+      <li class="{{ class }} md-tabs__item--dropdown">
+        <details class="md-tabs__dropdown-details">
+          <summary class="md-tabs__link">
+            {{ render_content(nav_item, ref) }}
+            <i class="bi bi-chevron-down md-tabs__caret" aria-hidden="true"></i>
+          </summary>
+          <ul class="md-tabs__dropdown">
+            {% for group in nav_item.children %}
+              <li class="md-tabs__dropdown-group">ー{{ group.title }}ー</li>
+              {% for child in group.children %}
+                <li>
+                  <a href="{{ child.url | url }}" class="md-tabs__dropdown-link{% if child.active %} md-tabs__dropdown-link--active{% endif %}">
+                    {{ child.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+    {% elif first.children %}
       {{ render(first, ref) }}
     {% elif nav_item.children | length > 1 %}
       <li class="{{ class }} md-tabs__item--dropdown">

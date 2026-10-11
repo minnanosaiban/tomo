@@ -1,0 +1,44 @@
+/* tomo 固有：技術解説のナビに「ーアプリー」「ーツールー」の区切りを入れる。
+   上部タブのドロップダウン（.md-tabs__dropdown-group）とサイドバーの両方。 */
+
+.md-tabs__dropdown-group {
+  padding: 8px 10px 3px;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.md-tabs__dropdown-group:not(:first-child) {
+  margin-top: 4px;
+}
+
+/* サイドバー：技術解説の中のグループ（アプリ／ツール／ウェブサイト）を、常に開いた区切り見出し ーアプリー にする。
+   外側のセクション（技術解説）には効かせない（入れ子の内側だけ）。 */
+.md-nav--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link {
+  justify-content: center;
+  margin-top: 0.6rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--md-default-fg-color--light);
+  pointer-events: none;
+  cursor: default;
+}
+
+.md-nav--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link .md-ellipsis::before,
+.md-nav--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link .md-ellipsis::after {
+  content: "ー";
+}
+
+.md-nav--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link .md-nav__icon {
+  display: none;
+}
+
+.md-nav--primary .md-nav__item--section .md-nav__item--section > .md-nav {
+  display: block;
+  visibility: visible;
+  max-height: none;
+  opacity: 1;
+  grid-template-rows: 1fr;
+}

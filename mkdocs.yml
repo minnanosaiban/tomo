@@ -11,19 +11,22 @@ nav:
   - Home:
       - index.md
   - 技術解説:
-      - ＰＤＦツール: tech/pdf-tools.md
-      - サイドノート作成: tech/sidenote.md
-      - 関係図エディタ RelaGrid: tech/relagrid.md
-      - スキャン墨消し: tech/scan-ocr.md
-      - スクショＰＤＦ化: tech/screenshot-pdf.md
-      - Ｘスクショ管理ツール: tech/screenshot-x.md
-      - 英語学習アプリ: tech/eng-study.md
-      - 内部通報制度をめぐる裁判記録: tech/hotline.md
-      - ウェブサイトデザイン: tech/web-design.md
-      - 応援傍聴ナビ: tech/court-calendar.md
-      - 株価データ取得ツール: tech/data-hub.md
-      - 有報ナビ: tech/stock-analysis.md
-      - E資格 動く数式ノート: tech/e-shikaku.md
+      - アプリ:
+          - 応援傍聴ナビ: tech/court-calendar.md
+          - 有報ナビ: tech/stock-analysis.md
+          - 英語学習アプリ: tech/eng-study.md
+      - ツール:
+          - ＰＤＦツール: tech/pdf-tools.md
+          - サイドノート作成: tech/sidenote.md
+          - 関係図エディタ RelaGrid: tech/relagrid.md
+          - スキャン墨消し: tech/scan-ocr.md
+          - スクショＰＤＦ化: tech/screenshot-pdf.md
+          - Ｘスクショ管理ツール: tech/screenshot-x.md
+          - 株価データ取得ツール: tech/data-hub.md
+      - ウェブサイト:
+          - E資格 動く数式ノート: tech/e-shikaku.md
+          - 内部通報制度をめぐる裁判記録: tech/hotline.md
+          - ウェブサイトデザイン: tech/web-design.md
 
 # 決算・株価データ検証は https://minnanosaiban.github.io/kessan-kabuka/ に移転した（2026-10-11）。
 # docs/blog/ には旧URLからの転送ページ（front matter の redirect_to）だけを残している。nav には載せない。
@@ -34,6 +37,7 @@ extra_css:
   - css/shared/layout.css
   - css/shared/components.css
   - css/shared/parts.css
+  - css/nav-groups.css      # tomo 固有：技術解説ナビの区切り（ーアプリー等）
   - https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap
   - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css

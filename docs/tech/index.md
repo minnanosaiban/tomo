@@ -19,9 +19,9 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">有報ナビ</span>
 <span class="toc-card-desc">有価証券報告書を条件で探して比べる公開サイト</span>
 </a>
-<a href="eng-study/" class="toc-card">
+<a href="eng-sentence/" class="toc-card">
 <span class="toc-card-num">03</span>
-<span class="toc-card-title">英語学習アプリ</span>
+<span class="toc-card-title">英文学習アプリ</span>
 <span class="toc-card-desc">TOEIC対策。暗号化クラウド同期つき</span>
 </a>
 </div>

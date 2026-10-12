@@ -46,13 +46,13 @@ hide:
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-study.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">03</span><a class="work-link" href="https://eng-sentence.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文学習アプリ</a> <a class="gh-link" aria-label="開く" href="https://eng-sentence.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
-<a class="arrow-link" href="tech/eng-study/"><i class="bi bi-tools"></i> 技術解説</a>
-<a class="arrow-link" href="https://github.com/minnanosaiban/eng-study" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+<a class="arrow-link" href="tech/eng-sentence/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-sentence" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-TOEIC対策向けの英語学習アプリです。英文・意味句・イントネーション・ユニット・単語の4つの単位を、表のように選んで学べます。Gemini での解析（API・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱に対応しています。
+TOEIC対策向けの、英文を学ぶアプリです。英文を表のように選んで、全文・区切り・品詞・文法・和訳・音声で学べます。Gemini での解析（API・コピペ）、暗号化したクラウド同期、Claude から英文を預ける受信箱も備えています。
 </p>
 <p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>

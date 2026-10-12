@@ -24,6 +24,7 @@ nav:
           - スクショPDF化: tech/screenshot-pdf.md
           - Xスクショ管理ツール: tech/screenshot-x.md
           - 株価データ取得ツール: tech/data-hub.md
+          - スライド動画メーカー: tech/slide-video.md
       - ウェブサイト:
           - E資格 動く数式ノート: tech/e-shikaku.md
           - 決算・株価データ検証: tech/kessan-kabuka.md

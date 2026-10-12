@@ -63,6 +63,11 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">株価データ取得ツール</span>
 <span class="toc-card-desc">株価・開示・ニュースの取得と品質チェック</span>
 </a>
+<a href="slide-video/" class="toc-card">
+<span class="toc-card-num">08</span>
+<span class="toc-card-title">スライド動画メーカー</span>
+<span class="toc-card-desc">画像・PDFからX向けのMP4を作る（ブラウザ内で完結）</span>
+</a>
 </div>
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ウェブサイト</p>

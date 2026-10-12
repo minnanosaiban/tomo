@@ -142,6 +142,18 @@ X（旧Twitter）の投稿を後から確認できる形で保存・整理する
 <p class="fig-meta">使用技術：Python・FastAPI・JavaScript（ローカルWebアプリ）</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">08</span><a class="work-link" href="https://slide-video-c0s.pages.dev/" target="_blank" rel="noopener">スライド動画メーカー</a> <a class="gh-link" aria-label="開く" href="https://slide-video-c0s.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/slide-video/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/slide-video" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+画像やPDFから、Xに投稿できるスライド動画（MP4）を作るツールです。横スライド・ページめくり・キューブ回転など8種類の見せ方から選べます。処理はすべてブラウザ内で完結し、外部送信はありません。
+</p>
+<p class="fig-meta">使用技術：JavaScript・PDF.js・WebCodecs（Cloudflare Pages）</p>
+</div>
+
 <p class="about-sec-title width-40">ウェブサイト</p>
 
 <div class="about-work width-40" markdown>

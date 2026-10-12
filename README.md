@@ -21,6 +21,7 @@
 | RelaGrid　関係図 | [`relagrid.md`](docs/tech/relagrid.md) |
 | スキャン墨消し | [`scan-ocr.md`](docs/tech/scan-ocr.md) |
 | スクショPDF化 | [`screenshot-pdf.md`](docs/tech/screenshot-pdf.md) |
+| スライド動画メーカー | [`slide-video.md`](docs/tech/slide-video.md) |
 | Xスクショ管理ツール | [`screenshot-x.md`](docs/tech/screenshot-x.md)（準備中） |
 | 応援傍聴ナビ | [`court-calendar.md`](docs/tech/court-calendar.md) |
 | 内部通報制度をめぐる裁判記録 | [`hotline.md`](docs/tech/hotline.md) |

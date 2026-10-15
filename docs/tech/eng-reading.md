@@ -4,6 +4,11 @@ title: 英文読解の復習アプリ
 
 # 英文読解の復習アプリ（English Reading Review）
 
+<p class="about-work-links">
+<a class="arrow-link" href="https://english-reading-review.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng_reading" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+
 英文と和訳のペアを登録し、**読んでいて引っ掛かった単語・熟語・フレーズ**を選んで★登録し、文脈つきで復習するアプリです。単語帳ではなく、「自分が英文を読んでいてつまずいた表現」を蓄積する帳面として作りました。サーバーはなく、静的ファイルだけで動きます。**入力した英文・和訳・復習データは、アプリからは外へ送りません。** 読み上げはブラウザの Web Speech API が行います。
 
 このページは、その仕組みと、作るうえで判断したことの解説です。

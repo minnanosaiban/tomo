@@ -70,9 +70,10 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">05</span>英文読解の復習アプリ</p>
+<p class="about-work-title"><span class="about-work-no">05</span><a class="work-link" href="https://english-reading-review.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英文読解の復習アプリ</a> <a class="gh-link" aria-label="開く" href="https://english-reading-review.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-reading/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng_reading" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
 英文を読んでいて引っ掛かった単語・熟語・フレーズを、選ぶだけで★登録し、文脈つきで復習するアプリです。復習のあとは、元の英文へ戻って読み直せます。登録した語句は英文に下線で表示され、データはすべてブラウザ内に保存されます。

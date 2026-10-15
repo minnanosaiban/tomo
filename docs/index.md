@@ -69,6 +69,17 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 <p class="fig-meta">使用技術：React・TypeScript・Web Speech API・GitHub Pages</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">05</span>英文読解の復習アプリ</p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/eng-reading/"><i class="bi bi-tools"></i> 技術解説</a>
+</p>
+<p>
+英文を読んでいて引っ掛かった単語・熟語・フレーズを、選ぶだけで★登録し、文脈つきで復習するアプリです。復習のあとは、元の英文へ戻って読み直せます。登録した語句は英文に下線で表示され、データはすべてブラウザ内に保存されます。
+</p>
+<p class="fig-meta">使用技術：React・TypeScript・Web Speech API・localStorage（Cloudflare Workers の静的配信）</p>
+</div>
+
 <p class="about-sec-title width-40">ツール</p>
 
 <div class="about-work width-40" markdown>

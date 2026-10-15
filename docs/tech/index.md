@@ -29,6 +29,11 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">英語の音の聞き比べアプリ</span>
 <span class="toc-card-desc">選んだ語句を間を空けて聞き比べる。再生制御の設計</span>
 </a>
+<a href="eng-reading/" class="toc-card">
+<span class="toc-card-num">05</span>
+<span class="toc-card-title">英文読解の復習アプリ</span>
+<span class="toc-card-desc">引っ掛かった語句を★登録して復習。選択位置の持ち方</span>
+</a>
 </div>
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ツール</p>

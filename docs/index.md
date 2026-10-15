@@ -57,6 +57,18 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 <p class="fig-meta">使用技術：JavaScript・IndexedDB・Gemini API・Web Crypto（AES-GCM）（Cloudflare Workers・D1）</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">04</span><a class="work-link" href="https://minnanosaiban.github.io/eng-sound/" target="_blank" rel="noopener">英語の音の聞き比べアプリ</a> <a class="gh-link" aria-label="開く" href="https://minnanosaiban.github.io/eng-sound/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/eng-sound/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-sound" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+英文を貼り付け、聞きたい単語やフレーズを選んで、間を空けて聞き比べるアプリです。離れた複数の箇所をリストに追加し、1つずつ独立して読み上げます。desk と street のような似た音や、範囲を広げたときの聞こえ方を比べられます。
+</p>
+<p class="fig-meta">使用技術：React・TypeScript・Web Speech API・GitHub Pages</p>
+</div>
+
 <p class="about-sec-title width-40">ツール</p>
 
 <div class="about-work width-40" markdown>

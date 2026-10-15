@@ -24,6 +24,11 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">英文学習アプリ</span>
 <span class="toc-card-desc">TOEIC対策。暗号化クラウド同期つき</span>
 </a>
+<a href="eng-sound/" class="toc-card">
+<span class="toc-card-num">04</span>
+<span class="toc-card-title">英語の音の聞き比べアプリ</span>
+<span class="toc-card-desc">選んだ語句を間を空けて聞き比べる。再生制御の設計</span>
+</a>
 </div>
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ツール</p>

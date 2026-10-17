@@ -5,10 +5,11 @@ title: 連続2ページPDFリーダー
 # 連続2ページPDFリーダー
 
 <p class="about-work-links">
+<a class="arrow-link" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-reader" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 
-**開発中です。** 公開サイトはまだありません（ソースコードは GitHub にあります）。このページは、設計と、作るうえで判断したことの解説です。
+このページは、その仕組みと、作るうえで判断したことの解説です。
 
 紙の資料を2ページ並べて読むように、**連続する任意の2ページ**（Page 3 \| Page 4 → Page 4 \| Page 5 → …）を同時に大きく表示するPDFリーダーです。蛍光マーカー、ライン、手書き風の文字を書き込めます。サーバーはなく、処理はすべてブラウザの中で行います。**開いたPDFも、書き込みも、自分のパソコンの外に出ません。**
 

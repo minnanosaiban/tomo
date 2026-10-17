@@ -81,7 +81,7 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <a href="pdf-reader/" class="toc-card">
 <span class="toc-card-num">09</span>
 <span class="toc-card-title">連続2ページPDFリーダー</span>
-<span class="toc-card-desc">連続2ページを大きく表示。1ページずつ進む操作と書き込み位置（開発中）</span>
+<span class="toc-card-desc">連続2ページを大きく表示。1ページずつ進む操作と書き込み位置</span>
 </a>
 </div>
 

@@ -179,7 +179,7 @@ X（旧Twitter）の投稿を後から確認できる形で保存・整理する
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">09</span>連続2ページPDFリーダー（開発中）</p>
+<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener">連続2ページPDFリーダー</a> <a class="gh-link" aria-label="開く" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/pdf-reader/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-reader" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -187,7 +187,7 @@ X（旧Twitter）の投稿を後から確認できる形で保存・整理する
 <p>
 連続する任意の2ページを同時に大きく表示して読み、マーカー・ライン・手書き風の文字を書き込めるPDFリーダーです。ホイールや左右キーで1ページずつ進み、書き込みは縮小表示しても同じ位置に残ります。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
-<p class="fig-meta">使用技術：React・TypeScript・PDF.js・IndexedDB</p>
+<p class="fig-meta">使用技術：React・TypeScript・PDF.js・IndexedDB（Cloudflare Pages）</p>
 </div>
 
 <p class="about-sec-title width-40">ウェブサイト</p>

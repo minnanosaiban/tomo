@@ -90,7 +90,7 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-PDFの墨消し・検索、手書き風の書き込み、結合・分割・回転、メタデータの編集・削除を行えるツールです。処理はすべてブラウザ内で完結し、外部送信はありません。
+PDFの墨消し・検索、結合・分割・回転、メタデータの編集・削除、ページ番号の追加を行えるツールです。基本機能のほか、元のPDFを少し縮小し、手書き風の文字・波かっこ「{ }」・矢印などでコメントの見栄えを整えられます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・PDF.js・pdf-lib（Cloudflare Pages）</p>
 </div>

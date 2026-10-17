@@ -78,6 +78,11 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">スライド動画メーカー</span>
 <span class="toc-card-desc">画像・PDFからX向けのMP4を作る（ブラウザ内で完結）</span>
 </a>
+<a href="pdf-reader/" class="toc-card">
+<span class="toc-card-num">09</span>
+<span class="toc-card-title">連続2ページPDFリーダー</span>
+<span class="toc-card-desc">連続2ページを大きく表示。1ページずつ進む操作と書き込み位置（開発中）</span>
+</a>
 </div>
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ウェブサイト</p>

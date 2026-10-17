@@ -178,6 +178,18 @@ X（旧Twitter）の投稿を後から確認できる形で保存・整理する
 <p class="fig-meta">使用技術：JavaScript・PDF.js・WebCodecs（Cloudflare Pages）</p>
 </div>
 
+<div class="about-work width-40" markdown>
+<p class="about-work-title"><span class="about-work-no">09</span>連続2ページPDFリーダー（開発中）</p>
+<p class="about-work-links">
+<a class="arrow-link" href="tech/pdf-reader/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/pdf-reader" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+</p>
+<p>
+連続する任意の2ページを同時に大きく表示して読み、マーカー・ライン・手書き風の文字を書き込めるPDFリーダーです。ホイールや左右キーで1ページずつ進み、書き込みは縮小表示しても同じ位置に残ります。処理はすべてブラウザ内で完結し、外部送信はありません。
+</p>
+<p class="fig-meta">使用技術：React・TypeScript・PDF.js・IndexedDB</p>
+</div>
+
 <p class="about-sec-title width-40">ウェブサイト</p>
 
 <div class="about-work width-40" markdown>

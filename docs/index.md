@@ -90,7 +90,7 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-tools" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
-PDFの墨消し・検索、結合・分割・回転、メタデータの編集・削除、ページ番号の追加を行えるツールです。基本機能のほか、元のPDFを少し縮小し、手書き風の文字・波かっこ「{ }」・矢印などでコメントの見栄えを整えられます。処理はすべてブラウザ内で完結し、外部送信はありません。
+PDFの墨消し・検索、結合・分割・回転、メタデータの編集・削除、ページ番号の追加、白黒化（文字データを残したまま）を行えるツールです。基本機能のほか、元のPDFを少し縮小し、手書き風の文字・波かっこ「{ }」・矢印などでコメントの見栄えを整えられます。処理はすべてブラウザ内で完結し、外部送信はありません。
 </p>
 <p class="fig-meta">使用技術：JavaScript・PDF.js・pdf-lib（Cloudflare Pages）</p>
 </div>
@@ -179,7 +179,7 @@ X（旧Twitter）の投稿を後から確認できる形で保存・整理する
 </div>
 
 <div class="about-work width-40" markdown>
-<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener">連続2ページPDFリーダー</a> <a class="gh-link" aria-label="開く" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p class="about-work-title"><span class="about-work-no">09</span><a class="work-link" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener">2ページ表示PDF</a> <a class="gh-link" aria-label="開く" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/pdf-reader/"><i class="bi bi-tools"></i> 技術解説</a>
 <a class="arrow-link" href="https://github.com/minnanosaiban/pdf-reader" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>

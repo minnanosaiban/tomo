@@ -1,8 +1,8 @@
 ---
-title: 連続2ページPDFリーダー
+title: 2ページ表示PDF
 ---
 
-# 連続2ページPDFリーダー
+# 2ページ表示PDF
 
 <p class="about-work-links">
 <a class="arrow-link" href="https://pdf-reader-eof.pages.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>

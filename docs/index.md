@@ -85,6 +85,7 @@ TOEIC対策向けの、英文を学ぶアプリです。英文を表のように
 <p class="about-work-title"><span class="about-work-no">06</span><a class="work-link" href="https://eng-note.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener">英語ノート</a> <a class="gh-link" aria-label="開く" href="https://eng-note.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i></a></p>
 <p class="about-work-links">
 <a class="arrow-link" href="tech/eng-note/"><i class="bi bi-tools"></i> 技術解説</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-note" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 <p>
 英文を選んで聞き、自分で書いた解説（Markdown）を、英文の行のボタンから開けるアプリです。英文は、パート・難易度・グループ・ラベルで絞り込み、1.0・0.8・0.5 の速さで読み上げられます。解説は、プレビューを見ながら書き、あとから直せます。英文と解説は、暗号化したクラウド同期で、PC とスマホで共有できます。

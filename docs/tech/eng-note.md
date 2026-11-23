@@ -6,6 +6,7 @@ title: 英語ノート
 
 <p class="about-work-links">
 <a class="arrow-link" href="https://eng-note.scratch-2026-10-07-cb3f9c.workers.dev/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> 公開サイト</a>
+<a class="arrow-link" href="https://github.com/minnanosaiban/eng-note" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
 </p>
 
 英文を選んで聞き、**自分で書いた解説（Markdown）を、英文のそばから開ける**アプリです。「英文」「解説」「同期」の3つのタブだけで、データは端末の IndexedDB に置き、暗号化して PC とスマホで共有します。

@@ -16,6 +16,7 @@
 
 | 制作物 | 解説 |
 |---|---|
+| 英語ノート | [`eng-note.md`](docs/tech/eng-note.md) |
 | PDFツール | [`pdf-tools.md`](docs/tech/pdf-tools.md) |
 | サイドノート作成 | [`sidenote.md`](docs/tech/sidenote.md) |
 | RelaGrid　関係図 | [`relagrid.md`](docs/tech/relagrid.md) |

@@ -34,6 +34,11 @@ description: 運営者が作ったアプリ・ツール・ウェブサイトの�
 <span class="toc-card-title">英文読解の復習アプリ</span>
 <span class="toc-card-desc">引っ掛かった語句を★登録して復習。選択位置の持ち方</span>
 </a>
+<a href="eng-note/" class="toc-card">
+<span class="toc-card-num">06</span>
+<span class="toc-card-title">英語ノート</span>
+<span class="toc-card-desc">英文のそばから、Markdown の解説を開く。暗号化同期つき</span>
+</a>
 </div>
 
 <p class="toc-phase-label"><i class="fa-solid fa-layer-group"></i> ツール</p>
